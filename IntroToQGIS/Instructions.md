@@ -2,7 +2,7 @@
 Instructions &amp; data for an introductory QGIS workshop
 
 ## Workshop Description:
-3:00-4:00 | Tuesday, June 13th | DSI Classroom | room 360 Shields Library
+2:00-4:00 | Monday, September 25th, 2017 | DSI Classroom | room 360 Shields Library
 
 This workshop will introduce participants to QGIS, a powerful open source GIS software.  The workshop will cover typical basic GIS software workflow needs such as loading data, changing the way data is displayed, and where to find analysis tools.  In addition, participants will learn strategies for finding help with QGIS and tutorials for home learning. This workshop is not intended to teach all the concepts of GIS from the beginning (it's only an hour!), but rather to introduce those already familiar with the concepts of GIS to a new software option for applying those concepts.
 
@@ -70,9 +70,9 @@ See Also: [QGIS Training Manual: The Interface](http://docs.qgis.org/2.14/en/doc
 # HANDS ON: Exercises
 You'll use the QGIS Trainin Manual's exercises to learn about QGIS and get some experience operating the interface.  Note that these exercises have 3 levels of difficulty that are color-coded:
 
-    *  Basic: Green Label
-    *  Intermediate: Blue Label
-    *  Advanced: Red Label
+*  Basic: Green Label
+*  Intermediate: Blue Label
+*  Advanced: Red Label
     
 Definitely try the green/basic exercises, and feel free to skip the blue/intermediate and red/advanced exercises as you see fit for your experience and interest.
 
