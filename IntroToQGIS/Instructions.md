@@ -12,7 +12,7 @@ Bring your laptop with QGIS (2.18) installed - visit QGIS.org for free download
 #### Are you new to GIS?
 That's great!  You can still get a lot out of this workshop.  Just know that this workshop is not designed to teach you everything you need to know to do GIS effectively.  Just like you can't learn stats in an hour, a one-hour workshop can't teach you GIS. Here are some options for in-depth learning: 
  *  [A Gentle Introduction to GIS](http://docs.qgis.org/2.14/en/docs/gentle_gis_introduction/) is an accessible introduction.
- *  UC Davis' LDA 150 is a great class and is taught most Fall & Spring quarters.  
+ *  UC Davis has many [GIS courses](https://spatial.ucdavis.edu/teaching/). LDA 150 is a great class to start and is taught most Fall & Spring quarters.  
  *  The UC Davis Extension also offers courses.  
  *  More home learning options are listed at the bottom of this document.
 
