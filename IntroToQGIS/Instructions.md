@@ -20,7 +20,6 @@ That's great!  You can still get a lot out of this workshop.  Just know that thi
 1. Introduction
 1. Demonstration: The Interface
 1. Hands On: Exercises
-1. UC Davis GIS Community
 1. Home Learning
 
 # Introduction
