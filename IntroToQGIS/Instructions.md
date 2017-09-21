@@ -25,18 +25,6 @@ That's great!  You can still get a lot out of this workshop.  Just know that thi
 
 # Introduction
 
-## About the UC Davis Library's Data Management Program
-The Data Management Program works to ensure key data are easily discoverable and accessible for the benefit of UC Davis researchers in all disciplines.
- *  Data Management Plans
- *  Metadata & Describing Data
- *  Finding Data
- *  Sharing & Preserving Data
- *  Geospatial Visualizations & Maps for Publication
- *  GIS Drop-In Hours: Wednesdays 2:00-4:00 Shields Map Room
- 
-Visit us online: http://data.ucdavis.edu
-
-
 ## About QGIS:
 QGIS (previously called Quantum GIS) is a free and open source desktop GIS software.  Since its initial development in 2002, QGIS has become one of the industry's leading software options for GIS.  QGIS is used by researchers across the world as well as by many California and Federal agencies.  QGIS allows users to access a number of other GIS software packages through it's graphical user interface including GRASS as well as user-contributed scripts and plug-ins.
 
@@ -81,15 +69,6 @@ Please complete the following items:
 1.  [QGIS Training Manual: The Interface](http://docs.qgis.org/2.14/en/docs/training_manual/introduction/index.html)
 1.  [QGIS Training Manual: Creating a Basic Map](http://docs.qgis.org/2.14/en/docs/training_manual/basic_map/index.html) (Skip the section about the custom SVG fill.)
 1.  Explore the [QGIS Training Manual](http://docs.qgis.org/2.14/en/docs/training_manual/index.html) for topics of particular interest to you.
-
-# UC Davis GIS Community
-The GIS community at UC Davis centers around the Geospatial email list.  It's populated by campus affiliates at any level and with any interest in geospatial tools (GIS, remote sensing, drones, etc.).  It's for announcements and questions.
-
-How to Sign Up:
-1.  Go to: https://lists.ucdavis.edu/sympa/
-2.  Log in with your UC Davis credentials.
-3.  Search: geospatial
-4.  Click the subscribe link.
 
 # Home Learning:
 The learning doesn't have to end when you leave the workshop!  We encourage you to continue to explore what QGIS has to offer and to find tools to help you with your analyses.
