@@ -9,7 +9,7 @@ Import the vector data you would like to work with.
 
 Order your layers with the countries on the bottom, then the lines, and points on top.  Save your work.
 
-![QGIS Layers Loaded](/Images/QGIS_1_LayersLoaded.PNG)
+![QGIS Layers Loaded](/CustomCartographicSymbols/Images/QGIS_1_LayersLoaded.PNG)
 
 
 ### Use Custom SVG Markers in QGIS
@@ -22,12 +22,12 @@ Let's use the pin marker we made earlier:
 1. Click "Apply" to see how it looks on your map.  Adjust the size of your pin marker to any size you like.  You can always make adjustments later.  Click "OK" to exit the dialog.
 1. Save your work.
 
-![Point Marker Dialog](/Images/QGIS_2_PointMarkerDialog.PNG)
+![Point Marker Dialog](/CustomCartographicSymbols/Images/QGIS_2_PointMarkerDialog.PNG)
 
-![Pins on the Map](/Images/QGIS_3_PinsApplied.PNG)
+![Pins on the Map](/CustomCartographicSymbols/Images/QGIS_3_PinsApplied.PNG)
 
 You can also use SVG markers for lines.  The process is similar to what you just did with your point markers: make the SVG marker in Inkscape, load it into QGIS in the layer properties dialog, and set some parameters.  To save some time, I pre-made an SVG for you to try with your lines layer that looks like a single twist of rope.  You can use this to make your line look like string.
-1. Find the Rope_Segment.svg file in the [Pre-Made SVGs Folder](/Pre-Made_SVGs) of this repository.  You'll also see that there's a pin svg in case you want to see what my version looks like.  Alternatively, you can make your own rope segment in Inkscape using the skills you just learned with the Pen Tool and Node Editor to make a similar shape.  The key to success is to make sure the left and right side of the shape fit together well when the image is repeated next to each other.  It's fiddly so I made one for you.
+1. Find the Rope_Segment.svg file in the [Pre-Made SVGs Folder](/CustomCartographicSymbols/Pre-Made_SVGs) of this repository.  You'll also see that there's a pin svg in case you want to see what my version looks like.  Alternatively, you can make your own rope segment in Inkscape using the skills you just learned with the Pen Tool and Node Editor to make a similar shape.  The key to success is to make sure the left and right side of the shape fit together well when the image is repeated next to each other.  It's fiddly so I made one for you.
 1. Open the Layer Properties dialog for the lines layer and go to the Style tab, just like before.
 1. In the white box, click on the "Simple line" text.
 1. In the "Symbol layer type" drop-down menu, pick "Marker line".  Notice that you have a longer tree of layers in the white box.
@@ -37,7 +37,7 @@ You can also use SVG markers for lines.  The process is similar to what you just
 1. Adjust the size of the segments in the "Size" parameter box.  For now, pick something like 4 milimeters to be able to see the segments.  They don't fit together yet, but we'll fix that next.
 1. Up at the top of the dialog, in the white box, click on the "Marker line" text.  The radio button next to "with interval" should be selected.  Change the spacing to make no space between the segments. 1.6 milimeters worked for me.  Apply these changes to the canvas with the "Apply" button.  If you like what you see, click "OK" to close the dialog, otherwise, make some more adjustments.  NOTE: A process similar to what we just did [can also be done in Inkscape](https://inkscapetutorials.org/2014/10/20/use-inkscape-to-draw-vector-rope-in-any-shape/), but it tends to work better on gentle curves.
 
-![String Lines](/Images/QGIS_4_String.PNG)
+![String Lines](/CustomCartographicSymbols/Images/QGIS_4_String.PNG)
 
 At this point, you'll want to get an idea of what your final map will look like.  I sometimes use a [Google Image](https://images.google.com) search to get some ideas.  For example, if you want to continue with the map pin board theme, try googling related keywords to see what kinds of map pin boards there are.  Do you want to label the locations?  Do you want lines for states and provinces?  Maybe you want some city names or graticule lines?  Get everything into the canvas you think you'll need for your final map.  It doesn't have to look nice at all yet, but unless you want to add it by hand later, you'll want to put it in now.
 
@@ -47,5 +47,5 @@ Helpful Links:
 
 
 
-Here's an example of a map I created with the same data you're working with.  I liked the idea of the textured string, but it was just too cluttered for my map, so I left it out.  I've included annotations on my map so you can learn how the effects were done.  None of it is fancy or difficult.  It's mostly just layering items.
-![Example Map with Annotations](/Images/PinMap_Annotations.png)
+Here's an example of a map I created with the same data you're working with, including some editing of the map itself in Inkscape.  I liked the idea of the textured string, but it was just too cluttered for my map, so I left it out.  I've included annotations on my map so you can learn how the effects were done in Inkscape.  None of it is fancy or difficult.  It's mostly just layering items.  Finishing maps in an art program like Inkscape or Illustrator could be it's own #maptimeDavis workshop if there is enough demand.
+![Example Map with Annotations](/CustomCartographicSymbols/Images/PinMap_Annotations.png)
