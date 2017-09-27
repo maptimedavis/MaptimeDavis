@@ -4,7 +4,7 @@
 Workshop participants will learn some common tools in Inkscape, an open source vector illustration program, with the goal of creating a file that can be used as a point marker in a GIS program.
 
 ## Graphical Plan
-**Inkscape:** Make Map Symbols --> **QGIS:** Compose a Map --> **Inkscape:** Finishing, Design Work
+**Inkscape:** Make Map Symbols --> **GIS:** Compose a Map
 
 ## Outline
 1. Getting Started
