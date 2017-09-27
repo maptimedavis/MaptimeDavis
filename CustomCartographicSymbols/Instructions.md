@@ -1,10 +1,7 @@
 # Custom Cartographic Symbols
 
-# Workshop: 
-Custom Cartographic Symbols
-
 ## Description:
-Maps built in the map composer of any GIS program often have the signature look of their software of origin. With some help from graphic design software, maps can have the signature of their cartographer instead. Participants in this workshop will leave with a clear understanding of how to use Inkscape to refine static cartographic works started in QGIS. This workshop will give participants hands-on experience with the workflow presented at the 2016 FOSS4G North America meeting for using QGIS-generated SVG files in Inkscape, including how to build a basic map in QGIS, import it into Inkscape, and work with tools such as fonts, design elements, and alignment tools, to make a map that is truly their own style.
+Workshop participants will learn some common tools in Inkscape, an open source vector illustration program, with the goal of creating a file that can be used as a point marker in a GIS program.
 
 ## Graphical Plan
 **Inkscape:** Make Map Symbols --> **QGIS:** Compose a Map --> **Inkscape:** Finishing, Design Work
@@ -13,14 +10,11 @@ Maps built in the map composer of any GIS program often have the signature look 
 1. Getting Started
   
 1. Intro to Inkscape
-   1. Demonstration: You Already Know This! 
+   1. Demonstration: You Already Know This!
    1. Hands-On: Make a Pin Icon in Inkscape
   
-2. Working in QGIS
-   1. Use Custom SVG Markers
-   1. Export to SVG
+2. Using your marker in a GIS (separate document)
 
-   
 ## Getting Started
 You should already have installed:
 * QGIS (2.18)
@@ -100,7 +94,7 @@ And add some shine to the pin stem with a smaller rectangle of a lighter gray on
 
 Adjust the page size: In the File menu, click on Document Properties.  In the Custom Size section, expand the "Resize page to content..." section by clicking on the little + sign.  Make sure nothing in your drawing is selected by clicking in a blank space.  Click the "Resize page to drawing or selection" button.  The page boundary should now hug the edge of your drawing.  Save one final time, close Inkscape, and you'll be ready to use your new pin marker in QGIS or ArcGIS!
 
-[Instructions for QGIS](/CustomCartographicSymbols/WorkingInQGIS.md)
+[Instructions for using your marker in QGIS](/CustomCartographicSymbols/WorkingInQGIS.md)
 
-[Instructions for ArcGIS](/CustomCartographicSymbols/WorkingInArcGIS.md)
+[Instructions for using your marker in ArcGIS](/CustomCartographicSymbols/WorkingInArcGIS.md)
 
