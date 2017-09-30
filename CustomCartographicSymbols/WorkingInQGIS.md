@@ -35,7 +35,7 @@ You can also use SVG markers for lines.  The process is similar to what you just
 1. Change the "Symbol layer type" drop-down menu selection to "SVG marker".
 1. Similar to what we did before, use the "..." button to open the dialog to find and select your Rope_Segment.svg and click the "Open" button.  It may be hard to see since the rope segment colors are similar to the dialog box, but you should see what looks like a tan dashed line in the preview.
 1. Adjust the size of the segments in the "Size" parameter box.  For now, pick something like 4 milimeters to be able to see the segments.  They don't fit together yet, but we'll fix that next.
-1. Up at the top of the dialog, in the white box, click on the "Marker line" text.  The radio button next to "with interval" should be selected.  Change the spacing to make no space between the segments. 1.6 milimeters worked for me.  Apply these changes to the canvas with the "Apply" button.  If you like what you see, click "OK" to close the dialog, otherwise, make some more adjustments.  NOTE: A process similar to what we just did [can also be done in Inkscape](https://inkscapetutorials.org/2014/10/20/use-inkscape-to-draw-vector-rope-in-any-shape/), but it tends to work better on gentle curves.
+1. Up at the top of the dialog, in the white box, click on the "Marker line" text.  The radio button next to "with interval" should be selected.  Change the spacing to make no space between the segments. 1.6 milimeters worked for me.  Apply these changes to the canvas with the "Apply" button.  If you like what you see, click "OK" to close the dialog, otherwise, make some more adjustments.  
 
 ![String Lines](/CustomCartographicSymbols/Images/QGIS_4_String.PNG)
 
@@ -46,6 +46,3 @@ Helpful Links:
 * [QGIS Training Manual Print Composer Tutorial](http://docs.qgis.org/2.14/en/docs/training_manual/map_composer/index.html)
 
 
-
-Here's an example of a map I created with the same data you're working with, including some editing of the map itself in Inkscape.  I liked the idea of the textured string, but it was just too cluttered for my map, so I left it out.  I've included annotations on my map so you can learn how the effects were done in Inkscape.  None of it is fancy or difficult.  It's mostly just layering items.  Finishing maps in an art program like Inkscape or Illustrator could be it's own #maptimeDavis workshop if there is enough demand.
-![Example Map with Annotations](/CustomCartographicSymbols/Images/PinMap_Annotations.png)
