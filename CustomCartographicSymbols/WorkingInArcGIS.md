@@ -7,7 +7,7 @@ ArcGIS requires that we use a .emf (Enhanced Metafile) file, so here's how we do
 4. In the EMF Output window that pops up, make sure you check the option to "Convert Text to Paths".
 
 Now we can use our pin in ArcMap
-1. Let's load up some data to use with our new pin.  Add the FOSS4G_Locations shapefile (ArcMap does not easily work with geoJSON, an open format) and country outlines from Natural Earth.
+1. Let's load up some data to use with our new pin.  Add the FOSS4G_Locations shapefile and country outlines from Natural Earth.
 1. Right click on the FOSS4G_Locations in the table of contents, choose Layer Properties.
 1. On the Symbology Tab, click the button that has the current symbol for the point (it probably looks like a circle if you haven't changed the default yet).
 1. In the Symbol Selector dialog that pops up, click the "Edit Symbol..." button.
