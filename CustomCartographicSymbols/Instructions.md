@@ -20,11 +20,6 @@ You should already have installed:
 * QGIS (2.18)
 * Inkscape (0.92)
 
-## Data
-Data to use in this workshop is in the [Data Folder](https://github.com/MicheleTobias/OpenSourceCartography/tree/master/Data)
-
-Other potential data sources for your maps: [Michele's List of Data Sources](https://docs.google.com/spreadsheets/d/1964wpzdUZJElZ7xsF740BMiLcTtga82jEOnkHF7wyHU/edit?usp=sharing)
-
 ## Intro to Inkscape
 ### Demonstration: You Already Know This!
    1. Concept of vectors (points, lines, polygons) vs. rasters (images)
