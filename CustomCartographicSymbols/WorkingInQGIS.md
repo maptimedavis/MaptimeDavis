@@ -45,4 +45,6 @@ Helpful Links:
 * [Multiline Labels in QGIS](https://anitagraser.com/2011/06/15/multi-line-labels-in-qgis/) from Anita Graser
 * [QGIS Training Manual Print Composer Tutorial](http://docs.qgis.org/2.14/en/docs/training_manual/map_composer/index.html)
 
+Today the process we just learned produces an icon that has colors that cannot be changed in the GIS.  For this kind of icon with multiple colors, this wouldn't really be possible anyway.  However, if you make a single-color icon, it is possible to edit the file to allow QGIS to edit the colors from the style interface.  For more on how to do this, see this handy Stack Exchange post: https://gis.stackexchange.com/questions/45180/how-to-create-svg-symbols-that-have-modifiable-fill-color-stroke-color-and-stro 
+
 
