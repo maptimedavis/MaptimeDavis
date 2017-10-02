@@ -29,7 +29,7 @@ You should already have installed:
        1. Layers
        1. Fill & Stroke = Symbology
        
-### Hands-On: Make a Pin Icon in Inkscape
+## Hands-On: Make a Pin Icon in Inkscape
 Let's learn to use Inkscape while making something we can use later: an icon to represent a point.  I'll walk you through how to make a map pin icon, but feel free to make your own version!  *Something to remember: SAVE OFTEN! Just like GIS, vector illustration programs can be a little unstable. Save every time you think you might want to.*
 
 Open Inkscape.  Let's learn a little about the interface.
