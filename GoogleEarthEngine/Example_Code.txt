@@ -1,16 +1,9 @@
-/**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var geometry = /* color: #d63000 */ee.Geometry.Polygon(
-        [[[5.7163238525390625, 50.95626413754695],
-          [5.760612487792969, 50.95453399643139],
-          [5.760612487792969, 50.97464290902178],
-          [5.719413757324219, 50.97550761325166]]]);
-/***** End of imports. If edited, may not auto-convert in the playground. *****/
 //upload CSV as a fusion table 
 
 //declare it as a variable
-var points = ee.FeatureCollection("ft:1oNHRZDw55SXydxUgYls1W474sCgl__vUv_pRpIcr");
+var points = ee.FeatureCollection("ft:197TBk5hVl_MrOdL8R_x53otnJnRzrmWNwv-NPIRY");
 // Zoom to a location.
-Map.centerObject(points, 12);
+Map.centerObject(points, 10);
 
 //Visualize points on map
 Map.addLayer(points, {}, 'samples');
