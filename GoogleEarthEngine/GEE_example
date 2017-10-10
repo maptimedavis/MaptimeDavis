@@ -1,0 +1,79 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var geometry = /* color: #d63000 */ee.Geometry.Polygon(
+        [[[5.7163238525390625, 50.95626413754695],
+          [5.760612487792969, 50.95453399643139],
+          [5.760612487792969, 50.97464290902178],
+          [5.719413757324219, 50.97550761325166]]]);
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//upload CSV as a fusion table 
+
+//declare it as a variable
+var points = ee.FeatureCollection("ft:1oNHRZDw55SXydxUgYls1W474sCgl__vUv_pRpIcr");
+// Zoom to a location.
+Map.centerObject(points, 12);
+
+//Visualize points on map
+Map.addLayer(points, {}, 'samples');
+print(points);
+//Pick a data source - Landsat 8 7 5 
+var l8 = ee.ImageCollection('LANDSAT/LC8_L1T_TOA');
+
+//Filter by date 
+var l8_2015 = l8.filterDate('2016-01-01', '2016-12-31');
+
+//Filter by boundaries
+//First draw a polygon
+var l815s = l8_2015.filterBounds(geometry);
+
+// This will sort from least to most cloudy.
+var sorted = l815s.sort('CLOUD_COVER');
+
+// Get the first (least cloudy) image.
+var scene = ee.Image(sorted.first());
+
+//add true color composite 
+var visParams = {bands: ['B4', 'B3', 'B2'], max: 0.3};
+Map.addLayer(scene, visParams, 'true-color composite');
+
+//get NDVI
+var ndvi = scene.normalizedDifference(['B5', 'B4']).rename('NDVI');
+
+//Adding NDVI to a collection as another band
+var addVI = function(image) {
+  var ndvi = image.normalizedDifference(['B5', 'B4']).rename('NDVI')
+  return image
+    .addBands([ndvi])
+};
+
+var collection1 = l8_2015.map(addVI);  
+
+//get min NDVI
+var median = collection1.reduce(ee.Reducer.median());
+//Export NDVI values to a table in drive
+print(median);
+Map.addLayer(median.select('NDVI_median'), {min: -0.8, max: 0.8, palette: 'black, green'},'NDVI')
+
+var medianV = median.reduceRegions({
+  reducer: ee.Reducer.median(),
+  collection: points,
+  scale: 30,
+}); 
+  
+Export.table.toDrive({
+  collection: medianV,
+  fileNamePrefix: 'xx',
+  folder: 'xx',
+  description: 'xx',
+  fileFormat: 'CSV'
+});
+
+Export.image.toDrive({
+  image: median,
+  description: 'xx',
+  folder: 'xx', 
+  fileNamePrefix: 'xx',
+  'maxPixels': 1e13,
+  scale: 30,
+  region: geometry 
+});
+

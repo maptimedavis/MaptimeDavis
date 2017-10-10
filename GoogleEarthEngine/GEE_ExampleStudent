@@ -1,0 +1,89 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var imagecoll = ee.ImageCollection("LANDSAT/LC8_L1T_TOA"),
+    imageCollection2 = ee.ImageCollection("LANDSAT/LC8_L1T_TOA"),
+    geometry = /* color: #d63000 */ee.Geometry.Polygon(
+        [[[5.729541778564453, 50.971292029698596],
+          [5.7588958740234375, 50.9691300426974],
+          [5.759410858154297, 50.97745314054855],
+          [5.7314300537109375, 50.97788546851198]]]);
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+//upload CSV as a fusion table 
+
+//declare it as a variable
+var points = ee.FeatureCollection('ft:197TBk5hVl_MrOdL8R_x53otnJnRzrmWNwv-NPIRY');
+// Zoom to the location of your points
+Map.centerObject(points, 10);
+
+//Visualize points on map
+Map.addLayer(points, {}, 'samples');
+print(points);
+
+
+//Pick a data source - Landsat 8 Top of the atmosphere
+//search using the bar above
+
+var l8 = ee.ImageCollection('LANDSAT/LC8_L1T_TOA');
+
+//Filter by date 
+var l8_2016 = l8.filterDate('2016-01-01', '2016-12-31');
+
+//Filter by boundaries
+//First draw a polygon using the "Draw a shape" tool on the map
+var l816s = l8_2016.filterBounds(geometry);
+
+// This will sort from least to most cloudy.
+var sorted = l815s.sort('CLOUD_COVER');
+
+// Get the first (least cloudy) image.
+var scene = ee.Image(sorted.first());
+
+//add true color composite 
+var visParams = {bands: ['B4', 'B3', 'B2'], max: 0.3};
+Map.addLayer(scene, visParams, 'true-color composite');
+
+//get NDVI
+var ndvi = scene.normalizedDifference(['xx', 'xx']).rename('NDVI');
+
+//Adding NDVI to a collection as another band
+var addVI = function(image) {
+  var ndvi = image.normalizedDifference(['xx', 'xx']).rename('NDVI')
+  return image
+    .addBands([ndvi])
+};
+
+var collection1 = l8_2016.map(addVI);  
+
+//get min NDVI
+var median = collection1.reduce(ee.Reducer.median());
+
+//print median
+print(median);
+Map.addLayer(median.select('NDVI_median'), {min: -0.8, max: 0.8, palette: 'black, green'},'NDVI')
+
+//Export NDVI values to a table in drive
+var medianV = median.reduceRegions({
+  reducer: ee.Reducer.median(),
+  collection: points,
+  scale: 30,
+}); 
+  
+Export.table.toDrive({
+  collection: medianV,
+  fileNamePrefix: 'xx',
+  folder: 'xx',
+  description: 'xx',
+  fileFormat: 'CSV'
+});
+
+
+
+Export.image.toDrive({
+  image: median,
+  description: 'xx',
+  folder: 'xx', 
+  fileNamePrefix: 'xx',
+  'maxPixels': 1e13,
+  scale: 30,
+  region: geometry 
+});
+*/
