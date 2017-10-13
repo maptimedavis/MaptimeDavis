@@ -2,6 +2,13 @@
 
 MaptimeDavis workshop on learning to use spatial data in R. Material from this workshop comes from http://rspatial.org
 
+### Description
+
+2:00-4:00 | Monday, October 16th, 2017 | DSI Classroom | room 360 Shields Library
+
+### Prepare
+
+ * Install R and Rstudio
  * Download all the code, data, and answers. https://github.com/MicheleTobias/MaptimeDavis/archive/master.zip
  * Unzip the data in the Rspatial folder.
  * *Note*: you may need to install packages, primarily sp,rgdal,rgeos and raster ```install.packages(c('sp','rgdal','rgeos','raster'))```
