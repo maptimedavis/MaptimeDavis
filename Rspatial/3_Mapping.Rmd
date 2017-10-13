@@ -1,0 +1,210 @@
+---
+title: "Spatial plotting in R"
+output:
+  html_document:
+    toc: yes
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+##Introduction {.tabset}
+One of the biggest advantages of working with spatial data is you can easily visualualize the spatial variation of the data. You do it by making maps. Maps are everywhere! In this session, we will focus on making maps using both `raster` and `spatail` class data.
+Like basic plots, for making maps there are number packages and functions available. However, with the following two functions from `sp` packages a large number of plotting can be done. 
+1. `plot` based on base R plotting system
+2. `spplot` based on `grid` system
+
+`plot` allows incremental addition of graphical elements in a single plotting device; whereas `spplot` does not allow such addition (similar to `lattice` or `ggplot2`). `spplot` makes maps with shared axes which makes visualization and comparison of multiple maps much easier.  
+
+##Plotting various spatial objects
+We will plot various raster (elevation) and vector data (administrative boundaries, rivers, lakes and protected areas) of Tanzania. First we will use the `plot` function. Make sure your working directory is *data* directory for this specific excercise. 
+
+*Important* Some of the vector data is in `*.shp` file format while others is in `*.rds` R database format. You can save anykind of data in `*.rds` format. Use `readRDS` and `saveRDS` to read and save data in `*.rds` format respectively.       
+
+
+  
+###Using `plot()`  
+```{r, fig.width = 6, fig.height = 6, message = FALSE}
+library(raster)
+#setwd("data")
+v0 <- readRDS('data/TZA_adm0.rds')
+plot(v0, border = "red")
+title(main = "Tanzania national boundary", sub = "source GADM")
+```
+
+**Ex 1:** Fill the polygon using a different color and change increase the thickness of the border
+
+
+####Color individual regions
+We will use the region boundaries from GADM database (level = 1)
+
+```{r, fig.width = 6, fig.height = 6}
+v1 <- readRDS('data/TZA_adm1.rds')
+
+# Each region should have different color; we will use the color ramp
+n <- length(v1$NAME_1)
+plot(v1, col=rainbow(n), main = 'Administrative boundary: level 1')
+
+# Now add name of the indiviudal regions to the map
+text(v1, v1$NAME_1, cex=0.75)
+```
+
+**Ex 2:** Read and plot level 2 administrative boundaries of Tanzania. Give different colors to the regions.
+
+
+####Add SpatialLines object to your plot
+We will plot the river.
+
+```{r, fig.width = 6, fig.height = 6}
+rv <- shapefile('data/Tanzania_rivers.shp')
+plot(v0, border = "red", lwd = 2,  axes = TRUE)
+plot(rv, col='blue', add = TRUE)
+title(main = "Tanzania rivers")
+# Add some more details
+legend('topright', legend = 'River', lty = 1, lwd = 2, col = 'blue', bty = "n")
+```
+
+**Ex 3.** Change the country boundary color, river color and place the legend in the bottom left of the plot.
+
+####Add additional SpatialPolygons
+Now we will plot the lake and protected areas of Tanzania. First read the required boundaries.
+
+```{r, fig.width = 6, fig.height = 6}
+lake <- shapefile('data/TZA_glwd.shp')
+protarea <- shapefile('data/TZA_wdpa.shp')
+plot(v0, lwd = 2,  axes = TRUE)
+plot(lake, col='lightblue', border = 'transparent', add = TRUE)
+plot(protarea, col='lightgreen', border = 'transparent', add = TRUE)
+title(main = "Tanzania lakes and protected area")
+```
+
+Note the border="transparent" option suppresses the plotting of polygon borders. 
+
+**Ex 4.** Check what happens when you don't use the `border` argument in while plotting lake and protected areas.
+
+####Plot Raster
+We will plot the elevation of Tanzania.
+
+```{r, fig.width = 6, fig.height = 6}
+alt <- raster('data/TZA_alt.tif')
+plot(alt, col = terrain.colors(20), axes=FALSE)
+title(main = "Elevation (m)")
+```
+
+To improve the visualization, we can `limit` the higher and lower elevataion zones. 
+
+```{r, fig.width = 6, fig.height = 6}
+alt[alt < 0] = 0
+alt[alt > 3000] = 3000
+plot(alt, col = terrain.colors(20), axes=FALSE)
+title(main = "Elevation (in m)")
+```
+
+####Plotting two raster layers
+We will show elevation and avergae annual temperature in the same plot.
+
+```{r, fig.width = 7, fig.height = 4}
+temp <- raster('data/TZA_bio1.tif')
+temp[temp < 0] = 0
+
+par(mfrow=c(1,2))
+plot(alt, col = terrain.colors(20), axes=FALSE)
+title(main = "Elevation (m)")
+
+plot(temp, col = rev(heat.colors(50)), axes=FALSE)
+title(main ="Annual Mean Temp (°C)")
+```
+
+####Adding Spatial *object to raster
+We will add the lake, rivers and administrative boundaries to the elevation raster plot
+
+```{r, fig.width = 6, fig.height = 6}
+plot(alt, col = terrain.colors(20), legend = FALSE)
+plot(lake, col='skyblue1', border = 'transparent', add = TRUE)
+plot(rv, col='blue1', add = TRUE)
+plot(v0, lwd = 2,  axes = TRUE, add = TRUE)
+title(main = "Lakes and rivers of Tanzania")
+```
+
+###Using `spplot()`
+We will use `spplot` for different plotting applications.
+
+```{r, fig.width = 7, fig.height = 4}
+# Use soil properties information; Soil organic carbon content and soil pH
+orc <- raster('data/TZA_ORC.tif')
+ph <- raster('data/TZA_PH.tif')
+soil <- stack(orc, ph)
+
+orc[orc>80] <- 80
+spplot(orc, main = list(label="Soil organic carbon content",  cex = 1))
+
+
+# change the ph values between 0 to 14
+ph <- ph/10
+spplot(ph, main = list(label="Soil pH",  cex = 1))
+```
+
+Now to change the color ramp and change legend position:
+```{r, fig.width = 6, fig.height = 6}
+brks <- seq(0,60,0.5)
+spplot(orc,
+       at = round(brks, digits=2),
+       col.regions = rev(terrain.colors(length(brks))), colorkey = list(space = "bottom"), 
+       main = list(label="Soil organic carbon content",  cex = 1))
+
+```
+
+**Ex 5.** Make similar changes to pH plot. Hint: the brks will take place at differnt sequence based on pH values
+
+####Adding Spatial *object to raster
+We will add the lake and administrative boundary to the elevation raster plot
+
+```{r, fig.width = 6, fig.height = 6}
+pols <- list("sp.lines", as(v0, 'SpatialLines'))
+brks <- seq(0,60,0.5)
+spplot(orc,
+       sp.layout=pols,
+       at = round(brks, digits=2),
+       col.regions = rev(terrain.colors(length(brks))), colorkey = list(space = "bottom"), 
+       main = list(label="Soil organic carbon content",  cex = 1))
+```
+
+See the difference with `plot` function. There is no use of `add=TRUE` argument.
+
+You can also add multiple SpatialObjects to the plot.
+
+```{r, fig.width = 6, fig.height = 6}
+pols1 <- list("sp.lines", as(v0, 'SpatialLines'), col = gray(0.4), lwd = 0.5)
+pols2 <- list("sp.polygons", as(lake, 'SpatialPolygons'), fill = 'skyblue1',col="transparent", first = FALSE)
+
+brks <- seq(0,60,0.5)
+spplot(orc,
+       sp.layout=list(pols1, pols2),
+       at = round(brks, digits=2),
+       col.regions = rev(terrain.colors(length(brks))), colorkey = list(space = "bottom"), 
+       main = list(label="Soil organic carbon content",  cex = 1))
+```
+
+**Ex 6.** Add the protected area boundaries to the plot. Donot fill the protected area polygon with any color.
+
+####Plot multiband raster object
+You can also use `ssplot` to plot multiband raster
+
+```{r, fig.width = 8, fig.height = 6}
+brks <- seq(0,70,0.5)
+ph <- ph*10
+soil <- stack(orc,ph)
+spplot(soil,
+       layout = c(2,1),
+       at = round(brks, digits=2),
+       col.regions = rev(terrain.colors(length(brks))), colorkey = list(space = "bottom"), 
+       main = list(label="Soil properties",  cex = 1))
+```
+
+* Ex 7.* Save your favorite plot using the following:
+`png(filename = "your-favorite-plot", width = 250, height = 200, units = "mm", res = 300)`
+`plot...`
+`spplot...`
+`dev.off()`
