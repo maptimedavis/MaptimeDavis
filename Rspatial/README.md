@@ -16,6 +16,7 @@ An introduction to R for geospatial topics with [RSpatial.org](http://rspatial.o
 
 Slide presentations on the topics:
 
+ * [What is Rspatial.org](https://www.scribd.com/document/357651325/rspatial-foss4g2017)
  * [Vectors in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day1_5_spatial_1_vector.pdf)
  * [CRS in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day1_6_spatial_2_crs.pdf)
  * [Rasters in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day2_1_spatial_3_raster.pdf)
