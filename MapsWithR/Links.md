@@ -1,5 +1,4 @@
-Making Maps with R
-with Ryan Peek
+"Making Maps with R" with Ryan Peek
 
 [github repository](https://github.com/ryanpeek/mapping_in_R)
 
