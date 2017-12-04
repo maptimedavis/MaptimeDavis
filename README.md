@@ -3,6 +3,12 @@ This is the temporary home of workshop materials for #maptimeDavis.
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
 
+# What is MaptimeDavis?
+Maptime is literally time for maps. Take a couple of hours to learn something new or hone a skill you already have.  Everyone is welcome, from brand new learners through seasoned veterans.
+
+## Why & how does Maptime work?
+Maptime is a community.  It works when everyone contributes.  Contributions take the form of not only presenting, but attending events and sharing those events with others, making new connections, discussing what topics you want, and helping to make sure they happen.  Maptime isn't a intended to be a list of topics served up for you to consume provided by some campus entity, but rather a discussion you participate in.
+
 # Call for Speakers
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDjQFZ7U_xNC5yYrlvwt1g3qBXzgFMizXIQXsu1HVD_OaYSQ/viewform?usp=sf_link">Nominate yourself or someone else as a speaker!</a>  
 
