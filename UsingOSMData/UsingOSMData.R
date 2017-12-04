@@ -3,6 +3,8 @@
 install.packages(c('osmdata','sf'), dependencies = TRUE)
 # will install lot of packages
 
+library(magrittr)
+
 library(osmdata)
 # supply the bounding box or specify the names
 bb <- getbb('Davis')
