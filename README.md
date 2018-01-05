@@ -9,6 +9,20 @@ Maptime is literally time for maps. Take a couple of hours to learn something ne
 ## Why & how does Maptime work?
 Maptime is a community.  It works when everyone contributes.  Contributions take the form of not only presenting, but attending events and sharing those events with others, making new connections, discussing what topics you want, and helping to make sure they happen.  Maptime isn't a intended to be a list of topics served up for you to consume provided by some campus entity, but rather a discussion you participate in.
 
+# Winter Quarter 2018 Schedule
+
+|Date	|Topic	|Speaker
+|---|---|---
+|17-Jan	|ArcGIS Resources on Campus	|Karen Beardsley
+|24-Jan	|Python for Geospatial	|Travis O’Brien
+|31-Jan	|Data Visualization with QGIS	|Michele Tobias
+|7-Feb	|Drone Image Stitching	|Taylor Nelsen & Travis Parker
+|14-Feb	|Open Street Map Mapathon	|Geospatial Community
+|21-Feb	|Open Mic: many short presentations	|Geospatial Community
+|28-Feb	|Finding Remote Sensing Data	|Ani Ghosh
+|7-Mar	|Spatial Databases	|Michele Tobias
+
+
 # Call for Speakers
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDjQFZ7U_xNC5yYrlvwt1g3qBXzgFMizXIQXsu1HVD_OaYSQ/viewform?usp=sf_link">Nominate yourself or someone else as a speaker!</a>  
 
@@ -23,3 +37,19 @@ How long are workshops typically?  We tend to schedule 2 hours, but it's adjusta
 I'm not an expert. Can I still present?  YES!  Experts are not always the best people to explain. Dedicated and proficient users of a tool are often better at teaching tools than the experts.
 
 Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
+
+# Previous Events
+
+|Date	|Topic	|Speaker
+|---|---|---
+|25-Sep-2017	|Intro to QGIS	|Michele Tobias
+|2-Oct-2017	|Custom Cartographic Symbols	|Michele Tobias
+|9-Oct-2017	|Google Earth Engine	|Pepe Ochoa & Kate Tiedeman
+|16-Oct-2017	|Intro to Spatial R with RSpatial.org	|Alex Mandel
+|23-Oct-2017	|UAV/Drone Show & Tell	|UAV Club
+|30-Oct-2017	|Viewing Data in ArcGIS	|Mapping Club
+|6-Nov-2017	|Cartography Panel & Clinic	|Amber Manfree, Sahoko Yui, Michele Tobias
+|13-Nov-2017	|Open Street Map Map-a-Thon	|Mapping Club
+|27-Nov-2017	|Making Maps in R	|Ryan Peek
+|4-Dec-2017	|Using Open Street Map Data	|Ani Ghosh
+
