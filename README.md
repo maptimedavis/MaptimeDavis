@@ -2,7 +2,7 @@
 
 |Date	|Topic	|Speaker
 |---|---|---
-|17-Jan	|ArcGIS Resources on Campus	|Karen Beardsley
+|17-Jan	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
 |24-Jan	|Python for Geospatial	|Travis O’Brien
 |31-Jan	|Data Visualization with QGIS	|Michele Tobias
 |7-Feb	|Drone Image Stitching	|Taylor Nelsen & Travis Parker
