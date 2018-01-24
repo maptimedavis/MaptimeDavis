@@ -30,3 +30,6 @@ For the main workshop go https://bitbucket.org/taobrienlbl/maptimedavis
     1. Say yes to prompts about upgrading packages
 1. Once done installing you should be able to run ```jupyter-notebook``` or ```spyder`` to edit and run code.
 
+## Now your ready for the main workshop
+
+Open https://bitbucket.org/taobrienlbl/maptimedavis in your web browser to see the instructions and get the files.
