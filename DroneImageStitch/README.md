@@ -1,7 +1,7 @@
 # Drone Imagery and Processing 
 
 Maptime 2/9/2018
-Travis Parker & Emily Hurry
+Travis Parker, Emily Hurry, & Taylor Nelsen
 
 ## Trial Pix4D Install Instructions
 
