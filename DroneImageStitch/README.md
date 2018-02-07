@@ -26,3 +26,11 @@ Windows Only - Mac/Linux users must use Pix4D Cloud
 ## Download Demo Data
 
 1) [RGB Images](https://figshare.com/articles/sUAS_RGB_Example_Data/5862504)
+
+## Presentation
+
+1) [Slides for following along](DroneImageProcessingPresent.pdf)
+
+## Tutorial
+
+1) [Tutorial](Pix4DPostProcessingInstructions.pdf) using the Demo Data linked above.
