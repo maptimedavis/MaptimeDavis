@@ -30,6 +30,8 @@ All the data is on [Figshare](https://figshare.com/account/projects/29010/articl
 1) [RGB Images](https://ndownloader.figshare.com/files/10412307) Approx 46 MB
 1) [Multi-Spectral Images](https://ndownloader.figshare.com/files/10416432) Approx 270 MB (430 MB unzipped)
 
+Want more test data?  OpenDroneMap has an [example data library](https://github.com/OpenDroneMap/odm_data).
+
 ## Presentation
 
 1) [Slides for following along](DroneImageProcessingPresent.pdf)
