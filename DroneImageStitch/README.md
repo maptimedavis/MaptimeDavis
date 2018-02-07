@@ -25,7 +25,10 @@ Windows Only - Mac/Linux users must use Pix4D Cloud
 
 ## Download Demo Data
 
-1) [RGB Images](https://figshare.com/articles/sUAS_RGB_Example_Data/5862504)
+All the data is on [Figshare](https://figshare.com/account/projects/29010/articles/5862504)
+
+1) [RGB Images](https://ndownloader.figshare.com/files/10412307) Approx 46 MB
+1) [Multi-Spectral Images](https://ndownloader.figshare.com/files/10416432) Approx 270 MB (430 MB unzipped)
 
 ## Presentation
 
