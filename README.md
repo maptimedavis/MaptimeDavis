@@ -4,8 +4,8 @@
 |---|---|---
 |17-Jan	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
 |24-Jan	|[Python for Geospatial](PythonGeospatial)	|Travis O’Brien
-|31-Jan	|Data Visualization with QGIS	|Michele Tobias
-|7-Feb	|Drone Image Stitching	|Taylor Nelsen & Travis Parker
+|31-Jan	|[Data Visualization with QGIS](DataVisualizationWithQGIS)	|Michele Tobias
+|7-Feb	|[Drone Image Stitching](DroneImageStitch)	|Taylor Nelsen & Travis Parker
 |14-Feb	|Open Street Map Mapathon	|Geospatial Community
 |21-Feb	|Open Mic: many short presentations	|Geospatial Community
 |28-Feb	|Finding Remote Sensing Data	|Ani Ghosh
