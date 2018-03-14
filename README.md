@@ -2,7 +2,16 @@
 
 |Date	|Topic	|Speaker
 |---|---|---
-|	|	|
+| 10-Apr	| **Is My Research Mappable?** An introduction to map making and GIS for researchers	| Michele Tobias & The Community
+| 17-Apr|	|
+| 24-Apr|	|
+| 1-May |	|
+| 8-May |	|
+| 15-May |	|
+| 22-May |	|
+| 29-May |	|
+| 5-Jun |	|
+| 12-Jun |	|
 
 The Spring Quarter Schedule is in progress!  Look for new workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus.
 
@@ -44,12 +53,12 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |13-Nov-2017	|Open Street Map Map-a-Thon	|Mapping Club
 |27-Nov-2017	|Making Maps in R	|Ryan Peek
 |4-Dec-2017	|Using Open Street Map Data	|Ani Ghosh
-|17-Jan	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
-|24-Jan	|[Python for Geospatial](PythonGeospatial)	|Travis O’Brien
-|31-Jan	|[Data Visualization with QGIS](DataVisualizationWithQGIS)	|Michele Tobias
-|7-Feb	|[Drone Image Stitching](DroneImageStitch)	|Taylor Nelsen & Travis Parker
-|14-Feb	|Open Street Map Mapathon	|Geospatial Community
-|21-Feb	|Open Mic: many short presentations	|Geospatial Community
-|28-Feb	|Finding Remote Sensing Data	|Ani Ghosh
-|7-Mar	|Spatial Databases	|Michele Tobias
+|17-Jan-2018	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
+|24-Jan-2018	|[Python for Geospatial](PythonGeospatial)	|Travis O’Brien
+|31-Jan-2018	|[Data Visualization with QGIS](DataVisualizationWithQGIS)	|Michele Tobias
+|7-Feb-2018	|[Drone Image Stitching](DroneImageStitch)	|Taylor Nelsen & Travis Parker
+|14-Feb-2018	|Open Street Map Mapathon	|Geospatial Community
+|21-Feb-2018	|Open Mic: many short presentations	|Geospatial Community
+|28-Feb-2018	|Finding Remote Sensing Data	|Ani Ghosh
+|7-Mar-2018	|Spatial Databases	|Michele Tobias
 
