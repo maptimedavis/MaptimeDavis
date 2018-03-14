@@ -1,15 +1,11 @@
-# Winter Quarter 2018 Schedule
+# Spring Quarter 2018 Schedule
 
 |Date	|Topic	|Speaker
 |---|---|---
-|17-Jan	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
-|24-Jan	|[Python for Geospatial](PythonGeospatial)	|Travis O’Brien
-|31-Jan	|[Data Visualization with QGIS](DataVisualizationWithQGIS)	|Michele Tobias
-|7-Feb	|[Drone Image Stitching](DroneImageStitch)	|Taylor Nelsen & Travis Parker
-|14-Feb	|Open Street Map Mapathon	|Geospatial Community
-|21-Feb	|Open Mic: many short presentations	|Geospatial Community
-|28-Feb	|Finding Remote Sensing Data	|Ani Ghosh
-|7-Mar	|Spatial Databases	|Michele Tobias
+|	|	|
+
+The Spring Quarter Schedule is in progress!  Look for new workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus.
+
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
 
@@ -48,4 +44,12 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |13-Nov-2017	|Open Street Map Map-a-Thon	|Mapping Club
 |27-Nov-2017	|Making Maps in R	|Ryan Peek
 |4-Dec-2017	|Using Open Street Map Data	|Ani Ghosh
+|17-Jan	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
+|24-Jan	|[Python for Geospatial](PythonGeospatial)	|Travis O’Brien
+|31-Jan	|[Data Visualization with QGIS](DataVisualizationWithQGIS)	|Michele Tobias
+|7-Feb	|[Drone Image Stitching](DroneImageStitch)	|Taylor Nelsen & Travis Parker
+|14-Feb	|Open Street Map Mapathon	|Geospatial Community
+|21-Feb	|Open Mic: many short presentations	|Geospatial Community
+|28-Feb	|Finding Remote Sensing Data	|Ani Ghosh
+|7-Mar	|Spatial Databases	|Michele Tobias
 
