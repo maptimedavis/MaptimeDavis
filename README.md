@@ -2,7 +2,7 @@
 
 |Date	|Topic	|Speaker
 |---|---|---
-| 10-Apr	| **Is My Research Mappable?** An introduction to map making and GIS for researchers	| Michele Tobias & The Community
+| 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & The Community
 | 17-Apr|	|
 | 24-Apr|	|
 | 1-May |	|
@@ -43,22 +43,22 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 
 |Date	|Topic	|Speaker
 |---|---|---
-|25-Sep-2017	|Intro to QGIS	|Michele Tobias
-|2-Oct-2017	|Custom Cartographic Symbols	|Michele Tobias
-|9-Oct-2017	|Google Earth Engine	|Pepe Ochoa & Kate Tiedeman
-|16-Oct-2017	|Intro to Spatial R with RSpatial.org	|Alex Mandel
+|25-Sep-2017	|[Intro to QGIS](https://github.com/MicheleTobias/MaptimeDavis/tree/master/IntroToQGIS)	|Michele Tobias
+|2-Oct-2017	|[Custom Cartographic Symbols](https://github.com/MicheleTobias/MaptimeDavis/tree/master/CustomCartographicSymbols)	|Michele Tobias
+|9-Oct-2017	|[Google Earth Engine](https://github.com/MicheleTobias/MaptimeDavis/tree/master/GoogleEarthEngine)	|Pepe Ochoa & Kate Tiedeman
+|16-Oct-2017	|[Intro to Spatial R with RSpatial.org](https://github.com/MicheleTobias/MaptimeDavis/tree/master/Rspatial)	|Alex Mandel
 |23-Oct-2017	|UAV/Drone Show & Tell	|UAV Club
-|30-Oct-2017	|Viewing Data in ArcGIS	|Mapping Club
-|6-Nov-2017	|Cartography Panel & Clinic	|Amber Manfree, Sahoko Yui, Michele Tobias
+|30-Oct-2017	|[Viewing Data in ArcGIS](https://github.com/MicheleTobias/MaptimeDavis/tree/master/ViewingDatainArcGIS)	|Mapping Club
+|6-Nov-2017	|[Cartography Panel & Clinic](https://github.com/MicheleTobias/MaptimeDavis/tree/master/Cartography)	|Amber Manfree, Sahoko Yui, Michele Tobias
 |13-Nov-2017	|Open Street Map Map-a-Thon	|Mapping Club
-|27-Nov-2017	|Making Maps in R	|Ryan Peek
-|4-Dec-2017	|Using Open Street Map Data	|Ani Ghosh
+|27-Nov-2017	|[Making Maps in R](https://github.com/MicheleTobias/MaptimeDavis/tree/master/MapsWithR)	|Ryan Peek
+|4-Dec-2017	|[Using Open Street Map Data](https://github.com/MicheleTobias/MaptimeDavis/tree/master/UsingOSMData)	|Ani Ghosh
 |17-Jan-2018	|[ArcGIS Resources on Campus](ArcGISResourcesOnCampus)	|Karen Beardsley
 |24-Jan-2018	|[Python for Geospatial](PythonGeospatial)	|Travis O’Brien
 |31-Jan-2018	|[Data Visualization with QGIS](DataVisualizationWithQGIS)	|Michele Tobias
 |7-Feb-2018	|[Drone Image Stitching](DroneImageStitch)	|Taylor Nelsen & Travis Parker
 |14-Feb-2018	|Open Street Map Mapathon	|Geospatial Community
-|21-Feb-2018	|Open Mic: many short presentations	|Geospatial Community
+|21-Feb-2018	|[Open Mic: many short presentations](https://github.com/MicheleTobias/MaptimeDavis/tree/master/OpenMicSession_Winter2018)	|Geospatial Community
 |28-Feb-2018	|Finding Remote Sensing Data	|Ani Ghosh
-|7-Mar-2018	|Spatial Databases	|Michele Tobias
+|7-Mar-2018	|[Spatial Databases](https://github.com/MicheleTobias/MaptimeDavis/tree/master/SpatialDatabases)	|Michele Tobias
 
