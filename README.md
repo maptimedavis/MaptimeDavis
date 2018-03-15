@@ -6,7 +6,7 @@ Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo a
 |Date	|Topic	|Speaker
 |---|---|---
 | 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & The Community
-| 17-Apr|	|
+| 17-Apr| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
 | 24-Apr|	|
 | 1-May |	|
 | 8-May |	|
