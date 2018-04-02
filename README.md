@@ -16,7 +16,7 @@ Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo a
 | 5-Jun |	|
 | 12-Jun |	|
 
-* Sessions marked with a star are not yet finalized. 
+\* Sessions marked with a star are not yet finalized. 
 
 The Spring Quarter Schedule is in progress!  Look for new workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus.
 
