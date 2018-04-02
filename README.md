@@ -5,16 +5,18 @@ Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo a
 
 |Date	|Topic	|Speaker
 |---|---|---
-| 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & The Community
+| 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & Matt Conner
 | 17-Apr| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
-| 24-Apr|	|
-| 1-May |	|
-| 8-May |	|
-| 15-May |	|
-| 22-May |	|
-| 29-May |	|
+| 24-Apr| * Earth Engine	| Ani Ghosh
+| 1-May | * Using the UC Davis Compute Cluster	| Alex Mandel
+| 8-May | * Open Street Map Mapathon	| Emily Hurry & Geospatial Community 
+| 15-May | * Collecting Locations	| Alex Mandel
+| 22-May | * Intro to QGIS???	| Michele Tobias
+| 29-May | * RSpatial.org Species Distributions (Big Foot Example)	| Elise Hellwig
 | 5-Jun |	|
 | 12-Jun |	|
+
+* Sessions marked with a star are not yet finalized. 
 
 The Spring Quarter Schedule is in progress!  Look for new workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus.
 
