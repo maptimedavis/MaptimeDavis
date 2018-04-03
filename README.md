@@ -11,7 +11,7 @@ Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo a
 | 1-May | * Using the UC Davis Compute Cluster	| Alex Mandel
 | 8-May | * Open Street Map Mapathon	| Emily Hurry & Geospatial Community 
 | 15-May | * Collecting Locations	| Alex Mandel
-| 22-May | * Intro to QGIS???	| Michele Tobias
+| 22-May | * Remote Sensing with Planet	| Orestis Herodotou (Planet)
 | 29-May | * RSpatial.org Species Distributions (Big Foot Example)	| Elise Hellwig
 | 5-Jun |	|
 | 12-Jun |	|
