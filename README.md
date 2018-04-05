@@ -4,7 +4,7 @@
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
 # Spring Quarter 2018 Schedule
-Workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.
+Workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/2018/04/05/maptimedavis-spring-2018-schedule/) for the workshops you plan to attend.
 
 |Date	|Topic	|Speaker
 |---|---|---
