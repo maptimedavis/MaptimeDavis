@@ -2,19 +2,18 @@
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
 # Spring Quarter 2018 Schedule
+Workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.
 
 |Date	|Topic	|Speaker
 |---|---|---
 | 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & Matt Conner
-| 17-Apr| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
+| 17-Apr| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion  * meet at the Craft Center	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
 | 24-Apr| Mapping Surface Water Change with ***Earth Engine*** * 1:00-4:00	| Ani Ghosh
 | 1-May | Learn to ***High Performance Compute***: Geo style	| Alex Mandel
 | 8-May | Open Street Map Mapathon * Location To Be Announced	| Emily Hurry 
 | 15-May | ***Collecting Location Data with Phones and Tablets***	| Alex Mandel
 | 22-May | ***Remote Sensing with Planet***	| Orestis Herodotou (Planet)
 | 29-May | ***RSpatial.org Species Distributions*** (Big Foot Example)	| Elise Hellwig
-
-The Spring Quarter Schedule is in progress!  Look for new workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus.
 
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
