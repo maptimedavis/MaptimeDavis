@@ -8,12 +8,12 @@ Workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on th
 |---|---|---
 | 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & Matt Conner
 | 17-Apr| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion  * meet at the Craft Center	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
-| 24-Apr| Mapping Surface Water Change with ***Earth Engine*** * 1:00-4:00	| Ani Ghosh
-| 1-May | Learn to ***High Performance Compute***: Geo style	| Alex Mandel
-| 8-May | ***Open Street Map Mapathon*** * Location To Be Announced	| Emily Hurry 
-| 15-May | ***Collecting Location Data with Phones and Tablets***	| Alex Mandel
-| 22-May | ***Remote Sensing with Planet***	| Orestis Herodotou (Planet)
-| 29-May | ***RSpatial.org Species Distributions*** (Big Foot Example)	| Elise Hellwig
+| 24-Apr| Mapping Surface Water Change with **Earth Engine** * 1:00-4:00	| Ani Ghosh
+| 1-May | Learn to **High Performance Compute**: Geo style	| Alex Mandel
+| 8-May | **Open Street Map Mapathon** * Location To Be Announced	| Emily Hurry 
+| 15-May | **Collecting Location Data with Phones and Tablets**	| Alex Mandel
+| 22-May | **Remote Sensing with Planet**	| Orestis Herodotou (Planet)
+| 29-May | **RSpatial.org Species Distributions** (Big Foot Example)	| Elise Hellwig
 
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
