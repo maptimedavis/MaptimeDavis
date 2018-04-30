@@ -35,9 +35,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Keep it Simple
 
-* map + reduce
-* split + combine
-* independant + aggregate
+* map + reduce, split + combine, independant + aggregate
+
+**High end stuff**
+
+* Hadoop
+* Spark
+* MPI (Message Passing Interface)
+* Microservices (e.g. AWS Lambda)
 
 ## Profiling
 
@@ -51,6 +56,12 @@ Finding the limiting factor:
 * Disk
     * Fast or Big, local or network?
 
+You have to find the limit to figure out how to go faster.
+
+* System Monitor
+* Logging in code (including time stamp and memory usage)
+* Code profiling tools (memory management)
+
 ## Hardware
 
 *Simple/Slower*
@@ -63,7 +74,19 @@ Finding the limiting factor:
 
 *Complex/Faster*
 
+## What's Available
+
+* College or Reserch Clusters
+     * CAES Farm
+     * etc...
+* Amazon Web Services
+* Google Compute Engine
+* Microsoft Azure
+
 ## Part 2: Examples
+
+* [Make thing independant]()
+* [Do things at the same time](https://github.com/wildintellect/lenscorrection)
 
 ## Geo Problems
 
@@ -72,4 +95,10 @@ Finding the limiting factor:
    * By Pixel, Stack of Pixels
 * Do the same thing over many files
    * Batch reprojection & format conversion
-   
+
+## Geo Problems that don't parallel easily
+
+* Where your value depends on your neighbor's value
+    * Interpolation
+* Data can't be split into subsets (sum of parts != sum of whole)
+* Edge effects
