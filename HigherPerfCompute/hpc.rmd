@@ -9,36 +9,67 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
-
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r pressure}
-plot(pressure)
-```
-
-
 ## What is HPC
+
+* What is High Performance?
+* Why do you care?
 
 ## Definitions
 
-i/o Input/Output - Reading and Writing from Disk
+* i/o (aka Input/Output): Reading and Writing from Disk
+* parallel: Doing things at the same time
+* CPU: The calculator
+    * Cores: Physical Number of Calculators
+    * Threads: 
+* memory(RAM): The place the computer puts things it's currently working on
+* storage: The place you put things you want to keep
 
 
-##
+## All about Approach
+
+1. Write a solution to a problem
+2. Look for things in series that could be done in parallel (Independence Test)
+3. Split into function
+4. Iterate function in parallel
+5. Collate the answers (if necessary)
+
+## Keep it Simple
+
+* map + reduce
+* split + combine
+* independant + aggregate
+
+## Profiling
+
+Finding the limiting factor:
+
+* RAM
+    * Expensive
+* CPU - more is great but:
+    * slower clock speed
+    * RAM per CPU
+* Disk
+    * Fast or Big, local or network?
+
+## Hardware
+
+*Simple/Slower*
+
+* Laptop
+* Desktop
+* Server
+* Bunch of Servers
+* Cluster or Cloud
+
+*Complex/Faster*
+
+## Part 2: Examples
+
+## Geo Problems
+
+* Calculate answer by geography where neighbors don't matter
+   * By Country, State, County, City, etc...
+   * By Pixel, Stack of Pixels
+* Do the same thing over many files
+   * Batch reprojection & format conversion
+   
