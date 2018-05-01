@@ -59,7 +59,7 @@ Finding the limiting factor:
 You have to find the limit to figure out how to go faster.
 
 * System Monitor
-* Logging in code (including time stamp and memory usage)
+* Logging in code (including node name, time stamp and memory usage)
 * Code profiling tools (memory management)
 
 ## Hardware
@@ -92,7 +92,6 @@ You have to find the limit to figure out how to go faster.
 
 * [Make things independant](https://bitbucket.org/hijmans-lab/computing/src/master/)
 * [Do things at the same time](https://github.com/wildintellect/lenscorrection)
-* [Moving to something bigger](https://bitbucket.org/hijmans-lab/gfc-data/src/master/scripts/1_prepareData.R) - Non-public link
 
 ## Geo Problems
 
@@ -104,9 +103,11 @@ You have to find the limit to figure out how to go faster.
 
 ## Geo Examples
 
-Sorry, not quite public code yet.
+Sorry, more not quite public code yet.
 
-* Batch Conversion
+* [Moving to something bigger](https://bitbucket.org/hijmans-lab/gfc-data/src/master/scripts/1_prepareData.R) - Non-public link
+* [Batch Conversion R](https://bitbucket.org/hijmans-lab/gfc-data/src/master/scripts/dataprep/wc2compress.R)
+* [Batch Conversion BASH](https://bitbucket.org/hijmans-lab/gfc-data/src/master/scripts/dataprep/worldclim_fut.sh)
 
 
 ## Geo Problems that don't parallel easily
