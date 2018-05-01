@@ -1,5 +1,5 @@
 ---
-title: "Higher Performance Computing: Geo"
+title: "High(er) Performance Computing: Geo"
 author: "Alex Mandel"
 date: "April 30, 2018"
 output: ioslides_presentation
@@ -92,6 +92,7 @@ You have to find the limit to figure out how to go faster.
 
 * [Make things independant](https://bitbucket.org/hijmans-lab/computing/src/master/)
 * [Do things at the same time](https://github.com/wildintellect/lenscorrection)
+* [Moving to something bigger](https://bitbucket.org/hijmans-lab/gfc-data/src/master/scripts/1_prepareData.R) - Non-public link
 
 ## Geo Problems
 
@@ -120,5 +121,5 @@ Sorry, not quite public code yet.
 
 * Some libraries and packages have parallelization included but optional (on a single node)
     * example R raster (some functions), requires declaring thread/core pool
-* Mac/Linux differ from Windows (they don't support threading the same way)
+* Mac/Linux differ from Windows (doesn't support threading the same way)
 * Thread Safety
