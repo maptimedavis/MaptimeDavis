@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * parallel: Doing things at the same time
 * CPU: The calculator
     * Cores: Physical Number of Calculators
-    * Threads: 
+    * Threads: Number of lines Cores can service
 * memory(RAM): The place the computer puts things it's currently working on
 * storage: The place you put things you want to keep
 
