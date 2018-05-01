@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
     * Threads: Number of lines Cores can service
 * memory(RAM): The place the computer puts things it's currently working on
 * storage: The place you put things you want to keep
-
+* node: a single computer
 
 ## All about Approach
 
@@ -63,6 +63,10 @@ You have to find the limit to figure out how to go faster.
 * Code profiling tools (memory management)
 
 ## Hardware
+![Text on next slide](scaling.png)
+
+## Hardware (Text)
+
 
 *Simple/Slower*
 
@@ -74,18 +78,19 @@ You have to find the limit to figure out how to go faster.
 
 *Complex/Faster*
 
+
 ## What's Available
 
 * College or Reserch Clusters
-     * CAES Farm
+     * CAES [Farm](https://wiki.cse.ucdavis.edu/support/home)
      * etc...
-* Amazon Web Services
+* [Amazon Web Services], e.g. [Lambda](https://aws.amazon.com/lambda/features/)
 * Google Compute Engine
 * Microsoft Azure
 
 ## Part 2: Examples
 
-* [Make thing independant]()
+* [Make things independant](https://bitbucket.org/hijmans-lab/computing/src/master/)
 * [Do things at the same time](https://github.com/wildintellect/lenscorrection)
 
 ## Geo Problems
@@ -96,9 +101,24 @@ You have to find the limit to figure out how to go faster.
 * Do the same thing over many files
    * Batch reprojection & format conversion
 
+## Geo Examples
+
+Sorry, not quite public code yet.
+
+* Batch Conversion
+
+
 ## Geo Problems that don't parallel easily
 
 * Where your value depends on your neighbor's value
-    * Interpolation
+    * e.g. Interpolation
 * Data can't be split into subsets (sum of parts != sum of whole)
 * Edge effects
+* Distance Matrix (at least if you want to avoid duplication of effort)
+
+## Things to Note
+
+* Some libraries and packages have parallelization included but optional (on a single node)
+    * example R raster (some functions), requires declaring thread/core pool
+* Mac/Linux differ from Windows (they don't support threading the same way)
+* Thread Safety
