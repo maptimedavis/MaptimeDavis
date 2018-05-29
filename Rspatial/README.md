@@ -1,5 +1,10 @@
 # Rspatial
 
+1. [Rspatial Introduction](#rspatial-Introduction)
+1. [Species Distribution Modeling](#species-distribution-modeling)
+
+## Rspatial Introduction
+
 2:00-4:00 | Monday, October 16th, 2017 | DSI Classroom | room 360 Shields Library
 https://spatial.ucdavis.edu/2017/10/09/maptimedavis-rspatial-org/
 
@@ -41,3 +46,13 @@ Slide presentations on the topics:
 
 1. Read about Mapping in R
 1. Read and try to answer the Exercises (Ex:) in 3_Mapping.Rmd (Open with Rstudio and use Knit to view the html)
+
+
+## Species Distribution Modeling
+
+1:00-3:00pm | Tuesday, May 29th, 2018 | DSI Classroom | room 360 Shields Library
+https://spatial.ucdavis.edu/2018/05/24/maptimedavis-r-species-distribution-modeling-bigfoot/
+
+1. [Presentation](modelingbigfoot.pptx)
+1. [Code](ModelingBigfoot.R)
+1. More details on http://rspatial.org/analysis/rst/5-global_regression.html
