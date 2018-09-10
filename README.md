@@ -3,19 +3,13 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Spring Quarter 2018 Schedule
-Workshops on Tuesdays 1:00-3:00 in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/2018/04/05/maptimedavis-spring-2018-schedule/) for the workshops you plan to attend.
+# Fall Quarter 2018 Schedule
+Workshops on **a date to be announced** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.
 
 |Date	|Topic	|Speaker
 |---|---|---
-| 10-Apr	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & Matt Conner
-| 17-Apr| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion  * meet at the Craft Center	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
-| 24-Apr| Mapping Surface Water Change with **Earth Engine** * 1:00-4:00	| Ani Ghosh
-| 1-May | [Learn to **High Performance Compute**: Geo style](HigherPerfCompute)	| Alex Mandel
-| 8-May | **Open Street Map Mapathon** * Location To Be Announced	| Emily Hurry 
-| 15-May | [**Collecting Location Data with Phones and Tablets**](PhonesTablets)	| Alex Mandel
-| 22-May | [**Remote Sensing with Planet**](Planet)	| Orestis Herodotou (Planet)
-| 29-May | [**RSpatial.org Species Distributions**](Rspatial) (Big Foot Example)	| Elise Hellwig
+| TBA	| TBA	| TBA 
+
 
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
@@ -63,4 +57,12 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |21-Feb-2018	|[Open Mic: many short presentations](https://github.com/MicheleTobias/MaptimeDavis/tree/master/OpenMicSession_Winter2018)	|Geospatial Community
 |28-Feb-2018	|Finding Remote Sensing Data	|Ani Ghosh
 |7-Mar-2018	|[Spatial Databases](https://github.com/MicheleTobias/MaptimeDavis/tree/master/SpatialDatabases)	|Michele Tobias
+| 10-Apr-2018	| **Is My Research Mappable?** Intro to map-making & GIS for researchers	| Michele Tobias & Matt Conner
+| 17-Apr-2018| **Field Work Prep:** Craft Center Tour + GPS Demonstration + Discussion  * meet at the Craft Center	| Jared Tolla (UCD Craft Center) & Scott Herbert (California Survey & Drafting Supply)
+| 24-Apr-2018| Mapping Surface Water Change with **Earth Engine** * 1:00-4:00	| Ani Ghosh
+| 1-May-2018 | [Learn to **High Performance Compute**: Geo style](HigherPerfCompute)	| Alex Mandel
+| 8-May-2018 | **Open Street Map Mapathon**	| Emily Hurry 
+| 15-May-2018 | [**Collecting Location Data with Phones and Tablets**](PhonesTablets)	| Alex Mandel
+| 22-May-2018 | [**Remote Sensing with Planet**](Planet)	| Orestis Herodotou (Planet)
+| 29-May-2018 | [**RSpatial.org Species Distributions**](Rspatial) (Big Foot Example)	| Elise Hellwig
 
