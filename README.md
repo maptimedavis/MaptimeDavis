@@ -4,11 +4,21 @@
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
 # Fall Quarter 2018 Schedule
-Workshops on **a date to be announced** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.
+Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.
 
 |Date	|Topic	|Speaker
 |---|---|---
-| TBA	| TBA	| TBA 
+| 1-Oct	| TBA	| TBA 
+| 8-Oct	| TBA	| TBA 
+| 15-Oct	| TBA	| TBA 
+| 22-Oct	| TBA	| TBA 
+| 29-Oct	| TBA	| TBA 
+| 5-Nov	| TBA	| TBA 
+| 12-Nov	| Holiday: Veterans' Day | No Workshop 
+| 19-Nov	| TBA	| TBA - FYI: Thanksgiving Week
+| 26-Nov	| TBA	| TBA 
+| 3-Dec	| TBA	| TBA 
+| 10 Dec	| TBA	| TBA 
 
 
 
