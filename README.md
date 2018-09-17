@@ -30,6 +30,11 @@ Maptime is literally time for maps. Take a couple of hours to learn something ne
 ## Why & how does Maptime work?
 Maptime is a community.  It works when everyone contributes.  Contributions take the form of not only presenting, but attending events and sharing those events with others, making new connections, discussing what topics you want, and helping to make sure they happen.  Maptime isn't a intended to be a list of topics served up for you to consume provided by some campus entity, but rather a discussion you participate in.
 
+# Get Updates!
+Follow us on Twitter at [@maptimeDavis](https://twitter.com/maptimeDavis)
+
+Join the UC Davis [Geospatial Email list](https://lists.ucdavis.edu/sympa/info/geospatial)
+
 # Call for Speakers
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDjQFZ7U_xNC5yYrlvwt1g3qBXzgFMizXIQXsu1HVD_OaYSQ/viewform?usp=sf_link">Nominate yourself or someone else as a speaker!</a>  
 
