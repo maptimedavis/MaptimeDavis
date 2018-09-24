@@ -16,7 +16,7 @@ Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Librar
 | 29-Oct	| TBA	| TBA 
 | 5-Nov	| TBA	| TBA 
 | 12-Nov	| Holiday: Veterans' Day | No Workshop 
-| 14-Nov | Special GIS Day Event: **Women in GIS Meetup (Location: TBA)** | Shannon DeArmond
+| 14-Nov | Special GIS Day Event: **[Women in GIS Meetup (Location: TBA)](http://meetu.ps/c/44DDN/slMsv/a)** | Shannon DeArmond
 | 19-Nov	| TBA	| TBA - FYI: Thanksgiving Week
 | 26-Nov	| TBA	| TBA 
 | 3-Dec	| TBA	| TBA 
