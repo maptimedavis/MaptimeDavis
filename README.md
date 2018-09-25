@@ -14,7 +14,7 @@ Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Librar
 | 15-Oct	| **Into to R Spatial**	| Robert Hijmans 
 | 22-Oct	| **Analyzing Drone Data**	| Taylor Nelsen
 | 29-Oct	| **Spatial SQL**	| Michele Tobias
-| 5-Nov	| **Finishing touches: how to create polished and professional-looking maps in ArcGIS** (meet in Wickson Computer Lab) | Amber Manfree
+| 5-Nov	| **Finishing touches: how to create polished and professional-looking maps in ArcGIS** (meet in 1014 Wickson, Computer Lab) | Amber Manfree
 | 12-Nov	| Holiday: Veterans' Day | No Workshop 
 | 14-Nov | Special GIS Day Event: **[Women in GIS Meetup (Location: TBA)](http://meetu.ps/c/44DDN/slMsv/a)** | Shannon DeArmond
 | 19-Nov	| **Data Visualization Challenge**	| Center for Spatial Sciences;  FYI: Thanksgiving Week
