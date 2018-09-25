@@ -11,13 +11,13 @@ Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Librar
 | 1-Oct	| **[Humanitarian Open Street Map Mapathon](https://tasks.hotosm.org)**	| The Geospatial Community 
 | 8-Oct	| **Intro to QGIS**	| Sierra Mabanta 
 | 12-Oct| Special Event: **Install Fest** 9:00-12:00 | DSI & Center for Spatial Sciences
-| 15-Oct	| **Into to R Spatial**	| Robert Hijmans (tentative)
+| 15-Oct	| **Into to R Spatial**	| Robert Hijmans 
 | 22-Oct	| **Analyzing Drone Data**	| Taylor Nelsen
-| 29-Oct	| TBA	| TBA 
-| 5-Nov	| TBA	| TBA 
+| 29-Oct	| **Spatial SQL**	| Michele Tobias
+| 5-Nov	| **Data Visualization Challenge**	| Center for Spatial Sciences
 | 12-Nov	| Holiday: Veterans' Day | No Workshop 
 | 14-Nov | Special GIS Day Event: **[Women in GIS Meetup (Location: TBA)](http://meetu.ps/c/44DDN/slMsv/a)** | Shannon DeArmond
-| 19-Nov	| TBA	| TBA - FYI: Thanksgiving Week
+| 19-Nov	| **Remote Sensing Challenge**	| TBA - FYI: Thanksgiving Week
 | 26-Nov	| TBA	| TBA 
 | 3-Dec	| TBA	| TBA 
 | 10 Dec	| TBA	| TBA 
