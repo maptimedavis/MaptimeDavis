@@ -19,10 +19,8 @@ Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Librar
 | 14-Nov | Special GIS Day Event: **[Women in GIS Meetup (Location: TBA)](http://meetu.ps/c/44DDN/slMsv/a)** | Shannon DeArmond
 | 19-Nov	| **Data Visualization Challenge**	| Center for Spatial Sciences;  FYI: Thanksgiving Week
 | 26-Nov	|  **Remote Sensing Challenge**		| TBA 
-| 3-Dec	| TBA	| TBA 
-| 10 Dec	| TBA	| TBA 
 
-
+What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
 
