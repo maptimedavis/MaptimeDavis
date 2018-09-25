@@ -11,8 +11,8 @@ Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Librar
 | 1-Oct	| **[Humanitarian Open Street Map Mapathon](https://tasks.hotosm.org)**	| The Geospatial Community 
 | 8-Oct	| **Intro to QGIS**	| Sierra Mabanta 
 | 12-Oct| Special Event: **Install Fest** 9:00-12:00 | DSI & Center for Spatial Sciences
-| 15-Oct	| TBA	| TBA 
-| 22-Oct	| TBA	| TBA 
+| 15-Oct	| **Into to R Spatial**	| Robert Hijmans (tentative)
+| 22-Oct	| **Analyzing Drone Data**	| Taylor Nelsen
 | 29-Oct	| TBA	| TBA 
 | 5-Nov	| TBA	| TBA 
 | 12-Nov	| Holiday: Veterans' Day | No Workshop 
