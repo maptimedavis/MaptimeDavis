@@ -2,7 +2,7 @@
 Instructions &amp; data for an introductory QGIS workshop
 
 ## Workshop Description:
-2:00-4:00 | Monday, September 25th, 2017 | DSI Classroom | room 360 Shields Library
+1:00-3:00 | Monday, September 8th, 2018 | DSI Classroom | room 360 Shields Library
 
 This workshop will introduce participants to QGIS, a powerful open source GIS software.  The workshop will cover typical basic GIS software workflow needs such as loading data, changing the way data is displayed, and where to find analysis tools.  In addition, participants will learn strategies for finding help with QGIS and tutorials for home learning. This workshop is not intended to teach all the concepts of GIS from the beginning (it's only 2 hours!), but rather to introduce those already familiar with the concepts of GIS to a new software option for applying those concepts.
 
