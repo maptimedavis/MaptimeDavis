@@ -2,7 +2,7 @@
 Instructions &amp; data for an introductory QGIS workshop
 
 ## Workshop Description:
-2:00-4:00 | Monday, September 25th, 2017 | DSI Classroom | room 360 Shields Library
+1:00-3:00 | Monday, October 8th, 2018| DSI Classroom | room 360 Shields Library
 
 This workshop will introduce participants to QGIS, a powerful open source GIS software.  The workshop will cover typical basic GIS software workflow needs such as loading data, changing the way data is displayed, and where to find analysis tools.  In addition, participants will learn strategies for finding help with QGIS and tutorials for home learning. This workshop is not intended to teach all the concepts of GIS from the beginning (it's only 2 hours!), but rather to introduce those already familiar with the concepts of GIS to a new software option for applying those concepts.
 
@@ -11,7 +11,7 @@ Bring your laptop with QGIS (2.18) installed - visit QGIS.org for free download
 
 #### Are you new to GIS?
 That's great!  You can still get a lot out of this workshop.  Just know that this workshop is not designed to teach you everything you need to know to do GIS effectively.  Just like you can't learn stats in an hour, a one-hour workshop can't teach you GIS. Here are some options for in-depth learning: 
- *  [A Gentle Introduction to GIS](http://docs.qgis.org/2.14/en/docs/gentle_gis_introduction/) is an accessible introduction.
+ *  [A Gentle Introduction to GIS](http://docs.qgis.org/2.18/en/docs/gentle_gis_introduction/) is an accessible introduction.
  *  UC Davis has many [GIS courses](https://spatial.ucdavis.edu/teaching/). LDA 150 is a great class to start and is taught most Fall & Spring quarters.  
  *  The UC Davis Extension also offers [courses](https://extension.ucdavis.edu/certificate-program/geographic-information-systems).  
  *  More home learning options are listed at the bottom of this document.
@@ -65,9 +65,9 @@ Definitely try the green/basic exercises, and feel free to skip the blue/interme
 
 Please complete the following items:
 1.  Download the exercise data at the [QGIS Training Manual Site](http://docs.qgis.org/2.14/en/docs/training_manual/foreword/foreword.html#data)
-1.  [QGIS Training Manual: The Interface](http://docs.qgis.org/2.14/en/docs/training_manual/introduction/index.html)
-1.  [QGIS Training Manual: Creating a Basic Map](http://docs.qgis.org/2.14/en/docs/training_manual/basic_map/index.html) (Skip the section about the custom SVG fill.)
-1.  Explore the [QGIS Training Manual](http://docs.qgis.org/2.14/en/docs/training_manual/index.html) for topics of particular interest to you.
+1.  [QGIS Training Manual: The Interface](http://docs.qgis.org/2.18/en/docs/training_manual/introduction/index.html)
+1.  [QGIS Training Manual: Creating a Basic Map](http://docs.qgis.org/2.18/en/docs/training_manual/basic_map/index.html) (Skip the section about the custom SVG fill.)
+1.  Explore the [QGIS Training Manual](http://docs.qgis.org/2.18/en/docs/training_manual/index.html) for topics of particular interest to you.
 
 # Home Learning:
 The learning doesn't have to end when you leave the workshop!  We encourage you to continue to explore what QGIS has to offer and to find tools to help you with your analyses.
