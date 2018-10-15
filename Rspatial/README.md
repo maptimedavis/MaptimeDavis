@@ -4,8 +4,10 @@
 1. [Species Distribution Modeling](#species-distribution-modeling)
 
 ## Rspatial Introduction
+1:00-3:00 | Monday, October 15th, 2017 | DSI Classroom | 360 Shields Library
+https://spatial.ucdavis.edu/2018/10/08/maptimedavis-intro-to-r-spatial/
 
-2:00-4:00 | Monday, October 16th, 2017 | DSI Classroom | room 360 Shields Library
+2:00-4:00 | Monday, October 16th, 2017 | DSI Classroom | 360 Shields Library
 https://spatial.ucdavis.edu/2017/10/09/maptimedavis-rspatial-org/
 
 An introduction to R for geospatial topics with [RSpatial.org](http://rspatial.org) Learn to load, analyze, and visualize spatial data with a robust accessible online tutorial with the help of knowledgeable instructors.
