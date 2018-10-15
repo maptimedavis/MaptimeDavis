@@ -24,9 +24,9 @@ An introduction to R for geospatial topics with [RSpatial.org](http://rspatial.o
 Slide presentations on the topics:
 
  * [What is Rspatial.org](https://www.scribd.com/document/357651325/rspatial-foss4g2017)
- * [Vectors in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day1_5_spatial_1_vector.pdf)
- * [CRS in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day1_6_spatial_2_crs.pdf)
- * [Rasters in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day2_1_spatial_3_raster.pdf)
+ * [Vectors in R](https://gfc.ucdavis.edu/events/dar2018/_static/talks/3_spatial_vector.pdf)
+ * [Projections(CRS|SRS) in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day1_6_spatial_2_crs.pdf)
+ * [Rasters in R](https://gfc.ucdavis.edu/events/dar2018/_static/talks/4_spatial_raster.pdf)
  * [Mapping in R](http://gfc.ucdavis.edu/events/arusha2016/_static/talks/day2_2_spatial_4_maps.pdf)
  
 ## Intro to Vectors
@@ -46,7 +46,7 @@ Slide presentations on the topics:
 
 ## Plotting Maps (Optional)
 
-1. Read about Mapping in R
+1. Read about [Mapping in R](http://rspatial.org/spatial/rst/9-maps.html)
 1. Read and try to answer the Exercises (Ex:) in 3_Mapping.Rmd (Open with Rstudio and use Knit to view the html)
 
 
