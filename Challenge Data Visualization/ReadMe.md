@@ -3,6 +3,7 @@
 The goal of this workhshop is to challenge you to create a data visualization in a limited amount of time.  Everyone gets the same datasets to work with and at the end of the time, we'll share our results to see what everyone was able to create.
 
 # Rules
+1. There are no restrictions on methods or tools - use whatever you would like.
 1. Use at least two of the required datasets.
 1. Use any other additional datasets you choose.
 1. Work alone or in a group.
