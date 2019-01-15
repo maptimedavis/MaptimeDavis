@@ -3,23 +3,21 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Fall Quarter 2018 Schedule
-Workshops on **Mondays from 1:00-3:00** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.
+# Winter Quarter 2019 Schedule
+Workshops on **Wednesdays from 10:00-12:00** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.
 
 |Date	|Topic	|Speaker
 |---|---|---
-| 1-Oct	| **[Humanitarian Open Street Map Mapathon](https://tasks.hotosm.org)**	| The Geospatial Community 
-| 8-Oct	| **Intro to QGIS**	| Sierra Mabanta 
-| 12-Oct| Special Event: **Install Fest** 9:00-12:00 | DSI & Center for Spatial Sciences
-| 15-Oct	| **Into to R Spatial**	| Robert Hijmans 
-| 22-Oct	| **Analyzing Drone Data**	| Taylor Nelsen
-| 29-Oct	| **Spatial SQL**	| Michele Tobias
-| 5-Nov	| **Finishing touches: how to create polished and professional-looking maps in ArcGIS** (meet in 1014 Wickson, Computer Lab) | Amber Manfree
-| 12-Nov	| Holiday: Veterans' Day | No Workshop 
-| 14-Nov | Special GIS Day Event: **[Women in GIS Meetup (Location: TBA)](http://meetu.ps/c/44DDN/slMsv/a)** | Shannon DeArmond
-| 19-Nov	| **Data Visualization Challenge**	| Center for Spatial Sciences
-| 26-Nov | **Data Fusion in Remote Sensing** | Yufang Jin's Lab
-| 3-Dec	|  **Remote Sensing Challenge**		| Center for Spatial Sciences
+|16 Jan|	Mapathon|	Sierra Mabanta
+|23-Jan|	1 Hour Map Challenge!|	Center for Spatial Sciences
+|30-Jan|	Interactive Maps with R|	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
+|6-Feb|	TBA|	Beatriz Martinez-Lopez’s Lab
+|13-Feb|	Python for Field Calculations in QGIS and ArcGIS|	Nick Santos
+|20-Feb|	Lightning Talks|	Geospatial Community
+|22-Feb|	Geospatial Data Visualization|	Michele Tobias
+|27-Feb|	Field Data Collection|	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
+|6-Mar|	Fire Mapping|	Yufang Jin’s Lab
+
 
 What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
@@ -81,4 +79,16 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 | 15-May-2018 | [**Collecting Location Data with Phones and Tablets**](PhonesTablets)	| Alex Mandel
 | 22-May-2018 | [**Remote Sensing with Planet**](Planet)	| Orestis Herodotou (Planet)
 | 29-May-2018 | [**RSpatial.org Species Distributions**](Rspatial) (Big Foot Example)	| Elise Hellwig
+| 1-Oct-2018	| **[Humanitarian Open Street Map Mapathon](https://tasks.hotosm.org)**	| The Geospatial Community 
+| 8-Oct-2018	| **Intro to QGIS**	| Sierra Mabanta 
+| 12-Oct-2018| Special Event: **Install Fest** 9:00-12:00 | DSI & Center for Spatial Sciences
+| 15-Oct-2018	| **Into to R Spatial**	| Robert Hijmans 
+| 22-Oct-2018	| **Analyzing Drone Data**	| Taylor Nelsen
+| 29-Oct-2018	| **Spatial SQL**	| Michele Tobias
+| 5-Nov-2018	| **Finishing touches: how to create polished and professional-looking maps in ArcGIS** (meet in 1014 Wickson, Computer Lab) | Amber Manfree
+| 12-Nov-2018	| Holiday: Veterans' Day | No Workshop 
+| 14-Nov-2018 | Special GIS Day Event: **[Women in GIS Meetup (Location: TBA)](http://meetu.ps/c/44DDN/slMsv/a)** | Shannon DeArmond
+| 19-Nov-2018	| **Data Visualization Challenge**	| Center for Spatial Sciences
+| 26-Nov-2018 | **Data Fusion in Remote Sensing** | Yufang Jin's Lab
+| 3-Dec-2018	|  **Remote Sensing Challenge**		| Center for Spatial Sciences
 
