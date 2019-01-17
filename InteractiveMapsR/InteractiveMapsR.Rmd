@@ -45,7 +45,7 @@ Mapview, Leaflet
 Exporting to share with others (HTML or Shiny)
 
 ## References
-https://rstudio.github.io/leaflet/
-https://r-spatial.github.io/mapview/
+- https://rstudio.github.io/leaflet/
+- https://r-spatial.github.io/mapview/
 
 
