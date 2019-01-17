@@ -2,6 +2,7 @@
 title: Interactive Maps with R
 author: Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
 date: January 30, 2019
+output: rmarkdown::github_document
 ---
 
 ## Goal
