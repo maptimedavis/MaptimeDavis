@@ -48,4 +48,55 @@ Exporting to share with others (HTML or Shiny)
 - https://rstudio.github.io/leaflet/
 - https://r-spatial.github.io/mapview/
 
+# Tutorial
+
+## Exercise 1
+Mapview [Article 1](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
+
+Note: the background may not show up in Rstudio, but if you open the file in browser it will. 
+
+## Exercise 2
+Mapview [Article 2](https://r-spatial.github.io/mapview/articles/articles/mapview_02-advanced.html)
+
+The link for different basemaps: http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
+
+## Other
+### Label options:
+https://rdrr.io/cran/mapview/man/addStaticLabels.html
+
+### Measures:
+```{r}
+library(leaflet)
+library(mapview)
+lopt = labelOptions(noHide = TRUE,
+                    direction = 'top',
+                    textOnly = TRUE)
+
+
+## point labels
+m1 = mapview(breweries)
+
+l1 = addStaticLabels(m1,
+                     label = breweries$number.of.types,
+                     labelOptions = lopt)
+l1
+
+## polygon centroid labels
+m2 = mapview(franconia)
+l2 = addStaticLabels(m2,
+                     label = franconia$NAME_ASCI,
+                     labelOptions = lopt)
+l2
+
+## custom labels
+m3 = m2 + m1
+l3 = addStaticLabels(m3,
+                     data = franconia,
+                     label = franconia$NAME_ASCI,
+                     labelOptions = lopt)
+l3
+
+m2 <- addMeasure(l3)
+}
+
 
