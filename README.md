@@ -18,7 +18,7 @@ Workshops on **Wednesdays from 10:00-12:00** in the DSI Classroom (360 Shields L
 |27-Feb|	Field Data Collection|	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
 |6-Mar|	Fire Mapping|	Yufang Jin’s Lab
 
-Give #maptimeDavis [feedback](https://goo.gl/forms/0e3s30cVNUxL8lgR2) ![feedback link](w19-feedback-qrcode.png) about a session you attended.
+Give #maptimeDavis [feedback](https://goo.gl/forms/0e3s30cVNUxL8lgR2) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
 
 What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
