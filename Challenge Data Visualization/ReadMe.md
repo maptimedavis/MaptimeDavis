@@ -38,3 +38,6 @@ maybe we should mine these datasets later:
 1. flight delays
 1. cats in government - theodi.org
 1. UCD Libyrary's American Viticultural Areas (AVA) data
+1. Zoo locations, income, etc, https://www.kaggle.com/imls/museum-directory
+1. UFO Sitings https://www.kaggle.com/NUFORC/ufo-sightings
+1. All the economics and human indicators you could want (probably other things) http://www.google.com/publicdata/directory
