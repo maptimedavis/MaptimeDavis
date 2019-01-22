@@ -14,15 +14,14 @@ The goal of this workhshop is to challenge you to create a data visualization in
 Choose at least two of these datasets to work with. 
 1. A species of your choice from the [Global Biodiversity Information Facility (GBIF) Database](https://www.gbif.org/)
 1. [Bigfoot Reports](http://plotkml.r-forge.r-project.org/bigfoot.html)
-1. Turkey Vulture locations - paper: http://rstb.royalsocietypublishing.org/content/369/1643/20130195  - data: https://www.datarepository.movebank.org/handle/10255/move.362
+1. Turkey Vulture locations - [paper](http://rstb.royalsocietypublishing.org/content/369/1643/20130195) and [data]( https://www.datarepository.movebank.org/handle/10255/move.362)
 1. [Moon Tree Locations](https://nssdc.gsfc.nasa.gov/planetary/lunar/moon_tree.html)
 1. [Jonathan McDowell's JSR Launch Vehicle Database](http://www.planet4589.org/space/lvdb/index.html) - look for the sites table
 1. [Open Flights](https://openflights.org/) airport data
-1. [Incarceration Trends](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-01-22)
 1. [Museums, Aquariums, and Zoos](https://www.kaggle.com/imls/museum-directory) of the US, including revenue.
 1. [UFO Sitings](https://www.kaggle.com/NUFORC/ufo-sightings)
 1. [Craft Breweries](https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-07-10) in the US
-1. [Public Libraries Survey](https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey/explore-pls-data/pls-data) in the US.
+1. [Public Libraries Survey](https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey/explore-pls-data/pls-data) in the US (2016 data suggested)
 
 # Helpful Datasets
 These datasets may be useful.
@@ -45,3 +44,4 @@ maybe we should mine these datasets later:
 1. Zoo locations, income, etc, https://www.kaggle.com/imls/museum-directory
 1. UFO Sitings https://www.kaggle.com/NUFORC/ufo-sightings
 1. All the economics and human indicators you could want (probably other things) http://www.google.com/publicdata/directory
+1. [Incarceration Trends](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-01-22)
