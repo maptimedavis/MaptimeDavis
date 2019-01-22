@@ -19,6 +19,10 @@ Choose at least two of these datasets to work with.
 1. [Jonathan McDowell's JSR Launch Vehicle Database](http://www.planet4589.org/space/lvdb/index.html) - look for the sites table
 1. [Open Flights](https://openflights.org/) airport data
 1. [Incarceration Trends](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-01-22)
+1. [Museums, Aquariums, and Zoos](https://www.kaggle.com/imls/museum-directory) of the US, including revenue.
+1. [UFO Sitings](https://www.kaggle.com/NUFORC/ufo-sightings)
+1. [Craft Breweries](https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-07-10) in the US
+1. [Public Libraries Survey](https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey/explore-pls-data/pls-data) in the US.
 
 # Helpful Datasets
 These datasets may be useful.
@@ -37,7 +41,7 @@ maybe we should mine these datasets later:
 1. food - mango dataset
 1. flight delays
 1. cats in government - theodi.org
-1. UCD Libyrary's American Viticultural Areas (AVA) data
+1. UCD Library's American Viticultural Areas (AVA) data
 1. Zoo locations, income, etc, https://www.kaggle.com/imls/museum-directory
 1. UFO Sitings https://www.kaggle.com/NUFORC/ufo-sightings
 1. All the economics and human indicators you could want (probably other things) http://www.google.com/publicdata/directory
