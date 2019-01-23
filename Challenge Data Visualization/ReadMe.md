@@ -2,6 +2,8 @@
 
 The goal of this workhshop is to challenge you to create a data visualization in a limited amount of time.  Everyone gets the same datasets to work with and at the end of the time, we'll share our results to see what everyone was able to create.
 
+Please share your experience of this workshop on our [Workshop Feeback Form](https://goo.gl/forms/Zlqsww3H3JtNoOAJ2).  Thanks!
+
 # Rules
 1. There are no restrictions on methods or tools - use whatever you would like.
 1. Use at least two of the datasets listed below.
