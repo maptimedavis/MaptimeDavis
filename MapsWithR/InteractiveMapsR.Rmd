@@ -6,10 +6,79 @@ output: rmarkdown::github_document
 ---
 
 ## Goal
+
 Give people an dive into how to make interactive plots in R with maps. Focus on maps that allow the user to pan, zoom, query(click).
 
-## Core tools
-Mapview, Leaflet
+### Core tools
+
+Mapview & Leaflet Packages
+
+Mapview wraps Leaflet, making it simpler to use. You can use anything from leaflet as additional arguments to Mapview.
+
+# Tutorial
+
+## Exercise 1
+Mapview [Article 1](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
+
+Note: the background may not show up in Rstudio, but if you open the file in browser it will. 
+
+## Exercise 2
+Mapview [Article 2](https://r-spatial.github.io/mapview/articles/articles/mapview_02-advanced.html)
+
+### Basemaps
+
+If you want to use a different Basemap (Background Map), here's a list of easy to use examples. http://leaflet-extras.github.io/leaflet-providers/preview/index.html
+You can use any other XYZ tile service, read the documentation on how.
+
+## Other
+
+### Labels
+
+There's a bunch of different methods for labels, [read more](https://rdrr.io/cran/mapview/man/addStaticLabels.html)
+
+
+```{r labels}
+library(leaflet)
+library(mapview)
+
+# Turn on labels to start
+lopt = labelOptions(noHide = TRUE,
+                    direction = 'top',
+                    textOnly = TRUE)
+
+
+# Point labels
+m1 = mapview(breweries)
+l1 = addStaticLabels(m1,
+                     label = breweries$number.of.types,
+                     labelOptions = lopt)
+l1
+
+# Polygon Labels
+m2 = mapview(franconia)
+l2 = addStaticLabels(m2,
+                     label = franconia$NAME_ASCI,
+                     labelOptions = lopt)
+l2
+
+# Custom labels
+m3 = m2 + m1
+l3 = addStaticLabels(m3,
+                     data = franconia,
+                     label = franconia$NAME_ASCI,
+                     labelOptions = lopt)
+l3
+```
+
+### Scale Bar
+Adding a Scale Bar to the Map
+```{r measure}
+# Take an existing map object and add a scale bar
+m2 <- addMeasure(l3)
+m2
+```
+
+# Outline
 
 ## Data Types 
 - Points, Lines, Polygons, Rasters
@@ -47,56 +116,3 @@ Exporting to share with others (HTML or Shiny)
 ## References
 - https://rstudio.github.io/leaflet/
 - https://r-spatial.github.io/mapview/
-
-# Tutorial
-
-## Exercise 1
-Mapview [Article 1](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
-
-Note: the background may not show up in Rstudio, but if you open the file in browser it will. 
-
-## Exercise 2
-Mapview [Article 2](https://r-spatial.github.io/mapview/articles/articles/mapview_02-advanced.html)
-
-The link for different basemaps: http://leaflet-extras.github.io/leaflet-providers/preview/index.html)
-
-## Other
-### Label options:
-https://rdrr.io/cran/mapview/man/addStaticLabels.html
-
-### Measures:
-```{r}
-library(leaflet)
-library(mapview)
-lopt = labelOptions(noHide = TRUE,
-                    direction = 'top',
-                    textOnly = TRUE)
-
-
-## point labels
-m1 = mapview(breweries)
-
-l1 = addStaticLabels(m1,
-                     label = breweries$number.of.types,
-                     labelOptions = lopt)
-l1
-
-## polygon centroid labels
-m2 = mapview(franconia)
-l2 = addStaticLabels(m2,
-                     label = franconia$NAME_ASCI,
-                     labelOptions = lopt)
-l2
-
-## custom labels
-m3 = m2 + m1
-l3 = addStaticLabels(m3,
-                     data = franconia,
-                     label = franconia$NAME_ASCI,
-                     labelOptions = lopt)
-l3
-
-m2 <- addMeasure(l3)
-}
-
-
