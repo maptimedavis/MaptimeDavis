@@ -39,7 +39,7 @@ Exercise 1
 
 Mapview [Article 1](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
 
-Note: the background may not show up in Rstudio, but if you open the file in browser it will.
+Note: the backgrounds may not show up in Rstudio, but if you open the file in a web browser (upper right corner of the RStudio preview window) it will.
 
 Exercise 2
 ----------
@@ -49,6 +49,8 @@ Mapview [Article 2](https://r-spatial.github.io/mapview/articles/articles/mapvie
 ### Basemaps
 
 If you want to use a different Basemap (Background Map), [here's a list of easy to use maps](http://leaflet-extras.github.io/leaflet-providers/preview/index.html). You can use any other XYZ tile services, read the [documentation on addTiles](https://www.rdocumentation.org/packages/leaflet/versions/2.0.2/topics/addControl) for various options.
+
+*Note* Some tiles source(e.g. Google), require that you have an api key to use their basemaps.
 
 Other Tips
 ----------
@@ -126,8 +128,8 @@ quake_map = leaflet(data = quakes[1:20,]) %>%
 saveWidget(quake_map, "quakes.html")
 ```
 
-Outline
-=======
+Things that are possible
+========================
 
 Data Types
 ----------
@@ -135,21 +137,6 @@ Data Types
 -   Points, Lines, Polygons, Rasters
 -   Vectors include the option for popups from attribute tables
 -   sp and sf
-
-Data Examples
--------------
-
--   Crop Field Boundaries (polygons) with UAS RGB and NDVI rasters (From Taylors presentation last quarter), it could be crop type
--   Getting country/administrative boundaries (polygons) via R and using them in Leaflet. Useful when working with health data or any field project in different countries
--   Climate data
-
-Steps
------
-
--   Data Preparation
--   Decide how to derive data
--   Dealing with missing data
--   Compile them at a point wise
 
 Styling
 -------
@@ -159,8 +146,8 @@ Styling
 -   Polygons
 -   Rasters
 -   Basemaps
--   Standard - OSM, Bing, Google,
--   XYZ tiles - i.e. Stamen, etc
+    -   Standard - OSM, Bing, Google,
+    -   XYZ tiles - i.e. Stamen, etc
 -   Transparency
 -   Labels
 -   Attribute pop-ups
@@ -170,4 +157,5 @@ Styling
 Bonus
 -----
 
-Exporting to share with others (HTML or Shiny)
+-   Exporting to share with mapshot.
+-   More advanced, you can use Leaflet in Shiny apps for 2 way interaction with users (they can draw on the maps and you can use that as data)
