@@ -18,7 +18,7 @@ output: github_document
 
 
 
-```{r map, echo=FALSE, fig.cap="Static Map"}
+```{r map, echo=FALSE, fig.cap="Static Map", message=FALSE}
 # Static Map vs Dynamic Map
 library(mapview)
 data(breweries, package="mapview")

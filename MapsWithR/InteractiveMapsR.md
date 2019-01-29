@@ -14,10 +14,6 @@ Introduction
     -   When your map will be viewed in anything other than a web browser.
     -   When you don't need the viewer to be able to pan, zoom, and click on things in the map.
 
-<!-- -->
-
-    ## Loading required package: methods
-
 ![Static Map](InteractiveMapsR_files/figure-markdown_github/map-1.png)
 
 [Interactive Map of the same data](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
