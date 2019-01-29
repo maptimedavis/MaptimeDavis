@@ -2,8 +2,33 @@
 title: Interactive Maps with R
 author: Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
 date: January 30, 2019
-output: rmarkdown::github_document
+output: github_document
+#always_allow_html: yes
 ---
+
+# Introduction
+
+* What is an Interactive Map? 
+    * A map that allows you to pan, zoom, and query(click) in the plot without additional code, or plotting. Also known as Slippy Maps, Dynamic Maps, etc...
+* When should I use an Interactive Map? 
+    * Data and result exploration.
+* When should I not use an Interactive Map? 
+    * When your map will be viewed in anything other than a web browser. 
+    * When you don't need the viewer to be able to pan, zoom, and click on things in the map.
+
+
+
+```{r map, echo=FALSE, fig.cap="Static Map"}
+# Static Map vs Dynamic Map
+library(mapview)
+data(breweries, package="mapview")
+
+plot(breweries$geometry, col = "purple")
+#mapview(breweries)
+```
+
+[Interactive Map of the same data](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
+
 
 ## Goal
 
@@ -37,7 +62,7 @@ You can use any other XYZ tile service, read the documentation on how.
 There's a bunch of different methods for labels, [read more](https://rdrr.io/cran/mapview/man/addStaticLabels.html)
 
 
-```{r labels}
+```{r labels, fig.cap="Labelling Examples"}
 library(leaflet)
 library(mapview)
 
@@ -50,16 +75,16 @@ lopt = labelOptions(noHide = TRUE,
 # Point labels
 m1 = mapview(breweries)
 l1 = addStaticLabels(m1,
-                     label = breweries$number.of.types,
+                     label = breweries$brewery,
                      labelOptions = lopt)
-l1
+#l1
 
 # Polygon Labels
 m2 = mapview(franconia)
 l2 = addStaticLabels(m2,
                      label = franconia$NAME_ASCI,
                      labelOptions = lopt)
-l2
+#l2
 
 # Custom labels
 m3 = m2 + m1
@@ -67,15 +92,15 @@ l3 = addStaticLabels(m3,
                      data = franconia,
                      label = franconia$NAME_ASCI,
                      labelOptions = lopt)
-l3
+#l3
 ```
 
 ### Scale Bar
 Adding a Scale Bar to the Map
-```{r measure}
+```{r measure, fig.cap="Scale Bar Example"}
 # Take an existing map object and add a scale bar
 m2 <- addMeasure(l3)
-m2
+#m2
 ```
 
 # Outline
