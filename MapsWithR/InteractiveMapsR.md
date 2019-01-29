@@ -14,9 +14,11 @@ Introduction
     -   When your map will be viewed in anything other than a web browser.
     -   When you don't need the viewer to be able to pan, zoom, and click on things in the map.
 
+This is a Static Map:
+
 ![Static Map](InteractiveMapsR_files/figure-markdown_github/map-1.png)
 
-[Interactive Map of the same data](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
+For comparison see this [interactive map of the same data](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
 
 Goal
 ----
@@ -46,7 +48,7 @@ Mapview [Article 2](https://r-spatial.github.io/mapview/articles/articles/mapvie
 
 ### Basemaps
 
-If you want to use a different Basemap (Background Map), here's a list of easy to use examples. <http://leaflet-extras.github.io/leaflet-providers/preview/index.html> You can use any other XYZ tile service, read the documentation on how.
+If you want to use a different Basemap (Background Map), [here's a list of easy to use maps](http://leaflet-extras.github.io/leaflet-providers/preview/index.html). You can use any other XYZ tile services, read the [documentation on addTiles](https://www.rdocumentation.org/packages/leaflet/versions/2.0.2/topics/addControl) for various options.
 
 Other Tips
 ----------
