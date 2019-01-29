@@ -72,14 +72,16 @@ m1 = mapview(breweries)
 l1 = addStaticLabels(m1,
                      label = breweries$brewery,
                      labelOptions = lopt)
-#l1
+
+# Call the mapview to plot it
+l1
 
 # Polygon Labels
 m2 = mapview(franconia)
 l2 = addStaticLabels(m2,
                      label = franconia$NAME_ASCI,
                      labelOptions = lopt)
-#l2
+l2
 
 # Custom labels
 m3 = m2 + m1
@@ -87,7 +89,7 @@ l3 = addStaticLabels(m3,
                      data = franconia,
                      label = franconia$NAME_ASCI,
                      labelOptions = lopt)
-#l3
+l3
 ```
 
 ### Scale Bar
@@ -97,7 +99,7 @@ Adding a Scale Bar to the Map
 ``` r
 # Take an existing map object and add a scale bar
 m2 <- addMeasure(l3)
-#m2
+m2
 ```
 
 ### Saving your map
