@@ -30,7 +30,7 @@ Mapview [Article 2](https://r-spatial.github.io/mapview/articles/articles/mapvie
 If you want to use a different Basemap (Background Map), here's a list of easy to use examples. http://leaflet-extras.github.io/leaflet-providers/preview/index.html
 You can use any other XYZ tile service, read the documentation on how.
 
-## Other
+## Other Tips
 
 ### Labels
 
