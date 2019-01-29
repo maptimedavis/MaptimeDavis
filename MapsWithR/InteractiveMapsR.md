@@ -25,7 +25,7 @@ Give people an dive into how to make interactive plots in R with maps. Focus on 
 
 ### Core tools
 
-Mapview & Leaflet Packages
+[Mapview](https://r-spatial.github.io/mapview/) & [Leaflet](https://rstudio.github.io/leaflet/) Packages
 
 Mapview wraps Leaflet, making it simpler to use. You can use anything from leaflet as additional arguments to Mapview.
 
@@ -98,6 +98,30 @@ m2 <- addMeasure(l3)
 #m2
 ```
 
+### Saving your map
+
+You can also save the interactive map to an HTML file which you can share with others.
+
+``` r
+m2 = mapview(franconia)
+mapshot(m2, "franconia.html")
+```
+
+If you used `leaflet` for your interactive map, you would use `saveWidget` from the `htmlwidgets` package.
+
+``` r
+library(leaflet)
+library(htmlwidgets)
+data(quakes)
+
+# Map first 20 rows from the `quakes` dataset
+quake_map = leaflet(data = quakes[1:20,]) %>%
+    addTiles() %>%
+    addMarkers(~long, ~lat, popup = ~as.character(mag))
+
+saveWidget(quake_map, "quakes.html")
+```
+
 Outline
 =======
 
@@ -143,9 +167,3 @@ Bonus
 -----
 
 Exporting to share with others (HTML or Shiny)
-
-References
-----------
-
--   <https://rstudio.github.io/leaflet/>
--   <https://r-spatial.github.io/mapview/>

@@ -18,13 +18,13 @@ output: github_document
 
 
 
-```{r map, echo=FALSE, fig.cap="Static Map"}
+```{r map, echo=FALSE, fig.cap="Static Map", message=FALSE}
 # Static Map vs Dynamic Map
 library(mapview)
 data(breweries, package="mapview")
 
 plot(breweries$geometry, col = "purple")
-#mapview(breweries)
+#mapview(breweries)	
 ```
 
 [Interactive Map of the same data](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
@@ -103,6 +103,28 @@ m2 <- addMeasure(l3)
 #m2
 ```
 
+### Saving your map
+You can also save the interactive map to an HTML file which you can share with others. 
+```{r savemap, eval = FALSE}
+m2 = mapview(franconia)
+mapshot(m2, "franconia.html")
+```
+
+If you used `leaflet` for your interactive map, you would use `saveWidget` from the `htmlwidgets` package. 
+```{r savemap2, eval = FALSE}
+library(leaflet)
+library(htmlwidgets)
+data(quakes)
+
+# Map first 20 rows from the `quakes` dataset
+quake_map = leaflet(data = quakes[1:20,]) %>%
+    addTiles() %>%
+    addMarkers(~long, ~lat, popup = ~as.character(mag))
+
+saveWidget(quake_map, "quakes.html")
+```
+
+
 # Outline
 
 ## Data Types 
@@ -137,4 +159,3 @@ m2 <- addMeasure(l3)
 
 ## Bonus
 Exporting to share with others (HTML or Shiny)
-
