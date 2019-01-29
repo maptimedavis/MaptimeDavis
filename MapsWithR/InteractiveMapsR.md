@@ -14,6 +14,10 @@ Introduction
     -   When your map will be viewed in anything other than a web browser.
     -   When you don't need the viewer to be able to pan, zoom, and click on things in the map.
 
+<!-- -->
+
+    ## Loading required package: methods
+
 ![Static Map](InteractiveMapsR_files/figure-markdown_github/map-1.png)
 
 [Interactive Map of the same data](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)
@@ -96,6 +100,30 @@ Adding a Scale Bar to the Map
 # Take an existing map object and add a scale bar
 m2 <- addMeasure(l3)
 #m2
+```
+
+### Saving your map
+
+You can also save the interactive map to an HTML file which you can share with others.
+
+``` r
+m2 = mapview(franconia)
+mapshot(m2, "franconia.html")
+```
+
+If you used `leaflet` for your interactive map, you would use `saveWidget` from the `htmlwidgets` package.
+
+``` r
+library(leaflet)
+library(htmlwidgets)
+data(quakes)
+
+# Map first 20 rows from the `quakes` dataset
+quake_map = leaflet(data = quakes[1:20,]) %>%
+    addTiles() %>%
+    addMarkers(~long, ~lat, popup = ~as.character(mag))
+
+saveWidget(quake_map, "quakes.html")
 ```
 
 Outline
