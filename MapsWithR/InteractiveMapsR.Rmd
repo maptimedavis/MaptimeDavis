@@ -36,7 +36,7 @@ Give people an dive into how to make interactive plots in R with maps. Focus on 
 
 ### Core tools
 
-Mapview & Leaflet Packages
+[Mapview](https://r-spatial.github.io/mapview/) & [Leaflet](https://rstudio.github.io/leaflet/) Packages
 
 Mapview wraps Leaflet, making it simpler to use. You can use anything from leaflet as additional arguments to Mapview.
 
@@ -138,6 +138,3 @@ m2 <- addMeasure(l3)
 ## Bonus
 Exporting to share with others (HTML or Shiny)
 
-## References
-- https://rstudio.github.io/leaflet/
-- https://r-spatial.github.io/mapview/
