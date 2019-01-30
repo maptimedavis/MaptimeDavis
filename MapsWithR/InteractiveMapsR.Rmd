@@ -15,6 +15,10 @@ output: github_document
 * When should I not use an Interactive Map? 
     * When your map will be viewed in anything other than a web browser. 
     * When you don't need the viewer to be able to pan, zoom, and click on things in the map.
+    * When the data is really big.
+* What could I use instead?
+    * Other static plot methods in R
+    * Desktop GIS applications like QGIS and ArcGIS (Handles large data much better)
 
 
 

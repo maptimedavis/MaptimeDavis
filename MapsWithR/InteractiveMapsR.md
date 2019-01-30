@@ -94,6 +94,41 @@ l3 = addStaticLabels(m3,
 l3
 ```
 
+### Colors and Legends
+
+Depending on the data type (raster, vector, etc) being plotted, colors can be modified using either a name or [hexcode](https://htmlcolorcodes.com/).
+
+``` r
+mapview(franconia, 
+        color="gray", # some colors work as color
+        col.regions="#008080") # more refined
+```
+
+We can also assign a color palette based on the data:
+
+``` r
+# assign color based on variable name in data:
+(zcol_map1 <- mapview(franconia, zcol="district"))
+
+# assign color but change the NA value and legend title
+mapview(breweries, zcol="number.of.types", na.color="transparent",
+        layer.name="Number of Beer Types <br> at Each Brewery")
+
+# manipulate some data to plot on top:
+library(dplyr)
+smallbrews <- breweries %>% filter(number.of.types<2) # only make 1 beer!
+manybrews <- breweries %>% filter(number.of.types>8) # make more than 8 kinds of beer!
+
+# and layer with beer data:
+zcol_map1 + 
+  mapview(smallbrews, color="white", col.regions="black",
+        na.color="transparent", 
+        layer.name="Single Beer Breweries") +
+  mapview(manybrews, color="white", col.regions="maroon",
+          na.color="transparent", 
+          layer.name="Multi Beer Breweries")
+```
+
 ### Scale Bar
 
 Adding a Scale Bar to the Map
