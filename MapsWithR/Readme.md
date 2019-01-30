@@ -5,7 +5,7 @@ There have been many maptimeDavis meeting on R topics. Here are a few specific t
 * January 30, 2019 - 10am
 * Alex Mandel, Nistara Randhawa, Ryan Peek, and Mahesh Maskey
 * [Tutorial](InteractiveMapsR.md)
-* [Source Code](InteractiveMaps.Rmd)
+* [Source Code](InteractiveMapsR.Rmd)
 * [Example used to make the flyer](example.R)
 * [Webpage](https://spatial.ucdavis.edu/2019/01/23/maptimedavis-interactive-maps-with-r/)
 
