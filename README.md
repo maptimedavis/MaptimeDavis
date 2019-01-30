@@ -22,7 +22,7 @@ What are these **Challenge** sessions?  We'll suggest a project that you can wor
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
 
-### Feedback ###
+## Feedback
 Give #maptimeDavis [feedback](https://goo.gl/forms/0e3s30cVNUxL8lgR2) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
 
 
