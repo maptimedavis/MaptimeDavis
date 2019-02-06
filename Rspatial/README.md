@@ -1,8 +1,12 @@
-# Rspatial
+# R spatial topics
+
+A list of Maptime Topics on R
 
 1. [Analyzing Animal Health Spatial-Explicit Networks Using R](https://drive.google.com/a/ucdavis.edu/file/d/1WXpWxWk4rqJaCx2ybFSOjng7T4cwwRg8/view?usp=sharing) - Feb 2019
 1. [Rspatial Introduction](#rspatial-Introduction)
 1. [Species Distribution Modeling](#species-distribution-modeling)
+1. [Maps With R](../MapsWithR)
+1. [Interactive Maps with R](../MapsWithR)
 
 ## Rspatial Introduction
 1:00-3:00 | Monday, October 15th, 2017 | DSI Classroom | 360 Shields Library
