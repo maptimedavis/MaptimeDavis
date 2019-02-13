@@ -10,9 +10,9 @@ Workshops on **Wednesdays from 10:00-12:00** in the DSI Classroom (360 Shields L
 |---|---|---
 |16 Jan|	Mapathon|	Sierra Mabanta
 |23-Jan|	1 Hour Map Challenge!|	Center for Spatial Sciences
-|30-Jan|	Interactive Maps with R|	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
-|6-Feb|	TBA|	Beatriz Martinez-Lopez’s Lab
-|13-Feb|	Python for Field Calculations in QGIS and ArcGIS|	Nick Santos
+|30-Jan|	[Interactive Maps with R](MapWithR) |	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
+|6-Feb|	[Spatial Networks in R](Rspatial) |	Beatriz Martinez-Lopez’s Lab
+|13-Feb|	[Python for Field Calculations in QGIS and ArcGIS](https://github.com/nickrsan/Python-GIS-Field-Calculations/) |	Nick Santos
 |20-Feb|	Lightning Talks|	Geospatial Community
 |22-Feb|	Geospatial Data Visualization|	Michele Tobias
 |27-Feb|	Field Data Collection|	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
