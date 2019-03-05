@@ -1,6 +1,6 @@
 # Google Earth Engine topics
 
-A list of Maptime Topics on R
+A list of Maptime Topics on Google Earth Engine
 
 1. [Fire Mapping with Earth Engine](#fire-mapping-with-earth-engine)
 1. [Mapping Surface Water Change](#mapping-surface-water-change-with-google-earth-engine)
@@ -21,7 +21,7 @@ Presented by: Yuhan Huang, Erica Scaduto, Bin Chen
 
 ### Materials
 
-* [Presentations](GEEMapTimeDavis03062019.pdf)
+* [Presentations](GEEMapTimeDavis_03062019.pdf)
 * Open [Code](https://code.earthengine.google.com/be37bd45b371b6e02e46342f4ad1bae6) in Earth Engine 
 
 
