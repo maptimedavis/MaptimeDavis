@@ -9,14 +9,14 @@ Workshops on **Wednesdays from 10:00-12:00** in the DSI Classroom (360 Shields L
 |Date	|Topic	|Speaker
 |---|---|---
 |16 Jan|	Mapathon|	Sierra Mabanta
-|23-Jan|	1 Hour Map Challenge!|	Center for Spatial Sciences
+|23-Jan|	1 Hour Map Challenge! |	Center for Spatial Sciences
 |30-Jan|	[Interactive Maps with R](MapWithR) |	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
 |6-Feb|	[Spatial Networks in R](Rspatial) |	Beatriz Martinez-Lopez’s Lab
 |13-Feb|	[Python for Field Calculations in QGIS and ArcGIS](https://github.com/nickrsan/Python-GIS-Field-Calculations/) |	Nick Santos
-|20-Feb|	Lightning Talks|	Geospatial Community
-|22-Feb|	Geospatial Data Visualization|	Michele Tobias
-|27-Feb|	Field Data Collection|	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
-|6-Mar|	Fire Mapping|	Yufang Jin’s Lab
+|20-Feb|	Lightning Talks |	Geospatial Community
+|22-Feb|	Geospatial Data Visualization |	Michele Tobias
+|27-Feb|	Field Data Collection |	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
+|6-Mar|	[Fire Mapping](GoogleEarthEngine) |	Yufang Jin’s Lab
 
 What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
