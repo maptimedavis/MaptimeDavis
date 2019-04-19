@@ -3,20 +3,19 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Winter Quarter 2019 Schedule
-Workshops on **Wednesdays from 10:00-12:00** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
+# Spring Quarter 2019 Schedule
+Workshops on **Tuesdays from 1:00-3:00pm** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
 
 |Date	|Topic	|Speaker
 |---|---|---
-|16 Jan|	Mapathon|	Sierra Mabanta
-|23-Jan|	1 Hour Map Challenge!|	Center for Spatial Sciences
-|30-Jan|	Interactive Maps with R|	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
-|6-Feb|	TBA|	Beatriz Martinez-Lopez’s Lab
-|13-Feb|	Python for Field Calculations in QGIS and ArcGIS|	Nick Santos
-|20-Feb|	Lightning Talks|	Geospatial Community
-|22-Feb|	Geospatial Data Visualization|	Michele Tobias
-|27-Feb|	Field Data Collection|	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
-|6-Mar|	Fire Mapping|	Yufang Jin’s Lab
+|Apr 16|Humanitarian OpenStreetMap Mapathon *Location To Be Announced Register|Mapping Club
+|Apr 23|NDVI Time Series Data in R  Register|Mahesh Maskey & Kristen Shapiro
+|Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
+|May 07|Drone Show & Tell *Location To Be Announced  Register|Center for Spatial Sciences
+|May 14|Historical Mapping with Open Source Tools  Register|Emily Merchant & Michael Mortimer
+|May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   Register|Matthew Twietmeyer, ESRI
+|May 28|GIS Career Panel Discussion  Register|Center for Spatial Sciences
+|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  Register|Matthew Twietmeyer, ESRI
 
 What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
@@ -94,4 +93,12 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 | 19-Nov-2018	| **Data Visualization Challenge**	| Center for Spatial Sciences
 | 26-Nov-2018 | **Data Fusion in Remote Sensing** | Yufang Jin's Lab
 | 3-Dec-2018	|  **Remote Sensing Challenge**		| Center for Spatial Sciences
-
+|16 Jan|	Mapathon|	Sierra Mabanta
+|23-Jan|	1 Hour Map Challenge! |	Center for Spatial Sciences
+|30-Jan|	[Interactive Maps with R](MapWithR) |	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
+|6-Feb|	[Spatial Networks in R](Rspatial) |	Beatriz Martinez-Lopez’s Lab
+|13-Feb|	[Python for Field Calculations in QGIS and ArcGIS](https://github.com/nickrsan/Python-GIS-Field-Calculations/) |	Nick Santos
+|20-Feb|	Lightning Talks |	Geospatial Community
+|22-Feb|	Geospatial Data Visualization |	Michele Tobias
+|27-Feb|	Field Data Collection |	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
+|6-Mar|	[Fire Mapping](GoogleEarthEngine) |	Yufang Jin’s Lab
