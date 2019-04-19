@@ -3,9 +3,8 @@ title: "Extracting normalized difference vegetation index (NDVI) time series dat
 author: "Mahesh L Maskey, Kristen Shapiro"
 date: "April 23, 2019"
 output:
-  md_document:
-    #number_sections: yes
-    toc: true
+  github_document:
+    toc: TRUE
     toc_depth: 3
 ---
 
