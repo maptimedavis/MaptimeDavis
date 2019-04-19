@@ -8,7 +8,7 @@ library(RColorBrewer)
 options(stringsAsFactors = FALSE)
 
 #Change to the path where your data is saved
-datapath <- '/Users/echellwig/Research/Bigfoot/'
+#datapath <- '/Users/echellwig/Research/Bigfoot/'
 
 #read in data
 bf <- read.csv(file.path(datapath, 'bigfoot.csv')) #bigfoot presence
