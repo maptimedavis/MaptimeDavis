@@ -2,9 +2,10 @@
 Instructions &amp; data for an introductory QGIS workshop
 
 ## Workshop Description:
-1:00-3:00 | Monday, October 8th, 2018| DSI Classroom | room 360 Shields Library
 
-2:00 - 4:00  | Monday, September 25th, s018  | DSI Classroom  | room 360 Shields Library
+1:00-3:00 | Monday, October 8th, 2018 | DSI Classroom | room 360 Shields Library
+
+2:00-4:00 | Monday, September 25th, 2017 | DSI Classroom | room 360 Shields Library
 
 This workshop will introduce participants to QGIS, a powerful open source GIS software.  The workshop will cover typical basic GIS software workflow needs such as loading data, changing the way data is displayed, and where to find analysis tools.  In addition, participants will learn strategies for finding help with QGIS and tutorials for home learning. This workshop is not intended to teach all the concepts of GIS from the beginning (it's only 2 hours!), but rather to introduce those already familiar with the concepts of GIS to a new software option for applying those concepts.
 
@@ -54,7 +55,7 @@ What can't it read?  .mxd files are map files created by ESRI's proprietary soft
     *  Plugins
 
 
-See Also: [QGIS Training Manual: The Interface](http://docs.qgis.org/2.14/en/docs/training_manual/introduction/index.html)
+See Also: [QGIS Training Manual: The Interface](http://docs.qgis.org/2.18/en/docs/training_manual/introduction/index.html)
 
 # HANDS ON: Exercises
 You'll use the QGIS Trainin Manual's exercises to learn about QGIS and get some experience operating the interface.  Note that these exercises have 3 levels of difficulty that are color-coded:
@@ -66,7 +67,8 @@ You'll use the QGIS Trainin Manual's exercises to learn about QGIS and get some 
 Definitely try the green/basic exercises, and feel free to skip the blue/intermediate and red/advanced exercises as you see fit for your experience and interest.
 
 Please complete the following items:
-1.  Download the exercise data at the [QGIS Training Manual Site](http://docs.qgis.org/2.14/en/docs/training_manual/foreword/foreword.html#data)
+
+1.  Download the exercise data at the [QGIS Training Manual Site](http://docs.qgis.org/2.18/en/docs/training_manual/foreword/foreword.html#data)
 1.  [QGIS Training Manual: The Interface](http://docs.qgis.org/2.18/en/docs/training_manual/introduction/index.html)
 1.  [QGIS Training Manual: Creating a Basic Map](http://docs.qgis.org/2.18/en/docs/training_manual/basic_map/index.html) (Skip the section about the custom SVG fill.)
 1.  Explore the [QGIS Training Manual](http://docs.qgis.org/2.18/en/docs/training_manual/index.html) for topics of particular interest to you.
