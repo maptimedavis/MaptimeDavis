@@ -1,2 +1,419 @@
+Extracting normalized difference vegetation index (NDVI) time series data from Landsat images via R-spatial Packages
+April 23, 2019
+1 Introduction
+1.1 Background
+1.2 Why landsat images
+1.3 Objectives
+1.4 How to download
+2 Download Landsat Images
+3 Loading libraries
+4 Costumized functions
+5 Example to load a raster
+5.1 Loading multiband raster image
+5.2 Visualizing raster
+6 NDVI Calculation example
+7 Temporal Analysis
+7.1 Loading series of rasters and calculating NDVI
+7.2 Saving into csvFile
+7.3 Loading NDVI time series
+7.4 Visualizing temporal dynamics
+8 Spatial Analysis
+8.1 Information about location
+8.2 Croping extent
+8.3 Visualizing spatial dynamics
+1 Introduction
+1.1 Background
+1.2 Why landsat images
+1.3 Objectives
+to learn how to deal with remotely sensed images to extract physical quantities like NDVI
+to visualize rater image and relevant statistics
+to perform sample raster calculation
+to extract NDVI time series from deifferent periods of obesevation
+to visualize spatial dynamics
+1.4 How to download
+  For this workshops, all the images are ready to download. For future, you will download by your own as demonstrated here.
+2 Download Landsat Images
+download image via google drive or in the links
+make sure all the files are under data folder
+note that all the image files named with “YYYYMMDD.tif” format
+3 Loading libraries
+library(raster)
+## Warning: package 'raster' was built under R version 3.5.2
+## Loading required package: sp
+library(sp)
+library(rgdal)
+## Warning: package 'rgdal' was built under R version 3.5.2
+## rgdal: version: 1.3-9, (SVN revision 794)
+##  Geospatial Data Abstraction Library extensions to R successfully loaded
+##  Loaded GDAL runtime: GDAL 2.2.3, released 2017/11/20
+##  Path to GDAL shared files: C:/Program Files/R/R-3.5.1/library/rgdal/gdal
+##  GDAL binary built with GEOS: TRUE 
+##  Loaded PROJ.4 runtime: Rel. 4.9.3, 15 August 2016, [PJ_VERSION: 493]
+##  Path to PROJ.4 shared files: C:/Program Files/R/R-3.5.1/library/rgdal/proj
+##  Linking to sp version: 1.3-1
+library(ggplot2)
+library(ggpubr)
+## Loading required package: magrittr
+## 
+## Attaching package: 'magrittr'
+## The following object is masked from 'package:raster':
+## 
+##     extract
+## 
+## Attaching package: 'ggpubr'
+## The following object is masked from 'package:raster':
+## 
+##     rotate
+library(knitr) 
+## Warning: package 'knitr' was built under R version 3.5.2
+4 Costumized functions
+NDVI <- function(X, Y){
+  #X: Near infrared band Image
+  #Y: Red band Image
+  ndvi <- (X-Y)/(X+Y)
+  return(ndvi)
+}
 
-https://mail.google.com/mail/u/1?ui=2&ik=25ff9499e3&attid=0.1&permmsgid=msg-f:1631191937054764939&th=16a3286ca0a16f8b&view=att&disp=inline&realattid=f_jun7fbn00
+ggrasterPlot <- function(imgRaster, valueStr, titleStr, colorScheme =  'inferno'){
+  imgRaster.df <- as.data.frame(imgRaster, xy = TRUE)
+  colnames(imgRaster.df)<-c('x', 'y', valueStr)
+  pltRaster<-ggplot(imgRaster.df, aes(x = x, y = y)) +
+    geom_raster(data = imgRaster.df , aes_string(fill = valueStr)) +
+    scale_fill_viridis_c(option = colorScheme) +
+    scale_x_continuous(expand = c(0,0))+
+    scale_y_continuous(expand = c(0,0))+
+    xlab('') + ylab('')+
+    coord_quickmap()+
+    ggtitle(titleStr)+
+  theme_bw()
+  return(pltRaster)
+}
+
+ggrasterHist<- function(imgRaster, valueStr){
+  imgRaster.df <- as.data.frame(imgRaster, xy = TRUE)
+  colnames(imgRaster.df)<-c('x', 'y', valueStr)
+  pltHist<-ggplot() +
+    geom_histogram(data = imgRaster.df, aes_string(x=valueStr), fill='green')+
+    xlab(valueStr) + ylab('Frequency')+
+    scale_x_continuous(expand = c(0,0), limits = c(0.3,0.7))+
+    scale_y_continuous(expand = c(0,0))+
+    theme_bw()
+  return(pltHist)
+}
+
+getcropArea<-function(X1,X2, Y1, Y2){
+  rectangle.df = data.frame(matrix(NaN, nrow = 5, ncol = 2))
+  colnames(rectangle.df) = c('x', 'y')
+  rectangle.df$x[c(1,4,5)] = X1
+  rectangle.df$x[c(2,3)] = X2
+  rectangle.df$y[c(1,2,5)] = Y1
+  rectangle.df$y[c(3,4)] = Y2
+  return(rectangle.df)
+}
+
+meanNDVI<- function(rasterNDVI){
+  dataMatrix <- rasterToPoints(rasterNDVI)
+  return(mean(dataMatrix[,3], na.rm = TRUE))
+}
+5 Example to load a raster
+5.1 Loading multiband raster image
+First we will load our raster file into R and view the data structure.
+
+imageFileName = 'Data/20180126.tif'
+raster1 <- stack(imageFileName)
+raster1
+## class       : RasterStack 
+## dimensions  : 29, 42, 1218, 4  (nrow, ncol, ncell, nlayers)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## names       : X20180126.1, X20180126.2, X20180126.3, X20180126.4
+Since there are multiple bands of, we can check the number or layer with
+
+nlayers(raster1)
+## [1] 4
+We can view the attributes of each band in the stack in a single output:
+
+raster1@layers
+## [[1]]
+## class       : RasterLayer 
+## band        : 1  (of  4  bands)
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : C:/Users/Mahesh/Documents/PostDocResearch/NDVI-DSI/Data/20180126.tif 
+## names       : X20180126.1 
+## 
+## 
+## [[2]]
+## class       : RasterLayer 
+## band        : 2  (of  4  bands)
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : C:/Users/Mahesh/Documents/PostDocResearch/NDVI-DSI/Data/20180126.tif 
+## names       : X20180126.2 
+## 
+## 
+## [[3]]
+## class       : RasterLayer 
+## band        : 3  (of  4  bands)
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : C:/Users/Mahesh/Documents/PostDocResearch/NDVI-DSI/Data/20180126.tif 
+## names       : X20180126.3 
+## 
+## 
+## [[4]]
+## class       : RasterLayer 
+## band        : 4  (of  4  bands)
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : C:/Users/Mahesh/Documents/PostDocResearch/NDVI-DSI/Data/20180126.tif 
+## names       : X20180126.4
+In both cases, we saw three layers corersponding to blue, green, red and near infrared. In order to calculate NDVI, we need two bands, namley red (third layer) and near infrared (fourth layer). ## Getting stacked rasters
+
+redBand<- raster1[[3]]
+NIRBand<- raster1[[4]]
+we can view them as
+
+redBand
+## class       : RasterLayer 
+## band        : 3  (of  4  bands)
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : C:/Users/Mahesh/Documents/PostDocResearch/NDVI-DSI/Data/20180126.tif 
+## names       : X20180126.3
+and
+
+NIRBand
+## class       : RasterLayer 
+## band        : 4  (of  4  bands)
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : C:/Users/Mahesh/Documents/PostDocResearch/NDVI-DSI/Data/20180126.tif 
+## names       : X20180126.4
+5.2 Visualizing raster
+Let’s plot rastar images individually using ggplot
+
+redBand.df <- as.data.frame(redBand, xy = TRUE)
+colnames(redBand.df)<-c('x', 'y', 'value')
+plt.red<-ggplot() +
+  geom_raster(data = redBand.df , aes(x = x, y = y, fill = value)) +
+  scale_fill_viridis_c(option = 'plasma') +
+  scale_x_continuous(expand = c(0,0))+
+  scale_y_continuous(expand = c(0,0))+
+  xlab('') + ylab('')+
+  ggtitle('Red band image')+
+  coord_quickmap()+
+  theme_bw()
+
+NIRBand.df <- as.data.frame(NIRBand, xy = TRUE)
+colnames(NIRBand.df)<-c('x', 'y', 'value')
+plt.nir<-ggplot() +
+  geom_raster(data = NIRBand.df , aes(x = x, y = y, fill = value)) +
+  scale_fill_viridis_c(option = 'inferno') +
+  scale_x_continuous(expand = c(0,0))+
+  scale_y_continuous(expand = c(0,0))+
+  xlab('') + ylab('')+
+  coord_quickmap()+
+  ggtitle('Near Infrared band image')+
+theme_bw()
+ggarrange(plt.red, plt.nir)
+
+6 NDVI Calculation example
+Let’s calculate NDVI
+
+ndvi <- (NIRBand - redBand)/(NIRBand + redBand)
+print(ndvi)
+## class       : RasterLayer 
+## dimensions  : 29, 42, 1218  (nrow, ncol, ncell)
+## resolution  : 30, 30  (x, y)
+## extent      : 256365, 257625, 4110375, 4111245  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
+## data source : in memory
+## names       : layer 
+## values      : 0.3097251, 0.6905607  (min, max)
+Let’s plot rastar for NDVI
+
+plt.NDVI<-ggrasterPlot(ndvi, 'NDVI', 'Entire Area',colorScheme =  'virdis')
+## Warning in viridisLite::viridis(n, alpha, begin, end, direction, option):
+## Option 'virdis' does not exist. Defaulting to 'viridis'.
+plt.NDVI
+
+Let’s create a histogram of the NDVI:
+
+  ndvi.df <- as.data.frame(ndvi, xy = TRUE)
+  colnames(ndvi.df)<-c('x', 'y', 'NDVI')
+ggplot() +
+  geom_histogram(data = ndvi.df, aes(NDVI), fill='green')+
+  xlab('NDVI') + ylab('Frequency')+
+  scale_x_continuous(expand = c(0,0))+
+  scale_y_continuous(expand = c(0,0))+
+  theme_bw()
+ To calculate the average NDVI for whole raster, NDVI raster needs to convert as data matrix. Such can be done vis rasterToPoints() with argument raster as
+
+dataMatrix <- rasterToPoints(ndvi)
+Let’s see what the table has
+
+str(dataMatrix)
+##  num [1:1218, 1:3] 256380 256410 256440 256470 256500 ...
+##  - attr(*, "dimnames")=List of 2
+##   ..$ : NULL
+##   ..$ : chr [1:3] "x" "y" "layer"
+head(dataMatrix)
+##           x       y     layer
+## [1,] 256380 4111230 0.4969136
+## [2,] 256410 4111230 0.4074303
+## [3,] 256440 4111230 0.4093173
+## [4,] 256470 4111230 0.4197272
+## [5,] 256500 4111230 0.3723543
+## [6,] 256530 4111230 0.4074962
+Since columns named x and y correspond to geo-coordinates, third column is obvisouly NDVI. In order to find the average value of NDVI, third column is used in mean() function
+
+NDVI.avg <- mean(dataMatrix[,3])
+print(NDVI.avg)
+## [1] 0.470304
+7 Temporal Analysis
+7.1 Loading series of rasters and calculating NDVI
+dateList = c('20180126', '20180202', '20180218', '20180306', '20180126', '20180202',
+             '20180306', '20180218', '20180126', '20180202', '20180306', '20180202',
+             '20180126', '20180218', '20180202', '20180306', '20180218', '20180306',
+             '20180218', '20180306', '20180126', '20180218', '20180126', '20180218')
+fileList = paste(dateList, '.tif', sep = '')
+fileList
+##  [1] "20180126.tif" "20180202.tif" "20180218.tif" "20180306.tif"
+##  [5] "20180126.tif" "20180202.tif" "20180306.tif" "20180218.tif"
+##  [9] "20180126.tif" "20180202.tif" "20180306.tif" "20180202.tif"
+## [13] "20180126.tif" "20180218.tif" "20180202.tif" "20180306.tif"
+## [17] "20180218.tif" "20180306.tif" "20180218.tif" "20180306.tif"
+## [21] "20180126.tif" "20180218.tif" "20180126.tif" "20180218.tif"
+nFiles = length(fileList)
+nFiles
+## [1] 24
+NDVI.ts <- data.frame(id = 1:nFiles)
+for (i in 1:nFiles) {
+  imageFileNameI <- paste('Data/', fileList[i], sep = '')
+  rasterImg <- stack(imageFileNameI)
+  redBand.Indv<- rasterImg[[3]]
+  NIRBand.Indv<- rasterImg[[4]]
+  NDVI.Indv <- NDVI(NIRBand.Indv, redBand.Indv)
+  dataMatrix <- rasterToPoints(NDVI.Indv)
+  NDVI.ts$NDVI[i] <- mean(dataMatrix[,3])
+}
+7.2 Saving into csvFile
+write.csv(NDVI.ts, file = 'testNDVI.csv', row.names = F)
+7.3 Loading NDVI time series
+readTs <- read.csv('testNDVI.csv', header = TRUE)
+startDate = as.Date('2018-01-26')
+endDate = as.Date('2019-02-01')
+dateVec = seq(startDate, endDate, by = '16 day')
+readTs$DATE = dateVec
+7.4 Visualizing temporal dynamics
+ggplot(data = readTs)+
+  geom_line(aes(x=DATE, y = NDVI), color ='blue')+
+  xlab('Date') + ylab('NDVI')+
+  scale_y_continuous(expand = c(0,0), limits = c(0.45, 0.5))+
+  scale_x_date(expand = c(0,0))+
+  theme_bw()
+
+8 Spatial Analysis
+8.1 Information about location
+dataMatrix <- rasterToPoints(ndvi)
+xcoord = dataMatrix[,1]
+ycoord = dataMatrix[,2]
+maxX <- max(dataMatrix[,1])
+maxY <- max(dataMatrix[,2])
+minX <- min(dataMatrix[,1])
+minY <- min(dataMatrix[,2])
+8.2 Croping extent
+Let’s define corner of left bottom half of the image
+
+midX = (minX+maxX)/2
+midY = (minY+maxY)/2
+cropArea1 <- getcropArea(minX, midX,minY, midY)
+cropArea2 <- getcropArea(midX, maxX,minY, midY)
+cropArea3 <- getcropArea(minX, midX,midY, maxY)
+cropArea4 <- getcropArea(midX, maxX,midY, maxY)
+crop_extent1 = extent(minX, midX, minY, midY)
+crop_extent2 <- extent(midX, maxX,minY, midY)
+crop_extent3 <- extent(minX, midX,midY, maxY)
+crop_extent4 <- extent(midX, maxX,midY, maxY)
+Superimpose crop area boundary over the image
+
+ndvi.df <- as.data.frame(ndvi, xy = TRUE)
+colnames(ndvi.df)<-c('x', 'y', 'ndvi')
+plt.NDVI<-ggplot() +
+  geom_raster(data = ndvi.df , aes(x = x, y = y, fill = ndvi)) +
+  geom_rect(data=cropArea1, mapping=aes(xmin=minX, xmax=midX, 
+                                           ymin=minY, ymax=midY),
+            color="black", alpha=0, size = 1.5) +
+  geom_rect(data=cropArea2, mapping=aes(xmin=midX, xmax=maxX, 
+                                           ymin=minY, ymax=midY),
+            color="black", alpha=0, size = 1.5) +
+  geom_rect(data=cropArea3, mapping=aes(xmin=minX, xmax=midX, 
+                                           ymin=midY, ymax=maxY),
+            color="black", alpha=0, size = 1.5) +
+  geom_rect(data=cropArea4, mapping=aes(xmin=midX, xmax=maxX, 
+                                           ymin=midY, ymax=maxY),
+            color="black", alpha=0, size = 1.5) +
+  scale_fill_viridis_c(option = 'viridis') +
+  scale_x_continuous(expand = c(0,0))+
+  scale_y_continuous(expand = c(0,0))+
+  xlab('') + ylab('')+
+  coord_quickmap()+
+  ggtitle('NDVI for whole image')+
+theme_bw()
+plt.NDVI
+
+imgCrop1 <- crop(ndvi, crop_extent1)
+meanNDVI1 = meanNDVI(imgCrop1)
+print(meanNDVI1)
+## [1] 0.4623415
+imgCrop2 <- crop(ndvi, crop_extent2)
+meanNDVI2 = meanNDVI(imgCrop2)
+print(meanNDVI2)
+## [1] 0.5069105
+imgCrop3 <- crop(ndvi, crop_extent3)
+meanNDVI3 = meanNDVI(imgCrop3)
+print(meanNDVI3)
+## [1] 0.4508264
+imgCrop4 <- crop(ndvi, crop_extent4)
+meanNDVI4 = meanNDVI(imgCrop4)
+print(meanNDVI4)
+## [1] 0.4595218
+8.3 Visualizing spatial dynamics
+Once again, recall original NDVI data frame and plot the histogram for entire area
+
+# Entire
+pltall<-ggrasterHist(ndvi, 'NDVI')
+pltall+ggtitle('Entire')
+
+Let’s have seperate ggplots for individual sections
+
+# bottom left
+plt.corner1<-ggrasterHist(imgCrop1, 'NDVI')
+#  bottom right
+plt.corner2<-ggrasterHist(imgCrop2, 'NDVI')
+# top left
+plt.corner4<-ggrasterHist(imgCrop3, 'NDVI')
+#  top right
+plt.corner3<-ggrasterHist(imgCrop4, 'NDVI')
+Now, combine them using ggarrange as
+
+ggarrange(plt.corner3+ggtitle('Top Left')+geom_vline(xintercept = meanNDVI3),
+          plt.corner4+ggtitle('Top Right')+geom_vline(xintercept = meanNDVI4),
+          plt.corner1+ggtitle('Bottom Left')+geom_vline(xintercept = meanNDVI1),
+          plt.corner2+ggtitle('Bottom Right')+geom_vline(xintercept = meanNDVI2),
+          nrow = 2, ncol = 2)
+
