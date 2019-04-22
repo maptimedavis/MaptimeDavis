@@ -100,8 +100,6 @@ Libraries
 
 ``` r
 library(raster)
-library(sp)
-library(rgdal)
 library(ggplot2)
 library(ggpubr)
 library(scales)
