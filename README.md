@@ -8,21 +8,21 @@ Workshops on **Tuesdays from 1:00-3:00pm** in the DSI Classroom (360 Shields Lib
 
 |Date	|Topic	|Speaker
 |---|---|---
-|Apr 16|Humanitarian OpenStreetMap Mapathon *Location To Be Announced Register|Mapping Club
-|Apr 23|NDVI Time Series Data in R  Register|Mahesh Maskey & Kristen Shapiro
+|Apr 16|Humanitarian OpenStreetMap Mapathon *Location To Be Announced |Mapping Club
+|Apr 23|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
 |Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
-|May 07|Drone Show & Tell *Location To Be Announced  Register|Center for Spatial Sciences
-|May 14|Historical Mapping with Open Source Tools  Register|Emily Merchant & Michael Mortimer
-|May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   Register|Matthew Twietmeyer, ESRI
-|May 28|GIS Career Panel Discussion  Register|Center for Spatial Sciences
-|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  Register|Matthew Twietmeyer, ESRI
+|May 07|Drone Show & Tell *Location To Be Announced  |Center for Spatial Sciences
+|May 14|Historical Mapping with Open Source Tools  |Emily Merchant & Michael Mortimer
+|May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
+|May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
+|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
 
 What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
 
 ## Feedback
-Give #maptimeDavis [feedback](https://goo.gl/forms/0e3s30cVNUxL8lgR2) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
+Give #maptimeDavis [feedback](https://docs.google.com/forms/d/e/1FAIpQLSeeZ5mWwtbbRLb-66s8IUiV2tG_0FwBjwcE9pXLWokrOLj8qg/viewform?usp=sf_link) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
 
 
 # What is MaptimeDavis?
