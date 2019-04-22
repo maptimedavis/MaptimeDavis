@@ -1,4 +1,4 @@
-Extracting normalized difference vegetation index (NDVI) time series data from Landsat images via R-spatial Packages
+Normalized Difference Vegetation Index (NDVI) Time Series Data in R
 ================
 Mahesh L Maskey, Kristen Shapiro
 April 23, 2019
@@ -7,37 +7,39 @@ April 23, 2019
 -   [Landsat Image](#landsat-image)
     -   [Why landsat images](#why-landsat-images)
     -   [Downloading Landsat images](#downloading-landsat-images)
-    -   [Download Landsat Images](#download-landsat-images)
 -   [Method](#method)
--   [Pertinent tools and functions](#pertinent-tools-and-functions)
-    -   [Loading libraries](#loading-libraries)
-    -   [Custumized functions](#custumized-functions)
--   [Tutoral 1: A single multiband raster image](#tutoral-1-a-single-multiband-raster-image)
-    -   [Loading and visualizing](#loading-and-visualizing)
-    -   [Getting stacked rasters](#getting-stacked-rasters)
-    -   [Visualizing rasters](#visualizing-rasters)
-    -   [NDVI Calculation example](#ndvi-calculation-example)
+    -   [Study Area](#study-area)
+    -   [Raster Data](#raster-data)
+    -   [R and R Markdown](#r-and-r-markdown)
+-   [Pertinent Tools and Functions](#pertinent-tools-and-functions)
+    -   [Libraries](#libraries)
+    -   [Custumized Functions](#custumized-functions)
+-   [Tutoral 1: A Single Multiband Raster Image](#tutoral-1-a-single-multiband-raster-image)
+    -   [Loading and Visualizing](#loading-and-visualizing)
+    -   [Stacked Rasters](#stacked-rasters)
+    -   [Raster Visualization](#raster-visualization)
+    -   [Sample NDVI Calculation](#sample-ndvi-calculation)
 -   [Tutorial 2: Temporal Analysis](#tutorial-2-temporal-analysis)
-    -   [Loading series of rasters and calculating NDVI](#loading-series-of-rasters-and-calculating-ndvi)
-    -   [Loading NDVI time series](#loading-ndvi-time-series)
-    -   [Visualizing temporal dynamics](#visualizing-temporal-dynamics)
+    -   [Loading Rasters and NDVI Time Series](#loading-rasters-and-ndvi-time-series)
+    -   [NDVI Time Series Data](#ndvi-time-series-data)
+    -   [Temporal Dynamics](#temporal-dynamics)
 -   [Tutorial 3: Spatial Analysis](#tutorial-3-spatial-analysis)
-    -   [Information about location](#information-about-location)
-    -   [Croping extent](#croping-extent)
-    -   [Visualizing spatial dynamics](#visualizing-spatial-dynamics)
+    -   [Raster Extent](#raster-extent)
+    -   [Croping Extent](#croping-extent)
+    -   [Spatial Variability](#spatial-variability)
 
 Introduction
 ============
 
 In order to quantify live vegetation within any area, an indicator, which uses the visible and near-infrared bands of the electromagnetic spectrum called the Normalized Difference Vegetation Index (NDVI), has been popularized for a wide variety of projects after the invent of remote sensing measurements
 
-Until now, such index has been derived using spatial analysis of GIS packages especially at a specific site and time. Moreover, such has been done manually. In addition, such information gathering over different time scales are not also available yet. In this regard, this workshop presents how NDVI can be derived using open source codes related to R-spatial packages. Further, this exercise demonstrates how such information can automatically be derived and extracts in a time series format. It will also presents an exercise to discretize the raster map under different spatial resolution revealing evolution of NDVI distribution over the given location.
+Until now, such index has been derived using spatial analysis of GIS packages especially at a specific site and time. Moreover, such has been done manually. In addition, such information gathering over different time scales are not also available yet. In this regard, this workshop presents how NDVI can be derived using open source codes related to R-spatial packages. Further, this exercise demonstrates how such information can automatically be derived and extracts in a time series format. It will also present an exercise to discretize the raster map into different areas of interest, revealing the evolution of NDVI distribution over a given location.
 
-While NDVI information is very useful in various field of studies like agriculture, crop yield, types of vegetation, plant phenology, climate change, seasonal change and beyond, this workshop has been set up with following objectives:
+While NDVI information is very useful in various field of studies like agriculture, crop yield, land cover change, plant phenology, climate change, seasonal change and beyond, this workshop has been set up with following objectives:
 
--   to learn how to deal with remotely sensed images to extract physical quantities like NDVI
--   to visualize rater image and relevant statistics
--   to perform sample raster calculation
+-   to learn how to manipulate remotely sensed images to extract physical quantities like NDVI
+-   to visualize rsater images and relevant statistics
+-   to perform sample raster calculations
 -   to extract NDVI time series from deifferent periods of obesevation
 -   to visualize spatial dynamics
 
@@ -53,8 +55,8 @@ Downloading Landsat images
 --------------------------
 
 -   Go to www.earthexplorer.usgs.gov
--   If you do not have earth explorar account, register for an account, certain features are accessible without an account, but to download data an account is necessary.
--   Enter search criteria to define your area and dates of interest; if using a shapefile, the data must be uploaded as a \*.zip
+-   If you do not have earth explorer account, register for an account, certain features are accessible without an account, but to download data an account is necessary.
+-   Enter search criteria to define your area and dates of interest; if using a `shapefile`, the data must be uploaded as a `*.zip`
 -   Under datasets you can choose which imagery archives to search through; note that earth explorer hosts more than just Landsat data.
 -   Under the Landsat collection, you can choose which Landsat satellites you want to add to your search and which level of data processing you want for the imagery products. For this tutorial we used Collection 1 Level-2, Landsat 8 data. Level 2 imagery is processed to surface reflectance.
 -   Under additional criteria you can further refine your search parameters. One example is to set limits on the amount of cloud cover you want to allow in any scene
@@ -62,27 +64,37 @@ Downloading Landsat images
 -   Depending on which type of imagery you want to access, the download options will change. Landsat Collection-1 Level 2 data is generated on demand and must submitted as an order to USGS. You will receive an email when your imagery request has been fulfilled and is ready to download. If you are using the Landsat ARD (analysis ready data) Collection, this imagery is immediately available for download and can be downloaded individually or with the bulk download option.
 -   Once you know which Landsat scenes you want to download there are other options you can explore to speed up the process. See: github.com/USGS-EROS/espa-bulk-downloader
 
-Download Landsat Images
------------------------
-
-For this workshop, we have already downloaded Landsat image and stored in `google drive`. Before the workshop make sure that all the files are under `Data` folder and also note that all the image files named with "YYYYMMDD.tif" format
-
 Method
 ======
 
-Here, we mostly use R-studio interface except for downloading landsat imagary files. Our purpose is to use simple and widly used open source library as much as possible. This workshop, entirely, will be done using R-Markdown because R Markdown documents are fully reproducible. Moreover, it allows you to see narrative text and code and preview on table and figures in an elegantly formatted version. It also allows us to save in `html` or `pdf` format. To learn more about `R Markdown`, refer to <https://rmarkdown.rstudio.com/>
+Study Area
+----------
 
 Our area of interest covers part of the San Joaquin Experimental Range which is located in the foothills of the Sierra Nevada in Coarsegold, Madera County, about 20 miles north of Fresno. San Joaquin contains open woodland dominated by oaks (blue and interior live oaks) and digger pine with scattered shrubs and nearly continuous cover of herbaceous plants.
 
 ![San Joaquin Experimental Range](StudyArea.png)
 
-This workshop covers: (a) import the raster data; (b) visualization; (c) raster calculation and (d) temporal and spatial dynamics.
+Raster Data
+-----------
 
-Pertinent tools and functions
+For this workshop, we have already downloaded Landsat images and stored in `google drive` belong to UC Davis (below). Before the workshop make sure that all the files are under `Data` folder and also note that all the image files named with "YYYYmmdd.tif" format.
+
+    URL: https://drive.google.com/a/ucdavis.edu/file/d/1TdyEqDOEnZ_9qUaF81CSFSkhO5n8GX6U/view?usp=sharing
+
+If you do not have `Data` folder in your machine where this this `rmd` file exists, create a folder and copy all the downloaded images into this folder.
+
+R and R Markdown
+----------------
+
+Here, we mostly use R-studio interface except for downloading Landsat imagery files. Our purpose is to use simple and widely used open source library as much as possible. This workshop, entirely, will be done using R-Markdown because R Markdown documents are fully reproducible. Moreover, it allows you to see narrative text and code and preview on table and figures in an elegantly formatted version. It also allows us to save in `html` or `pdf` format. To learn more about `R Markdown`, refer to <https://rmarkdown.rstudio.com/>
+
+This workshop covers: (a) importing the raster data; (b) visualizing the rater data; (c) performing raster calculation and (d) investigating temporal and spatial dynamics.
+
+Pertinent Tools and Functions
 =============================
 
-Loading libraries
------------------
+Libraries
+---------
 
 ``` r
 library(raster)
@@ -93,10 +105,10 @@ library(ggpubr)
 library(scales)
 ```
 
-Custumized functions
+Custumized Functions
 --------------------
 
-Here are some functions for this workshop and later you can use freely. These functions are developed by us to make ease of analysis. In the second part of workshop, we will use these function intensively.
+Here are some functions for this workshop.
 
 ``` r
 NDVI <- function(X, Y){
@@ -128,7 +140,7 @@ ggrasterPlot <- function(imgRaster, valueStr, titleStr, colorScheme =  'inferno'
 }
 
 ggrasterHist<- function(imgRaster, valueStr){
-  # routine to create histogram of raster using ggplot with required modifications
+  # creates a histogram of raster using ggplot with required modifications
   #imgRaster:   raster image
   #valueStr:    define value to be analyzed
   imgRaster.df <- as.data.frame(imgRaster, xy = TRUE)
@@ -143,7 +155,7 @@ ggrasterHist<- function(imgRaster, valueStr){
 }
 
 getcropArea<-function(X1,X2, Y1, Y2){
-  # generates a set of coordinates for ractangles to be plotted based on
+  # generates a set of coordinates for a ractangle to be plotted based on
   # X1, Y1: lower bound
   # X2, Y2: upper bound
   rectangle.df = data.frame(matrix(NaN, nrow = 5, ncol = 2))
@@ -162,22 +174,22 @@ meanNDVI<- function(rasterNDVI){
 }
 ```
 
-Tutoral 1: A single multiband raster image
+Tutoral 1: A Single Multiband Raster Image
 ==========================================
 
 The first part of our workshop will focus on a single image with following tasks:
 
--   how to read the multiband raster data;
+-   how to read the multiband raster data
 -   to extract individual band raster
--   to perform raster calulation
+-   to perform raster calculations
 -   to visualize its statistics
 
-In this first part, we will go through mannual steps for calculation and visualization. In next part we will use customized functions.
+In this first part, we will go through steps for calculation and visualization. In next part, we will mostly use customized functions.
 
-Loading and visualizing
+Loading and Visualizing
 -----------------------
 
-A function `stack()` embedded in `raster` package creates a `RasterStack`, a collection of RasterLayer objects. Here we use this function to read multiband raster image and then view the data structure. For this, we use one of the stored file `20180202.tif` under `Data` folder.
+A function `stack()` embedded in the `raster` package creates a `RasterStack`, a collection of `RasterLayer objects`. Here we use this function to read multiband raster image and then view the data structure. For this, we use one of the stored file `20180202.tif` under `Data` folder.
 
 ``` r
 imageFileName = 'Data/20180202.tif'
@@ -192,7 +204,7 @@ raster1
     ## coord. ref. : +proj=utm +zone=10 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 
     ## names       : X20180202.1, X20180202.2, X20180202.3, X20180202.4
 
-Since there are multiple bands of, we can check the number or layer using `nlayers()` function
+Since there are multiple bands in the raster, we can check the number of layers using the `nlayers()` function.
 
 ``` r
 nlayers(raster1)
@@ -200,7 +212,7 @@ nlayers(raster1)
 
     ## [1] 4
 
-see there are four bands each of which are:
+there are four bands each of which are:
 
 ``` r
 raster1@layers
@@ -249,10 +261,10 @@ raster1@layers
     ## data source : /home/vulpes/biogeo/spatialcenter/MaptimeDavis/Rspatial/NDVI-TimeSeriesR/Data/20180202.tif 
     ## names       : X20180202.4
 
-In both cases, we saw three layers corersponding to blue, green, red and near infrared. In order to calculate NDVI, we need two bands, namley red (third layer) and near infrared (fourth layer). So we simple assign third element of `raster1` as `redBand` and fourth one as `NIRBand`
+Notice that there are three layers corresponding to blue, green, red and near infrared respectively. In order to calculate NDVI, we need two bands: red (third layer) and near infrared (fourth layer). So, we simply assign third element of `raster1` as `redBand` and fourth as `NIRBand`.
 
-Getting stacked rasters
------------------------
+Stacked Rasters
+---------------
 
 ``` r
 redBand<- raster1[[3]]
@@ -282,10 +294,10 @@ NIRBand
     ## data source : /home/vulpes/biogeo/spatialcenter/MaptimeDavis/Rspatial/NDVI-TimeSeriesR/Data/20180202.tif 
     ## names       : X20180202.4
 
-Visualizing rasters
--------------------
+Raster Visualization
+--------------------
 
-We can plot rastar images individually just using `ggplot` embedded in `ggplot2` package. For this, one needs to convert rater data to a dataframe. We may use `as.data.frame` funcion to do this as the `raster` package has an built-in function for conversion to a plotable dataframe. So, let's view both raster data. Here we rename layer to `value` for simplicity while we reneame the column names of this data frame. In this excersise, we just set the default values of color scale to `scale_fill_viridis_c()` and also to the `coord_quickmap()` function to use an approximate Mercator projection for our plots.
+We can plot raster images individually just using `ggplot` embedded in the `ggplot2` package. For this, one needs to convert rater data to a dataframe. We can use the `as.data.frame` function to do this as the `raster` package has an built-in function for conversion to a plotable dataframe. So, let's view both raster data. Here, we rename `layer` attribute to `value` for simplicity while we rename the column names of this data frame. In this exercise, we just set the default values of color scale to `scale_fill_viridis_c()` and also to the `coord_quickmap()` functions. Former function provides colour maps that are perceptually uniform. We use `plasma` for `redBand` and `inferno` for `NIRBand`. `coord_quickmap()` follows `mercator projection` while ploting.
 
 ``` r
 redBand.df <- as.data.frame(redBand, xy = TRUE)
@@ -321,14 +333,14 @@ plt.nir
 
 ![](NDVI-TimeSeriesR_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
-NDVI Calculation example
-------------------------
+Sample NDVI Calculation
+-----------------------
 
 Now, we have two raster data ready to calculate NDVI using simple equation,
 
 $NDVI= \\frac{R\_{4} - R\_{3}}{R\_{4} + R\_{3}}$
 
-Where *R*<sub>3</sub> refers to raster in red region and *R*<sub>4</sub> to raster in NIR region. We simply use this equation to perform rater calculation as:
+Where *R*<sub>3</sub> refers to raster in red layer and *R*<sub>4</sub> to raster in NIR layer. We simply use this equation to perform rater calculation as:
 
 ``` r
 ndvi <- (NIRBand - redBand)/(NIRBand + redBand)
@@ -344,14 +356,14 @@ print(ndvi)
     ## names       : layer 
     ## values      : 0.3477685, 0.6455959  (min, max)
 
-Here `ndvi` is new raster data contatining information about NDVI over the entire locatoion. Since we already went through how to plot raster image, here we use customised function `ggrasterPlot()` fubction to plot `ndvi` raster data. This function requires raster information, name of attributes, title and color scheme.
+Here `ndvi` is new raster data containing information about NDVI over the entire location. Since we already went through how to plot raster image, here we use customized function `ggrasterPlot()` function to plot `ndvi` raster data. This function requires raster information, name of attributes, title and color scheme.
 
 ``` r
 plt.NDVI<-ggrasterPlot(ndvi, 'NDVI', 'Entire Area',colorScheme =  'viridis')
 plt.NDVI
 ```
 
-![](NDVI-TimeSeriesR_files/figure-markdown_github/unnamed-chunk-10-1.png) Once again, we use `ggplot()` function to draw histogram of NDVI over the entire area. To to this, we use `geom_histogram()` after converting into a data frame named `ndvi.df` with one of colum name given to `NDVI`.
+![](NDVI-TimeSeriesR_files/figure-markdown_github/unnamed-chunk-10-1.png) Once again, we use `ggplot()` function to draw histogram of NDVI over the entire area. To to this, we use `geom_histogram()` after converting into a data frame named `ndvi.df` with one of colum names given to `NDVI`.
 
 ``` r
   ndvi.df <- as.data.frame(ndvi, xy = TRUE)
@@ -364,13 +376,13 @@ ggplot() +
   theme_bw()
 ```
 
-![](NDVI-TimeSeriesR_files/figure-markdown_github/unnamed-chunk-11-1.png) While this plot gives NDVI informaton over the space, we usually report average value of such quantity. So, to calculate the average NDVI for whole raster, we convert NDVI raster to data matrix, named `dataMatrix` using a `rasterToPoints()` funtion built in \`raster package
+![](NDVI-TimeSeriesR_files/figure-markdown_github/unnamed-chunk-11-1.png) While this plot gives NDVI information over the space, we usually report average NDVI value. So, to calculate the average NDVI for whole raster, we convert the NDVI raster to data matrix, named `dataMatrix` using a `rasterToPoints()` function built in \`raster package.
 
 ``` r
 dataMatrix <- rasterToPoints(ndvi)
 ```
 
-`dataMatrix` is a data frame now. Now, we would like to see the structure of this data matrixusing `str()` and `head()` functions.
+`dataMatrix` is a data frame now. Now, we would like to see the structure of this data matrix using `str()` and `head()` functions.
 
 ``` r
 str(dataMatrix)
@@ -393,7 +405,7 @@ head(dataMatrix)
     ## [5,] 789600 4112760 0.4223585
     ## [6,] 789630 4112760 0.4167948
 
-Since columns named `x` and `y` correspond to geo-coordinates, third column is obvisouly NDVI. In order to find the average value of NDVI, third column is used in `mean()` function
+Since columns named `x` and `y` correspond to geo-coordinates, third column is obviously NDVI. In order to find the average value of NDVI, third column is used in the `mean()` function.
 
 ``` r
 NDVI.avg <- mean(dataMatrix[,3])
@@ -405,10 +417,10 @@ print(NDVI.avg)
 Tutorial 2: Temporal Analysis
 =============================
 
-Loading series of rasters and calculating NDVI
-----------------------------------------------
+Loading Rasters and NDVI Time Series
+------------------------------------
 
-As mentioned before, over a year there must be at least 24 files, each for a month. To avoid combersome task, `list.files()` is used to list the files. Here we just select the raster image file with `.tif` extension, so an argument `pattern` is used as
+Since Landsat has images every 16 days so there must be at least 24 images over a year comprising two each for a month. However, due to clouds, we are able to extract only 13 images. To handle a series of rasters, use the function`list.files()`. Here we just select the raster image files with `*.tif` extension, so an argument `pattern` is used as
 
 ``` r
 fileList = list.files("Data/", pattern = "*.tif$")
@@ -420,7 +432,7 @@ fileList
     ##  [9] "20180813.tif" "20180914.tif" "20181016.tif" "20181117.tif"
     ## [13] "20181203.tif"
 
-See there are 14 files with the format of `YYYYmmdd.tif`. Now, we convert each string into date string. To do this, first, use `substr()` function starting from first character to eighth character as
+See there are 13 files with the format of `YYYYmmdd.tif`. `Please note that if you want any additinal images, have file name with similar format`. This offers us to convert file name string into a date string. To do this, first, use `substr()` function. This function allows us to extract substrings in a character vector. So, we can extract date string starting from first character to eighth as:
 
 ``` r
 datestr = substr(fileList, start =  1, stop =  8)
@@ -434,19 +446,19 @@ monthstr = substr(datestr, start =  5, stop =  6)
 daystr = substr(datestr,  start =  7, stop =  8)
 ```
 
-Now, concatenate above three strings into a formated date string with `YYYY-mm-dd` style using `paste()` function and then convert them into a class of date using `as.Date()` function assign a set of dates as `dateVec`.
+Now, concatenate above three strings into a formatted date string with `YYYY-mm-dd` style using the `paste()` function and then convert them into a class of date using the `as.Date()` function assigning a set of dates as `dateVec`. Now, these dates are readable format.
 
 ``` r
 dateChar = paste(yearstr, monthstr, daystr, sep='-')
 dateVec = as.Date(dateChar)
 ```
 
-Finally, let's load all the file automatically using `for` loop. Inside loop, perform following tasks:
+Finally, let's load all the file automatically using a `for` loop. Inside loop, perform following tasks:
 
 -   assign each file as `imageFileNameI`
 -   read multiband image, using `stack()` function as explained before
--   extract red and NIR band rasters
--   calculate NDVI as `NDVI.Indv` from these two bands using prededined function `NDVI()`
+-   extract red and NIR band raster
+-   calculate NDVI as `NDVI.Indv` from these two bands using predefined function `NDVI()`
 -   convert raster `NDVI.Indv` into a matrix of points using `rasterToPoints()` and
 -   for simplicity, compute individual NDVI using `mean()` function
 
@@ -466,16 +478,16 @@ for (i in 1:nFiles) {
 }
 ```
 
-Thus, NDVI time series is ready to store for future use. To do this, export NDVI time series, just obtained into a file named `testNDVI.csv` using a `write.csv()` function as:
+Thus, the NDVI time series is ready to store for future use. To do this, export the NDVI time series into a file named `testNDVI.csv` using the `write.csv()` function as:
 
 ``` r
 write.csv(NDVI.ts, file = 'testNDVI.csv', row.names = F)
 ```
 
-Loading NDVI time series
-------------------------
+NDVI Time Series Data
+---------------------
 
-Let's load previously saved `csv` file for analysis. Please note that you can use the previously defined dataframe `NDVI.ts`. But for illustration purpose, here, use `read.csv` function setting `stringsAsFactors` as `FALSE` to import NDVI time series from the file `testNDVI.csv`. Then use `head()` function to see first five rows of the data.
+Let's load previously saved `csv` file for analysis. Please note that you can also use the previously defined data frame `NDVI.ts`. But for illustration purpose, here, use `read.csv` function setting `stringsAsFactors` as `FALSE` to import NDVI time series from the file `testNDVI.csv`. Then use `head()` function to see first six rows of the data.
 
 ``` r
 readTs <- read.csv('testNDVI.csv',stringsAsFactors = FALSE, header = TRUE)
@@ -490,10 +502,10 @@ head(readTs)
     ## 5 2018-05-09 0.4488009
     ## 6 2018-06-10 0.3533115
 
-Visualizing temporal dynamics
------------------------------
+Temporal Dynamics
+-----------------
 
-As a part of studying dyanamics, simple task to visualize the evolution of NDVI. So, here we plot imported NDVI time series using `ggplot()` function embbeded in `ggplot2` package. Below is the simple version of the plot:
+As a part of studying dynamics, simple task to visualize the evolution of NDVI. So, here we plot imported NDVI time series using the `ggplot()` function embedded in the `ggplot2` package. Below is the simple version of the plot:
 
 ``` r
 readTs$DATE = as.Date(readTs$DATE)
@@ -512,12 +524,12 @@ plt.Ts
 Tutorial 3: Spatial Analysis
 ============================
 
-Here we look variability of NDVI over the space. For this purpose, we descritize one image recorded very first into four equal pieces. For simplicity, we will use rectangular block.
+Here we look variability of NDVI over the space. For this purpose, we descritize one image into four equal pieces. For simplicity, we will use rectangular block.
 
-Information about location
---------------------------
+Raster Extent
+-------------
 
-First, we define the corner of each block. To do this, let's find the extent of whole image using `min()` and `max()` functions after converting original NDVI raster `ndvi` into a data matrix followed by seperate two vectors of `X-` and `Y-` cooredinates
+First, we define the extent of each block. To do this, let's find the extent of whole image using `min()` and `max()` functions after converting original NDVI raster `ndvi` into a data matrix followed by separate two vectors of `X-` and `Y-` coordinates
 
 ``` r
 dataMatrix <- rasterToPoints(ndvi)
@@ -529,7 +541,7 @@ minX <- min(dataMatrix[,1])
 minY <- min(dataMatrix[,2])
 ```
 
-Here are the extent of raster
+Here is the extent of raster
 
 ``` r
 c(minX, maxX, minY, maxY)
@@ -537,7 +549,7 @@ c(minX, maxX, minY, maxY)
 
     ## [1]  789480  790770 4111830 4112760
 
-Croping extent
+Croping Extent
 --------------
 
 Now, we crop raster into four equal pieces by defining their extents from the middle half and center half as
@@ -547,7 +559,7 @@ midX = (minX+maxX)/2 # center half
 midY = (minY+maxY)/2 # middle half
 ```
 
-Below are the four croping area defined via customized function `getcropArea()`. This function requires four attributes: each two belongs to orthogonal axis and returns a set of coordinate for a rectangle. Note that these crop area will be used for plotting purpose but not for croping purpose.
+Below are the four cropping area defined via customized function `getcropArea()`. This function requires four attributes: each two belongs to orthogonal axis and returns a set of coordinate for a rectangle. Note that these crop area will be used for plotting purpose but not for cropping purpose.
 
 ``` r
 cropArea1 <- getcropArea(minX, midX,minY, midY)
@@ -556,7 +568,7 @@ cropArea3 <- getcropArea(minX, midX,midY, maxY)
 cropArea4 <- getcropArea(midX, maxX,midY, maxY)
 ```
 
-Using these `cropArea`s, superimpose crop area boundary over the image to see the descretization scheme by plotting raster and rectanguler blocks. Here we use `geom_rect` to distinguish crop areas.
+Using these `cropArea`s, superimpose crop area boundaries over the image to see the descretization scheme by plotting raster and rectangular blocks. Here, we use `geom_rect` with `alpha=0` for transparency to distinguish crop areas.
 
 ``` r
 ndvi.df <- as.data.frame(ndvi, xy = TRUE)
@@ -594,7 +606,7 @@ crop_extent3 <- extent(minX, midX,midY, maxY)
 crop_extent4 <- extent(midX, maxX,midY, maxY)
 ```
 
-Now, let's crop rasters using `crop()` function with arguments of raster and extent. To learn more about this function, please refer to <https://www.rdocumentation.org/packages/raster/versions/2.8-19/topics/crop>. Also, here we use our costumized function `meanNDVI` to calculate NDVI of each block as:
+Now, let's crop raster using `crop()` function with arguments of raster and extent. To learn more about this function, please refer to <https://www.rdocumentation.org/packages/raster/versions/2.8-19/topics/crop>. Also, here we use our customized function `meanNDVI` to calculate NDVI of each block as:
 
 ``` r
 imgCrop1 <- crop(ndvi, crop_extent1)
@@ -630,10 +642,10 @@ print(meanNDVI4)
 
 These are NDVI values foe each blocks in order
 
-Visualizing spatial dynamics
-----------------------------
+Spatial Variability
+-------------------
 
-Once again, recalling original NDVI raster`ndvi`, we can again plot the histogram for entire area. But here we use costomized function `ggrasterHist()` to have few lines of codes.
+Recalling our original NDVI raster`ndvi`, we can again plot the histogram for entire area. But, here, we use the customized function `ggrasterHist()` to have a few lines of codes.
 
 ``` r
 # Entire
@@ -643,7 +655,7 @@ pltall+ggtitle('Entire Area')
 
 ![](NDVI-TimeSeriesR_files/figure-markdown_github/unnamed-chunk-30-1.png)
 
-This is the histogram of NDVI distribution over the entire area. Now we will look into seperate distribution of such quantities using `ggrasterHist()` function.
+This is the histogram of NDVI distribution over the entire area. Now we will look into seperate NDVI distributions for our subset areas using the `ggrasterHist()` function.
 
 ``` r
 # bottom left
@@ -665,7 +677,7 @@ plt.corner4<-ggrasterHist(imgCrop3, 'NDVI')
 plt.corner3<-ggrasterHist(imgCrop4, 'NDVI')
 ```
 
-In this way, we have four histograms and let's combine them using `ggarrange()` function embedded in `ggpubr` package and customize as needed.
+Now, we have four histograms;let's combine them using the `ggarrange()` function embedded in the `ggpubr` package and customize as needed.
 
 ``` r
 ggarrange(plt.corner3+ggtitle('Top Left')+geom_vline(xintercept = meanNDVI3),
