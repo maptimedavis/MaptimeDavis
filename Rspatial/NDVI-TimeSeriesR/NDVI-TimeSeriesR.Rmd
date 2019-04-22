@@ -62,7 +62,7 @@ If you do not have `Data` folder in your machine where this this `rmd` file exis
 ## R and R Markdown
   Here, we mostly use RStudio interface except for downloading Landsat imagery files. Our purpose is to use simple and widely used open source library as much as possible. This workshop, entirely, will be done using R-Markdown because R Markdown documents are fully reproducible. Moreover, it allows you to see narrative text and code and preview on table and figures in an elegantly formatted version. It also allows us to save in `html` or `pdf` format. To learn more about `R Markdown`, refer to https://rmarkdown.rstudio.com/
   
-> [Link to the R-Markdown Source Code](https://raw.githubusercontent.com/MicheleTobias/MaptimeDavis/master/Rspatial/NDVI-TimeSeriesR/NDVI-TimeSeriesR.Rmd) When it opens, use File -> Save As (Ctrl-S) to save the file to your computer and open it in RStudio
+> Get the code from teh Data.zip linked above or directly [from the R-Markdown Source Code on github](https://raw.githubusercontent.com/MicheleTobias/MaptimeDavis/master/Rspatial/NDVI-TimeSeriesR/NDVI-TimeSeriesR.Rmd) When it opens, use File -> Save As (Ctrl-S) to save the file to your computer and open it in RStudio
   
   This workshop covers: (a) importing the raster data; (b) visualizing the rater data; (c) performing raster calculation and (d) investigating temporal and spatial dynamics.
   
