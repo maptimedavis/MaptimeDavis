@@ -12,7 +12,7 @@ Workshops on **Tuesdays from 1:00-3:00pm** in the DSI Classroom (360 Shields Lib
 |Apr 23|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
 |Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
 |May 07|Drone Show & Tell *Location To Be Announced  |Center for Spatial Sciences
-|May 14|Historical Mapping with Open Source Tools  |Emily Merchant & Michael Mortimer
+|May 14|[Historical Mapping with Open Source Tools](historymaps.md)  |Emily Merchant & Michael Mortimer
 |May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
 |May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
 |Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
