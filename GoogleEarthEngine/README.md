@@ -30,6 +30,9 @@ Presented by: Yuhan Huang, Erica Scaduto, Bin Chen
 1:00-4:00pm | Tuesday April 24, 2018
 https://spatial.ucdavis.edu/2018/04/19/maptimedavis-mapping-surface-water-chance-with-google-earth-engine/
 
+* [Presentation](https://drive.google.com/a/ucdavis.edu/file/d/0B29fdRd4qa9DdE0xMjMtR2pqZFFFRjJuYUNhcUxueEpvSFNN/view?usp=sharing)
+* Open [Code](https://code.earthengine.google.com/?accept_repo=users/anighosh/maptime) in Earth Engine
+
 ## Intro to Google Earth Engine
 
 Monday 2:00-4:00pm October 9, 2017
