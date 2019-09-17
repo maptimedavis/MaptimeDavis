@@ -3,19 +3,12 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Spring Quarter 2019 Schedule
-Workshops on **Tuesdays from 1:00-3:00pm** in the DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
+# Fall Quarter 2019 Schedule
+Workshops on **Tuesdays from 10:00-12:00am** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
 
 |Date	|Topic	|Speaker
 |---|---|---
-|Apr 16|Humanitarian OpenStreetMap Mapathon *Location To Be Announced |Mapping Club
-|Apr 23|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
-|Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
-|May 07|Drone Show & Tell *Location To Be Announced  |Center for Spatial Sciences
-|May 14|[Historical Mapping with Open Source Tools](historymaps.md)  |Emily Merchant & Michael Mortimer
-|May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
-|May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
-|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
+|  |  |
 
 What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
 
@@ -102,3 +95,11 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |22-Feb|	Geospatial Data Visualization |	Michele Tobias
 |27-Feb|	Field Data Collection |	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
 |6-Mar|	[Fire Mapping](GoogleEarthEngine) |	Yufang Jin’s Lab
+|Apr 16|Humanitarian OpenStreetMap Mapathon *Location To Be Announced |Mapping Club
+|Apr 23|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
+|Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
+|May 07|Drone Show & Tell *Location To Be Announced  |Center for Spatial Sciences
+|May 14|[Historical Mapping with Open Source Tools](historymaps.md)  |Emily Merchant & Michael Mortimer
+|May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
+|May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
+|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
