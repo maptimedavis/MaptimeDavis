@@ -6,11 +6,13 @@ Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo a
 # Fall Quarter 2019 Schedule
 Workshops on **Tuesdays from 10:00-12:00am** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
 
+This quarter skills workshops will alternate weeks with Research Cluster gatherings, a time for people interested in geospatial research to come together to work.
+
 |Date	|Topic	|Speaker
 |---|---|---
 |  |  |
 
-What are these **Challenge** sessions?  We'll suggest a project that you can work on in teams or solo.  At the end of the session, we'll share the results (or how far we got) with the group.  Low pressure, come and play!
+
 
 #maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
 
