@@ -20,7 +20,7 @@ This quarter skills workshops will alternate weeks with [Spatial Science Researc
 5-Nov	|TBA |Would you like to present?
 6-Nov	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
 12-Nov	|Research Cluster	|---
-19-Nov	NASA Develop Program	|Jose Ochoa
+19-Nov	|NASA Develop Program	|Jose Ochoa
 20-Nov 2:00-4:00	|Spatial SQL	|Michele Tobias
 26-Nov	|Research Cluster	|---
 	
