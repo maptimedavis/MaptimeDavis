@@ -27,7 +27,7 @@ This quarter skills workshops will alternate weeks with [Spatial Science Researc
 
 
 
-#maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List and the [DataLab Events Calendar](http://ds.lib.ucdavis.edu/eventscalendar/)</a>
+#maptimeDavis events are listed on the [UC Davis Center for Spatial Sciences Events List](https://spatial.ucdavis.edu/events/) and the [DataLab Events Calendar](http://ds.lib.ucdavis.edu/eventscalendar/)
 
 ## Feedback
 Give #maptimeDavis [feedback](https://docs.google.com/forms/d/e/1FAIpQLSeeZ5mWwtbbRLb-66s8IUiV2tG_0FwBjwcE9pXLWokrOLj8qg/viewform?usp=sf_link) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
