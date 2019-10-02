@@ -4,17 +4,30 @@
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
 # Fall Quarter 2019 Schedule
-Workshops on **Tuesdays from 10:00-12:00am** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
+Workshops on **Tuesdays from 10:00-12:00am** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/events/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
 
-This quarter skills workshops will alternate weeks with Research Cluster gatherings, a time for people interested in geospatial research to come together to work.
+This quarter skills workshops will alternate weeks with [Spatial Science Research Cluster](http://ds.lib.ucdavis.edu/spatial-sciences/) gatherings, a time for people interested in geospatial research to come together to work.
 
 |Date	|Topic	|Speaker
 |---|---|---
 |  |  |
+1 Oct	|Research Cluster	|---
+3 Oct	2:00-4:00|InstallFest	|DataLab Crew
+8 Oct	|AI-Assisted Mapping: Using Facebook's RapiD OSM Editor	|Cameron Denney, Kaart @ Facebook
+15-Oct	|Research Cluster	|---
+22-Oct	|Cloud-computing for large geospatial datasets	|Lauren Mabe
+29-Oct	|Research Cluster	|---
+5-Nov	|TBA |Would you like to present?
+6-Nov	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
+12-Nov	|Research Cluster	---
+19-Nov	NASA Develop Program	|Jose Ochoa
+20-Nov 2:00-4:00	|Spatial SQL	|Michele Tobias
+26-Nov	|Research Cluster	|---
+	
 
 
 
-#maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List</a>
+#maptimeDavis events are listed on the <a href="https://spatial.ucdavis.edu/events/">UC Davis Center for Spatial Sciences Events List and the [DataLab Events Calendar](http://ds.lib.ucdavis.edu/eventscalendar/)</a>
 
 ## Feedback
 Give #maptimeDavis [feedback](https://docs.google.com/forms/d/e/1FAIpQLSeeZ5mWwtbbRLb-66s8IUiV2tG_0FwBjwcE9pXLWokrOLj8qg/viewform?usp=sf_link) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
