@@ -17,7 +17,7 @@ This quarter skills workshops will alternate weeks with [Spatial Science Researc
 15-Oct	|Research Cluster	|---
 22-Oct	|Cloud-computing for large geospatial datasets	|Lauren Mabe
 29-Oct	|Research Cluster	|---
-5-Nov	|TBA |Would you like to present?
+5-Nov	|Map Collection Tour & Library Map Data Projects | Dawn Collings
 6-Nov	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
 12-Nov	|Research Cluster	|---
 19-Nov	|NASA Develop Program	|Jose Ochoa
