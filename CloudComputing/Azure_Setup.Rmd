@@ -1,0 +1,221 @@
+---
+title: "Untitled"
+author: "Lauren Mabe"
+date: "8/13/2019"
+output: output: 
+  html_document:
+    theme: journal
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Testing out/downloading/whatnot Azure to do large operations (like the Monte Carlo) on the cloud 
+
+
+Following these instructions:
+https://docs.microsoft.com/en-us/azure/batch/tutorial-r-doazureparallel
+
+# set up azure side
+Create azure account:
+Azure account: https://azure.microsoft.com/en-us/account/
+
+Within Azure manager on web, create batch and storage accounts
+
+I also reccomend downloading the Azure Batch Monitor application  
+This allows you to monitor your computing progress as well as stop jobs/clusters manually.
+
+# now set up R part
+## first make sure R is updated
+https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol
+in console:
+install.packages("installr")
+library(installr)
+updateR() - prompts will tell to install from RGUI, so do that
+
+## install Azure
+in console:
+library(devtools)
+devtools::install_github("Azure/rAzureBatch")
+devtools::install_github("Azure/doAzureParallel")
+
+## credentials/cluster jsons
+This part will need to be done/set for each working directory. 
+For example, if running this file, the credentials/cluster jsons need to be set within this working directory
+If using Azure in other files, the jsons will need to be set within those working directories
+
+then:
+```{r}
+library(doAzureParallel)
+generateCredentialsConfig("credentials.json")
+```
+
+Find this stuff below on Azure account portal.azure.com
+Go to batch account/storage account - manage keys (might be in the sidebar)
+open the JSON file in Notepad and put this info in - it will look something like this:
+
+{
+  "sharedKey": {
+    "batchAccount": {
+    "name": "yourusername",
+    "key": "XPBn1YmDIafkBLuTHTsnTBYHBeqY7CIU0M7W88A5NDyuUgwZM0JCiyXzjQer+rfdbeTp/bFkcG6uaNxfo71Evg==",
+    "url": "https://lmabe.westus.batch.azure.com"
+    },
+    "storageAccount": {
+      "name": "yourusername",
+      "key": "p9qpPiW+CZ4BagHzj8MDyaCQgSdabtEl15ZA9YlMZga+DpS4PRCtbUlY0FQKBRv4VHKP0xcPeukXRyAHiFTBZQ==",
+      "endpointSuffix": "core.windows.net"
+    }
+  },
+dont touch the github stuff!!
+
+
+when done:
+```{r}
+setCredentials("credentials.json") 
+```
+
+# now create a batch pool
+```{r}
+generateClusterConfig("cluster.json")
+```
+This creates a text file in the working directory.
+you can change the settings of batch clusters in this file
+
+#create the cluster
+Create your cluster if it does not exist; this takes a few minutes
+You can create multiple clusters as long as you use a different name in the json
+Most of the time you can run all your jobs from the same pool/cluster, but if you can also make multiple pools as needed, each pool needs a different name
+```{r}
+
+# make cluster
+cluster <- makeCluster("cluster.json") 
+
+# Register your parallel backend 
+registerDoAzureParallel(cluster) 
+  
+# Check that the nodes are running 
+getDoParWorkers() 
+```
+
+
+# test it out - a test monte carlo simulation
+```{r}
+# parameters
+mean_change = 1.001 
+volatility = 0.01 
+opening_price = 100 
+
+# define the function - simlates stock prices or something
+getClosingPrice <- function() { 
+  days <- 1825 # ~ 5 years 
+  movement <- rnorm(days, mean=mean_change, sd=volatility) 
+  path <- cumprod(c(opening_price, movement)) 
+  closingPrice <- path[days] 
+  return(closingPrice) 
+} 
+
+```
+
+For the demonstration, run a monte carlo on the local computer using %do%
+First run 10,000 simulations locally using a standard foreach loop with the %do% keyword:
+```{r local sim}
+
+start_s <- Sys.time() # keeping track of time it takes
+# Run 10,000 simulations in series 
+closingPrices_s <- foreach(i = 1:10, .combine='c') %do% { 
+  replicate(1000, getClosingPrice()) 
+} 
+end_s <- Sys.time() 
+
+# plot the closing prices
+hist(closingPrices_s)
+
+# local sim of 10,000 takes a few seconds
+
+```
+
+showing time it takes to run locally
+```{r}
+
+# local sim of 10,000 takes a few seconds
+difftime(end_s, start_s) 
+
+# estimated time of 10 million outcomes (10,000 * 1,000)
+1000 * difftime(end_s, start_s, unit = "min") 
+```
+
+Now run the sim on Azure
+Now run the code using foreach with the %dopar% keyword to compare how long it takes to run 10 million simulations in Azure. To parallelize the simulation with Batch, run 100 iterations of 100,000 simulations:
+
+.options.azure parameter allows you to set multiple parameters. Here it only sets the chunk size option. Set it higher for larger datasets. If its too high for a small dataset, you wont get the full power of the pool however
+Some more options availiable here:
+https://github.com/Azure/doAzureParallel/blob/master/docs/52-azure-foreach-options.md
+```{r cloud sim}
+
+# Optimize runtime. Chunking allows running multiple iterations on a single R instance.
+opt <- list(chunkSize = 10) 
+
+start_p <- Sys.time()  
+closingPrices_p <- foreach(i = 1:100, .combine='c', .options.azure = opt) %dopar% { 
+  replicate(100000, getClosingPrice()) 
+} 
+end_p <- Sys.time() 
+
+hist(closingPrices_p) 
+```
+
+The simulation distributes tasks to the nodes in the Batch pool. You can see the activity in the heat map for the pool in the Azure portal]. Go to Batch accounts > myBatchAccount. Click Pools > myPoolName.
+
+```{r}
+#checking time it takes to run
+difftime(end_p, start_p, unit = "min") 
+```
+
+# IMPORTANT - close the cluster! You don't want to get charged on accident!!!
+```{r}
+stopCluster(cluster)
+```
+
+# if wait = FALSE
+To get your results back from Azure:
+```{r}
+
+# get job result
+result <- getJobResult("jobname")
+
+# .combine = "rbind" is ignored, must do it manually here
+result <- do.call(rbind, result)
+```
+
+
+# random helpful things
+
+You can use the default configuration, but there are ways to maximize the performance of the cluster in the cluster configuration file 
+- If you have packages you know you need to load to each core, you can load them when you make the cluster by specifying them in the config file
+- Increase the number of compute cores (nodes) by increasing the max numbers
+- can change the number of tasks to each core with MaxTasksPerNode. 
+It takes some patience and practice to determine which settings will work best for your situation. In general
+
+Things to consider: 
+- size of the task to run in parallel. More tasks per node = less compute power for each task
+- number of iterations. More nodes
+- loading time: more nodes = more time to load the cluster, but faster overall computing
+- computing time: more tasks per node = more tasks running, but slower compute time per task
+
+You can change the parameters of the pool
+If you change the parameters of the pool, you'll need to change the name of it as well
+
+I think having a larger number of nodes makes installing packages take longer but I could be wrong
+if you install packages in the pool, you still need to specify them in the foreach loop - this does speed things up when starting the foreach loop, definitley should do if running multiple foreachs
+
+
+setting the wait = FALSE parameter will send things to azure and not clog up r
+however, you will also need to keep the job so you can pull the data back later with getJobResult()
+(it comes back as a list, needs to be rbound)
+
+all jobs need a unique job name. Job names can only have letters and numbers 

@@ -1,0 +1,347 @@
+---
+title: "doParallel"
+author: "Lauren Mabe"
+date: "10/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load libraries
+```{r}
+
+# for spatial data
+library(sp)
+library(raster)
+
+# for parallel
+library(doParallel)
+
+
+```
+
+# register parallel backend
+```{r the fast way}
+
+# calling this should with no args gets 3 workers on Windows and 1/2 number of cores on Mac (?)
+registerDoParallel()
+
+# check number of workers
+getDoParWorkers()
+
+```
+
+```{r the advanced way}
+
+# detect number of cores in computer
+num_cores <- detectCores()
+num_cores
+
+# make a cluster using half of the available cores (for this example) using makeCluster()
+cl <- makeCluster(num_cores / 2)
+
+# register parallel backend with this cluster
+registerDoParallel(cl)
+
+# check the new number of workers
+getDoParWorkers()
+
+```
+
+# Use do parallel
+
+
+## Load some sample data
+```{r}
+
+# for sample datasets
+library(spData)
+
+# Data on 25,357 single family homes sold in Lucas County, Ohio, 1993-1998
+data(house)
+plot(house)
+
+```
+
+
+## Create a process we want to run in parallel
+- selects n random points
+- Calculates min, max, mean nearest neighbor distance for each point
+- saves those to a 1 line dataframe
+```{r}
+
+
+myParallelProcess <- function(num_points, points) {
+
+    # get a random sample of points
+    sample <- spsample(x = points, n = num_points, type = "random")
+    
+    # compute a distance matrix
+    dist_mat <- raster::pointDistance(sample)
+    diag(dist_mat) <- NA
+    
+    # find the Nearest Neighbor for each point
+    # Each row is a point, each column is all the other points, find column w/ min for each row
+    sample$NN_dist <- apply(dist_mat, 1, min, na.rm=T)
+    
+    ret <- data.frame(min_nn = min(sample$NN_dist), 
+                      max_nn = max(sample$NN_dist), 
+                      mean_nn = mean(sample$NN_dist))
+    
+    return(ret)
+    
+} #close myParallelProcess()
+
+test <- myParallelProcess(num_points = 100, points = house)
+test
+```
+
+## Test the function
+```{r}
+
+# Time to run the function once
+
+start_time <- Sys.time()
+
+test <- myParallelProcess(num_points = 2000, points = house)
+
+end_time <- Sys.time()
+
+calc_time <- difftime(end_time, start_time, units = "mins")
+calc_time
+```
+
+```{r}
+
+# time to do a monte carlo simulation in series
+
+# monte carlo simulation - 1000 times
+calc_time * 1000
+
+
+```
+
+
+```{r}
+
+# time difference in series 10,000 times
+calc_time * 10000
+
+```
+
+
+## Monte Carlo simulation in parallel
+Test the loop using %do%
+Make sure to use a smaller number of iterations
+foreach defaults to returning the results of each loop iteration in a list, using .combine = "rbind" rbinds them into a dataframe
+```{r}
+
+result <- foreach(i = 1:2, .combine = "rbind") %do% {
+    # everything within this loop will be run in parallel
+    
+    
+    # run the function
+    res <- myParallelProcess(num_points = 2000, points = house)
+    
+    # add some more data
+    res$iter <- i
+    
+    # the last line is returned,
+    # it is better if the loop does not end on a $ column creation (not sure why)
+    res <- res
+    
+} #close loop
+    
+    
+result
+
+```
+
+use %dopar% to run the simulation in parallel
+if packages other than base are used, they must be installed on each core using .packages argument
+```{r}
+
+start_time <- Sys.time()
+
+result <- foreach(i = 1:1000, .combine = "rbind", .packages = c("sp", "raster")) %dopar% {
+    # everything within this loop will be run in parallel
+    
+    
+    # run the function
+    res <- myParallelProcess(num_points = 2000, points = house)
+    
+    # add some more data
+    res$iter <- i
+    
+    # the last line is returned,
+    # it is better if the loop does not end on a $ column creation (not sure why)
+    res <- res
+    
+} #close loop
+    
+end_time <- Sys.time()
+
+calc_time <- difftime(end_time, start_time, units = "mins")
+calc_time
+
+
+
+```
+
+Cut the processing time in half. Since we are using 4 core, you would expect the time to be a quarter of in series, but there is some overhead associated with the parallel computing
+As the tast gets larger, (either the task itself or the number of iterations), this overhead goes down relative to total processing time
+
+
+```{r}
+
+str(result)
+
+```
+
+VERY IMPORTANT!!!!
+Stop your cluster
+```{r}
+stopCluster(cl)
+
+```
+
+
+
+# doAzureParallel
+
+## Azure setup
+
+Generate a cluster configuration file, this will be saved in the working directory (or where this file is saved to)
+```{r}
+
+library(doAzureParallel)
+generateCredentialsConfig("credentials.json")
+
+
+```
+
+Go to that text file and add your credentials
+Find the credentials below on Azure account portal.azure.com
+Go to batch account/storage account - manage keys (might be in the sidebar)
+
+After this you need to set the credentials
+```{r}
+setCredentials("credentials.json") 
+
+```
+
+Now the Azure parallel backend is connected to your RStudio
+
+
+Next you need to set up the clusters, this essentially becomes your cores on the cloud computer
+first you must make a cluster configuration file
+The cluster config file will also be in the working directory
+```{r}
+generateClusterConfig("cluster.json")
+```
+
+You can use the default configuration, but there are ways to maximize the performance of the cluster in this file 
+- If you have packages you know you need to load to each core, you can load them when you make the cluster by specifying them in the config file
+- Increase the number of compute cores (nodes) by increasing the max numbers
+- can change the number of tasks to each core with MaxTasksPerNode
+
+Things to consider: 
+- size of the task to run in parallel
+- number of iterations
+- loading time: more nodes = more time to load the cluster, but faster overall computing
+- computing time: more tasks per node = more tasks running, but slower compute time per task
+
+
+Create the cluster and load it to the parallel backend
+```{r}
+
+# make cluster - THIS TAKES A WHILE
+cluster <- makeCluster("cluster.json") 
+
+# Register your parallel backend 
+registerDoAzureParallel(cluster) 
+
+```
+
+You can check the number of nodes running
+```{r}
+# Check that the nodes are running 
+getDoParWorkers() 
+```
+
+There are 12 workers to work for me. 6 nodes (3 high priority, 3 low priority) + 2 tasks per node
+
+## Test it out!
+Set options
+
+- chunkSize = the number of loop iterations to send to each node
+- job = the name of the job, this is needed to get your data back from azure
+- wait = do we want to wait to let loop finish running, or send the data to retrieve later
+```{r}
+
+# set azure options
+opt <- list(chunkSize = 100, job = "testjob6", wait = TRUE, autoDeleteJob = FALSE)
+
+```
+
+Lets run the simulation, running it 10,000 times
+.options.azure must be set
+```{r}
+
+start_time <- Sys.time()
+
+result <- foreach(i = 1:10000, .combine = "rbind", .packages = c("sp", "raster"), .options.azure = opt) %dopar% {
+    # everything within this loop will be run in parallel
+    
+    
+    # run the function
+    res <- myParallelProcess(num_points = 2000, points = house)
+    
+    # add some more data
+    res$inter <- i
+    
+    # the last line is returned,
+    # it is better if the loop does not end on a $ column creation (not sure why)
+    res <- res
+    
+} #close loop
+    
+end_time <- Sys.time()
+
+calc_time <- difftime(end_time, start_time, units = "mins")
+
+
+
+
+
+```
+
+```{r}
+calc_time
+```
+
+# Send code and recieve results back
+If the wait option is set to wait = FALSE, you can send code to Azure then continue to work in R on something else
+(Setting wait = FALSE automatically sets autoDeleteJob to FALSE as well)
+When using this setting, the .combine parameter is ignored. It will always come back as a list
+
+To get your results back from Azure:
+```{r}
+
+# get job result
+result <- getJobResult("testjob6")
+
+# .combine = "rbind" is ignored, must do it manually here
+result <- do.call(rbind, result)
+```
+
+
+
+MOST IMPORTANT!- stop your cluster
+This can also be done in Batch Monitor
+```{r}
+stopCluster(cluster)
+```
+
