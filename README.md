@@ -3,26 +3,27 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Fall Quarter 2019 Schedule
-Workshops on **Tuesdays from 10:00-12:00am** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/events/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
+# Winter Quarter 2020 Schedule
+Workshops on **Tuesdays from 10:00am-12:00pm** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/events/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
 
 This quarter skills workshops will alternate weeks with [Spatial Science Research Cluster](http://ds.lib.ucdavis.edu/spatial-sciences/) gatherings, a time for people interested in geospatial research to come together to work.
 
+**This is the tentative schedule as of 12/11/2019.  We are in the process of scheduling.**
+
 |Date	|Topic	|Speaker
 |---|---|---
+|7 Jan	|Spatial Science Research Cluster|---
+|14 Jan	|Making Map Figures for Publication |Michele Tobias
+|21 Jan	|Spatial Science Research Cluster |---
+|28-Jan	|ESRI Resources on Campus |Karen Beardsley
+|4-Feb	|Spatial Science Research Cluster |---
+|11-Feb	|Lightning Talks |Community
+|18-Feb	|Spatial Science Research Cluster |---
+|25-Feb	|TBD: topic related to drone data processing with Metashape |Mallika Nocco & Derek Young
+|3-Mar	|Spatial Science Research Cluster |---
+|10-Mar	|Participitory Mapping With Field Papers |Nina Fontana & Michele Tobias
 |  |  |
-1 Oct	|Research Cluster	|---
-3 Oct	2:00-4:00|InstallFest	|DataLab Crew
-8 Oct	|AI-Assisted Mapping: Using Facebook's RapiD OSM Editor	|Cameron Denney, Kaart @ Facebook
-15-Oct	|Research Cluster	|---
-22-Oct	|Cloud-computing for large geospatial datasets	|Lauren Mabe
-29-Oct	|Research Cluster	|---
-5-Nov	|Map Collection Tour & Library Map Data Projects | Dawn Collings
-6-Nov	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
-12-Nov	|Research Cluster	|---
-19-Nov	|NASA Develop Program	|Jose Ochoa
-20-Nov 2:00-4:00	|Spatial SQL	|Michele Tobias
-26-Nov	|Research Cluster	|---
+
 	
 
 
@@ -118,3 +119,15 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
 |May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
 |Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
+|1 Oct	|Research Cluster	|---
+|3 Oct	2:00-4:00|InstallFest	|DataLab Crew
+|8 Oct	|AI-Assisted Mapping: Using Facebook's RapiD OSM Editor	|Cameron Denney, Kaart @ Facebook
+|15-Oct	|Research Cluster	|---
+|22-Oct	|Cloud-computing for large geospatial datasets	|Lauren Mabe
+|29-Oct	|Research Cluster	|---
+|5-Nov	|Map Collection Tour & Library Map Data Projects | Dawn Collings
+|6-Nov	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
+|12-Nov	|Research Cluster	|---
+|19-Nov	|NASA Develop Program	|Jose Ochoa
+|20-Nov 2:00-4:00	|Spatial SQL	|Michele Tobias
+|26-Nov	|Research Cluster	|---
