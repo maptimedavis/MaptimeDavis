@@ -13,15 +13,15 @@ This quarter skills workshops will alternate weeks with [Spatial Science Researc
 |Date	|Topic	|Speaker
 |---|---|---
 |7 Jan	|Spatial Science Research Cluster|---
-|14 Jan	|Making Map Figures for Publication |Michele Tobias
+|14 Jan	|Finding Historical Air Photos with UCSB's FrameFinder |Dawn Collings
 |21 Jan	|Spatial Science Research Cluster |---
 |28-Jan	|ESRI Resources on Campus |Karen Beardsley
 |4-Feb	|Spatial Science Research Cluster |---
-|11-Feb	|Lightning Talks |Community
+|11-Feb	|Planet Satellite Data with QGIS Plugin |Planet’s Staff
 |18-Feb	|Spatial Science Research Cluster |---
-|25-Feb	|TBD: topic related to drone data processing with Metashape |Mallika Nocco & Derek Young
+|25-Feb	|Drone imagery processing using Agisoft Metashape: single-workstation and high-performance computing cluster applications |Mallika Nocco & Derek Young
 |3-Mar	|Spatial Science Research Cluster |---
-|10-Mar	|Participitory Mapping With Field Papers |Nina Fontana & Michele Tobias
+|10-Mar	|Participatory Mapping With Field Papers |Nina Fontana & Michele Tobias
 |  |  |
 
 	
