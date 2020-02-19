@@ -15,7 +15,7 @@ If you wish to follow allong, you will need to:
 
 The steps we will walk through are the following:
 
-*\* indicates this repo includes a Metashape project resulting from the associated step*
+*\* indicates the [workshop demo files](https://ucdavis.box.com/s/vbcur8ct28bgkmp66h61ozj473pa4k71) include a Metashape project resulting from the associated step*
 
 1. Add photos (Workflow -> Add folder; add the **XYZ** folder from this repo)
 2. \*Align photos (Workflow -> Align photos)
