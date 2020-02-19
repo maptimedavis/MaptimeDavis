@@ -15,7 +15,7 @@ If you wish to follow allong, you will need to:
 
 The steps we will walk through are the following:
 
-*\* indicates this repo includes a Metashape project resulting from the associated step*
+*\* indicates the [workshop demo files](https://ucdavis.box.com/s/vbcur8ct28bgkmp66h61ozj473pa4k71) include a Metashape project resulting from the associated step*
 
 1. Add photos (Workflow -> Add folder; add the **XYZ** folder from this repo)
 2. \*Align photos (Workflow -> Align photos)
@@ -37,6 +37,6 @@ Found under Workflow -> Batch process.
 
 ## Scripted metashape workflow
 
-The workshop demo files include a configuration file (in the folder `example_config_file`) that can be used to process the example photo set using the [UC Davis Metashape Workflow Tool](https://github.com/ucdavis/metashape). **Note that you need to change the absolute file paths in the config file to match your machine.** Assuming both the Metashape Workflow Tool ("metashape" repository) and this repository ("maptime-metashape-workshop") are in the same directory and that *that directory is your working directory*, you would run the workflow using the included configuration file as follows:
+The [workshop demo files](https://ucdavis.box.com/s/vbcur8ct28bgkmp66h61ozj473pa4k71) include a configuration file (in the folder `example_config_file`) that can be used to process the example photo set using the [UC Davis Metashape Workflow Tool](https://github.com/ucdavis/metashape). **Note that you need to change the absolute file paths in the config file to match your machine.** Assuming both the Metashape Workflow Tool ("metashape" repository) and this repository ("maptime-metashape-workshop") are in the same directory and that *that directory is your working directory*, you would run the workflow using the included configuration file as follows:
 
 `python metashape/python/metashape_workflow.py maptime-metashape-workshop/example_config_file/config_example.yml`
