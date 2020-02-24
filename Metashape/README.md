@@ -17,7 +17,7 @@ The steps we will walk through are the following:
 
 *\* indicates the [workshop demo files](https://ucdavis.box.com/s/vbcur8ct28bgkmp66h61ozj473pa4k71) include a Metashape project resulting from the associated step*
 
-1. Add photos (Workflow -> Add folder; add the **XYZ** folder from this repo)
+1. Add photos (Workflow -> Add folder; add the `sample_rgb_photoset` folder from the [workshop demo files](https://ucdavis.box.com/s/vbcur8ct28bgkmp66h61ozj473pa4k71))
 2. \*Align photos (Workflow -> Align photos)
 3. Optimize cameras (Reference pane: Optimize cameras)
 4. Build dense cloud (Workflow -> Build dense cloud)
