@@ -4,7 +4,7 @@
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
 # Spring Quarter 2020 Schedule
-Workshops on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please contact Michele Tobias - mmtobias[at]ucdavis.edu - for Zoom link details.
+Workshops on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details.
 
 This quarter skills workshops will alternate weeks with [Spatial Science Research Cluster](http://ds.lib.ucdavis.edu/spatial-sciences/) gatherings, a time for people interested in geospatial research to come together to work.
 
