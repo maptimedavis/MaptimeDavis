@@ -3,25 +3,24 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Winter Quarter 2020 Schedule
-Workshops on **Tuesdays from 10:00am-12:00pm** in the DataLab/DSI Classroom (360 Shields Library) on the UC Davis Campus, unless otherwise noted.  Please [register](https://spatial.ucdavis.edu/events/) for the workshops you plan to attend.  All #maptimeDavis workshops are free of cost and open to the public.  
+# Spring Quarter 2020 Schedule
+Workshops on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please contact Michele Tobias - mmtobias[at]ucdavis.edu - for Zoom link details.
 
 This quarter skills workshops will alternate weeks with [Spatial Science Research Cluster](http://ds.lib.ucdavis.edu/spatial-sciences/) gatherings, a time for people interested in geospatial research to come together to work.
 
-**This is the tentative schedule as of 12/11/2019.  We are in the process of scheduling.**
+**This is the tentative schedule as of 4/3/2020.**
 
 |Date	|Topic	|Speaker
 |---|---|---
-|7 Jan	|Spatial Science Research Cluster|---
-|14 Jan	|Finding Historical Air Photos with UCSB's FrameFinder |Dawn Collings
-|21 Jan	|Spatial Science Research Cluster |---
-|28-Jan	|ESRI Resources on Campus |Karen Beardsley
-|4-Feb	|Spatial Science Research Cluster |---
-|11-Feb	|Planet Satellite Data with QGIS Plugin |Planet’s Staff
-|18-Feb	|Spatial Science Research Cluster |---
-|25-Feb	|Drone imagery processing using Agisoft Metashape: single-workstation and high-performance computing cluster applications |Mallika Nocco & Derek Young
-|3-Mar	|Spatial Science Research Cluster |---
-|10-Mar	|Participatory Mapping With Field Papers |Nina Fontana & Michele Tobias
+|7-Apr – 10:30 |Spatial Sciences Research Cluster| ---
+|14-Apr|#maptimeDavis: Intro to GIS with QGIS|Michele Tobias
+|21-Apr|Spatial Sciences Research Cluster| ---
+|28-Apr (tentative)|#maptimeDavis: R for Spatial|Leah Nagel
+|5-May|	Spatial Sciences Research Cluster| ---
+|12-May|#maptimeDavis: Mapbox|Megan Danielson, mapbox
+|19-May|Spatial Sciences Research Cluster| ---
+|26-May|		
+|2-Jun|Spatial Sciences Research Cluster| ---
 |  |  |
 
 	
@@ -111,14 +110,14 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |22-Feb|	Geospatial Data Visualization |	Michele Tobias
 |27-Feb|	Field Data Collection |	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
 |6-Mar|	[Fire Mapping](GoogleEarthEngine) |	Yufang Jin’s Lab
-|Apr 16|Humanitarian OpenStreetMap Mapathon *Location To Be Announced |Mapping Club
+|Apr 16|Humanitarian OpenStreetMap Mapathon Location To Be Announced |Mapping Club
 |Apr 23|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
 |Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
-|May 07|Drone Show & Tell *Location To Be Announced  |Center for Spatial Sciences
+|May 07|Drone Show & Tell Location To Be Announced  |Center for Spatial Sciences
 |May 14|[Historical Mapping with Open Source Tools](historymaps.md)  |Emily Merchant & Michael Mortimer
-|May 21|Getting Started with ArcGIS Pro  *1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
+|May 21|Getting Started with ArcGIS Pro  1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
 |May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
-|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge *1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
+|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge 1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
 |1 Oct	|Research Cluster	|---
 |3 Oct	2:00-4:00|InstallFest	|DataLab Crew
 |8 Oct	|AI-Assisted Mapping: Using Facebook's RapiD OSM Editor	|Cameron Denney, Kaart @ Facebook
@@ -131,3 +130,13 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |19-Nov	|NASA Develop Program	|Jose Ochoa
 |20-Nov 2:00-4:00	|Spatial SQL	|Michele Tobias
 |26-Nov	|Research Cluster	|---
+|7 Jan	|Spatial Science Research Cluster|---
+|14 Jan	|Finding Historical Air Photos with UCSB's FrameFinder |Dawn Collings
+|21 Jan	|Spatial Science Research Cluster |---
+|28-Jan	|ESRI Resources on Campus |Karen Beardsley
+|4-Feb	|Spatial Science Research Cluster |---
+|11-Feb	|Planet Satellite Data with QGIS Plugin |Planet’s Staff
+|18-Feb	|Spatial Science Research Cluster |---
+|25-Feb	|Drone imagery processing using Agisoft Metashape: single-workstation and high-performance computing cluster applications |Mallika Nocco & Derek Young
+|3-Mar	|Spatial Science Research Cluster |---
+|10-Mar	|Participatory Mapping With Field Papers |Nina Fontana & Michele Tobias
