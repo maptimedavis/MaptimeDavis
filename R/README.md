@@ -1,4 +1,4 @@
-#R Workshops
+# R Workshops
 
 Here are workshops we've had on R:
 * [R Spatial](https://github.com/maptimedavis/MaptimeDavis/tree/master/R/Rspatial)
