@@ -15,7 +15,7 @@ This quarter skills workshops will alternate weeks with [Spatial Science Researc
 |7-Apr – 10:30 |Spatial Sciences Research Cluster| ---
 |14-Apr|#maptimeDavis: Intro to GIS with QGIS|Michele Tobias
 |21-Apr|Spatial Sciences Research Cluster| ---
-|28-Apr (tentative)|#maptimeDavis: R for Spatial|Leah Nagel
+|28-Apr|#maptimeDavis: R for Spatial|Leah Nagel
 |5-May|	Spatial Sciences Research Cluster| ---
 |12-May|#maptimeDavis: Mapbox|Megan Danielson, mapbox
 |19-May|Spatial Sciences Research Cluster| ---
