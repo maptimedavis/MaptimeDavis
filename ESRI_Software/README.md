@@ -1,4 +1,4 @@
-#ESRI Workshops
+# ESRI Workshops
 
 Here are materials for a few of the ESRI software workshops we've had:
 * [ArcGIS Resources on the UC Davis Campus](https://github.com/maptimedavis/MaptimeDavis/tree/master/ESRI_Software/ArcGISResourcesOnCampus)
