@@ -1,4 +1,4 @@
-#QGIS Workshops
+# QGIS Workshops
 
 Here are some workshops we've had on QGIS:
 
