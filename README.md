@@ -3,25 +3,19 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Spring Quarter 2020 Schedule
-Workshops on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details.
+# Summer 2020 Schedule
+#maptimeDavis Workshops are taking a break for the summer, but the #maptimeDavis Studio (formerly Spatial Sciences Research Cluster) meetings will meet on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details.
 
-This quarter skills workshops will alternate weeks with [Spatial Science Research Cluster](http://ds.lib.ucdavis.edu/spatial-sciences/) gatherings, a time for people interested in geospatial research to come together to work.
+#maptimeDavis events are produced by the [Spatial Sciences Research & Learning Cluster](https://datalab.ucdavis.edu/spatial-sciences/) within the [UC Davis Datalab](https://datalab.ucdavis.edu/).
 
-**This is the tentative schedule as of 4/3/2020.**
 
 |Date	|Topic	|Speaker
 |---|---|---
-|7-Apr – 10:30 |Spatial Sciences Research Cluster| ---
-|14-Apr|#maptimeDavis: Intro to GIS with QGIS|Michele Tobias
-|21-Apr|Spatial Sciences Research Cluster| ---
-|28-Apr|#maptimeDavis: R for Spatial|Leah Nagel
-|5-May|	Spatial Sciences Research Cluster| ---
-|12-May|#maptimeDavis: Mapbox|Megan Danielson, mapbox
-|19-May|Spatial Sciences Research Cluster| ---
-|26-May|		
-|2-Jun|Spatial Sciences Research Cluster| ---
-|  |  |
+| 23 June | #maptimeDavis Studio  |
+| 7 July | #maptimeDavis Studio |
+| 21 July | #maptimeDavis Studio |
+| 21 July | #maptimeDavis Studio |
+| 4 Aug | #maptimeDavis Studio |
 
 	
 
@@ -101,42 +95,51 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 | 19-Nov-2018	| **Data Visualization Challenge**	| Center for Spatial Sciences
 | 26-Nov-2018 | **Data Fusion in Remote Sensing** | Yufang Jin's Lab
 | 3-Dec-2018	|  **Remote Sensing Challenge**		| Center for Spatial Sciences
-|16 Jan|	Mapathon|	Sierra Mabanta
-|23-Jan|	1 Hour Map Challenge! |	Center for Spatial Sciences
-|30-Jan|	[Interactive Maps with R](MapWithR) |	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
-|6-Feb|	[Spatial Networks in R](Rspatial) |	Beatriz Martinez-Lopez’s Lab
-|13-Feb|	[Python for Field Calculations in QGIS and ArcGIS](https://github.com/nickrsan/Python-GIS-Field-Calculations/) |	Nick Santos
-|20-Feb|	Lightning Talks |	Geospatial Community
-|22-Feb|	Geospatial Data Visualization |	Michele Tobias
-|27-Feb|	Field Data Collection |	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
-|6-Mar|	[Fire Mapping](GoogleEarthEngine) |	Yufang Jin’s Lab
-|Apr 16|Humanitarian OpenStreetMap Mapathon Location To Be Announced |Mapping Club
-|Apr 23|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
-|Apr 30|Intro to GIS with QGIS  Register|Michele Tobias
-|May 07|Drone Show & Tell Location To Be Announced  |Center for Spatial Sciences
-|May 14|[Historical Mapping with Open Source Tools](historymaps.md)  |Emily Merchant & Michael Mortimer
-|May 21|Getting Started with ArcGIS Pro  1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
-|May 28|GIS Career Panel Discussion  |Center for Spatial Sciences
-|Jun 04|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge 1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
-|1 Oct	|Research Cluster	|---
-|3 Oct	2:00-4:00|InstallFest	|DataLab Crew
-|8 Oct	|AI-Assisted Mapping: Using Facebook's RapiD OSM Editor	|Cameron Denney, Kaart @ Facebook
-|15-Oct	|Research Cluster	|---
-|22-Oct	|Cloud-computing for large geospatial datasets	|Lauren Mabe
-|29-Oct	|Research Cluster	|---
-|5-Nov	|Map Collection Tour & Library Map Data Projects | Dawn Collings
-|6-Nov	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
-|12-Nov	|Research Cluster	|---
-|19-Nov	|NASA Develop Program	|Jose Ochoa
-|20-Nov 2:00-4:00	|Spatial SQL	|Michele Tobias
-|26-Nov	|Research Cluster	|---
-|7 Jan	|Spatial Science Research Cluster|---
-|14 Jan	|Finding Historical Air Photos with UCSB's FrameFinder |Dawn Collings
-|21 Jan	|Spatial Science Research Cluster |---
-|28-Jan	|ESRI Resources on Campus |Karen Beardsley
-|4-Feb	|Spatial Science Research Cluster |---
-|11-Feb	|Planet Satellite Data with QGIS Plugin |Planet’s Staff
-|18-Feb	|Spatial Science Research Cluster |---
-|25-Feb	|Drone imagery processing using Agisoft Metashape: single-workstation and high-performance computing cluster applications |Mallika Nocco & Derek Young
-|3-Mar	|Spatial Science Research Cluster |---
-|10-Mar	|Participatory Mapping With Field Papers |Nina Fontana & Michele Tobias
+|16 Jan-2019|	Mapathon|	Sierra Mabanta
+|23-Jan-2019|	1 Hour Map Challenge! |	Center for Spatial Sciences
+|30-Jan-2019|	[Interactive Maps with R](MapWithR) |	Alex Mandel, Nistara Randhawa, Ryan Peek, Mahesh Maskey
+|6-Feb-2019|	[Spatial Networks in R](Rspatial) |	Beatriz Martinez-Lopez’s Lab
+|13-Feb-2019|	[Python for Field Calculations in QGIS and ArcGIS](https://github.com/nickrsan/Python-GIS-Field-Calculations/) |	Nick Santos
+|20-Feb-2019|	Lightning Talks |	Geospatial Community
+|22-Feb-2019|	Geospatial Data Visualization |	Michele Tobias
+|27-Feb-2019|	Field Data Collection |	Derek Young, Sierra Mabanta, Huck Rees, Ofuhre Igbinedion
+|6-Mar-2019|	[Fire Mapping](GoogleEarthEngine) |	Yufang Jin’s Lab
+|Apr 16-2019|Humanitarian OpenStreetMap Mapathon Location To Be Announced |Mapping Club
+|Apr 23-2019|NDVI Time Series Data in R  |Mahesh Maskey & Kristen Shapiro
+|Apr 30-2019|Intro to GIS with QGIS  Register|Michele Tobias
+|May 07-2019|Drone Show & Tell Location To Be Announced  |Center for Spatial Sciences
+|May 14-2019|[Historical Mapping with Open Source Tools](historymaps.md)  |Emily Merchant & Michael Mortimer
+|May 21-2019|Getting Started with ArcGIS Pro  1014 Wickson Computer Lab   |Matthew Twietmeyer, ESRI
+|May 28-2019|GIS Career Panel Discussion  |Center for Spatial Sciences
+|Jun 04-2019|Introduction to Python in ArcGIS Pro & ArcGIS R-Bridge 1014 Wickson Computer Lab  |Matthew Twietmeyer, ESRI
+|1 Oct-2019	|Research Cluster	|---
+|3 Oct-2019	2:00-4:00|InstallFest	|DataLab Crew
+|8 Oct-2019	|AI-Assisted Mapping: Using Facebook's RapiD OSM Editor	|Cameron Denney, Kaart @ Facebook
+|15-Oct-2019	|Research Cluster	|---
+|22-Oct-2019	|Cloud-computing for large geospatial datasets	|Lauren Mabe
+|29-Oct-2019	|Research Cluster	|---
+|5-Nov-2019	|Map Collection Tour & Library Map Data Projects | Dawn Collings
+|6-Nov-2019	2:00-4:00|Intro to SQL (non-spatial)	|Michele Tobias
+|12-Nov-2019	|Research Cluster	|---
+|19-Nov-2019	|NASA Develop Program	|Jose Ochoa
+|20-Nov-2019 2:00-4:00	|Spatial SQL	|Michele Tobias
+|26-Nov-2019	|Research Cluster	|---
+|7 Jan-2020	|Spatial Science Research Cluster|---
+|14 Jan-2020	|Finding Historical Air Photos with UCSB's FrameFinder |Dawn Collings
+|21 Jan-2020	|Spatial Science Research Cluster |---
+|28-Jan-2020	|ESRI Resources on Campus |Karen Beardsley
+|4-Feb-2020	|Spatial Science Research Cluster |---
+|11-Feb-2020	|Planet Satellite Data with QGIS Plugin |Planet’s Staff
+|18-Feb-2020	|Spatial Science Research Cluster |---
+|25-Feb-2020	|Drone imagery processing using Agisoft Metashape: single-workstation and high-performance computing cluster applications |Mallika Nocco & Derek Young
+|3-Mar-2020	|Spatial Science Research Cluster |---
+|10-Mar-2020	|Participatory Mapping With Field Papers |Nina Fontana & Michele Tobias
+|7-Apr-2020 – 10:30 |Spatial Sciences Research Cluster| ---
+|14-Apr-2020|#maptimeDavis: Intro to GIS with QGIS|Michele Tobias
+|21-Apr-2020|Spatial Sciences Research Cluster| ---
+|28-Apr-2020|#maptimeDavis: R for Spatial|Leah Nagel
+|5-May-2020|	Spatial Sciences Research Cluster| ---
+|12-May-2020|#maptimeDavis: Mapbox|Megan Danielson, mapbox
+|19-May-2020|Spatial Sciences Research Cluster| ---
+|26-May-2020|Humanitarian OpenStreetMap Mapathon|community	
+|2-Jun-2020|Spatial Sciences Research Cluster| ---
