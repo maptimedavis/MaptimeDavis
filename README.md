@@ -143,3 +143,15 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |19-May-2020|Spatial Sciences Research Cluster| ---
 |26-May-2020|Humanitarian OpenStreetMap Mapathon|community	
 |2-Jun-2020|Spatial Sciences Research Cluster| ---
+|6-Oct-2020|The Year of the Map: The imortance of Spatial Data in 2020|Leah Nagel
+|13-Oct-2020|Contributing Geographic Data Through OpenStreetMap (OSM)|Gaurav Thapa
+|20-Oct-2020|OpenStreetMap Data|community
+|27-Oct-2020|Journal Map Figure Design|Michele Tobias
+|3-Nov-2020|Map Design & Cartography|community
+|10-Nov-2020|Crop Type Mapping with Deep Learning using Tensor Flow|Alex Mandel & Lily Thomas, Development Seed
+|17-Nov-2020|Machine Learning for Spatial Data|community
+|24-Nov-2020|From Spatial Data to Publication Ready Figure: Mapmaking with R|Ryan Peek
+|1-Dec-2020|Mapping in R|community
+
+
+
