@@ -3,25 +3,11 @@
 # Swag
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
-# Summer 2020 Schedule
-#maptimeDavis Workshops are taking a break for the summer, but the #maptimeDavis Studio (formerly Spatial Sciences Research Cluster) meetings will meet on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details.
+# Schedule
+#maptimeDavis Workshops typically happen on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details and the full current schedule.
 
 #maptimeDavis events are produced by the [Spatial Sciences Research & Learning Cluster](https://datalab.ucdavis.edu/spatial-sciences/) within the [UC Davis Datalab](https://datalab.ucdavis.edu/).
 
-
-|Date	|Topic	|Speaker
-|---|---|---
-| 23 June | #maptimeDavis Studio  |
-| 7 July | #maptimeDavis Studio |
-| 21 July | #maptimeDavis Studio |
-| 21 July | #maptimeDavis Studio |
-| 4 Aug | #maptimeDavis Studio |
-
-	
-
-
-
-#maptimeDavis events are listed on the [UC Davis Center for Spatial Sciences Events List](https://spatial.ucdavis.edu/events/) and the [DataLab Events Calendar](http://ds.lib.ucdavis.edu/eventscalendar/)
 
 ## Feedback
 Give #maptimeDavis [feedback](https://docs.google.com/forms/d/e/1FAIpQLSeeZ5mWwtbbRLb-66s8IUiV2tG_0FwBjwcE9pXLWokrOLj8qg/viewform?usp=sf_link) OR [QR Code for your phone](w19-feedback-qrcode.png) about a session you attended.
