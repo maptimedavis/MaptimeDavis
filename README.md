@@ -152,6 +152,11 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |17-Nov-2020|Machine Learning for Spatial Data|community
 |24-Nov-2020|From Spatial Data to Publication Ready Figure: Mapmaking with R|Ryan Peek
 |1-Dec-2020|Mapping in R|community
+|12-Jan|#maptimeDavis Workshop: Earth Engine & R for presentation-quality contextual maps|Christian John
+|19-Jan|#maptimeDavis Studio: Future of #maptimeDavis|Community Discussion	
+|9-Feb|#maptimeDavis Workshop: Geocoding Address Data: Approaches to Personally Identifiable Data|Michele Tobias
+|16-Feb|#maptimeDavis Studio: Working with Address Data|Community Discussion
+|23-Feb|#maptimeDavis Workshop: Getting started with the new ArcGIS Field Maps|Canserina Kurnia & Mark Stewart, ESRI
 
 
 
