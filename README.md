@@ -41,6 +41,10 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 
 # Previous Events
 
+## Videos
+If we have a recording see our [Youtube Channel](https://www.youtube.com/@maptimedavis95616/videos)
+
+## List by Date
 |Date	|Topic	|Speaker
 |---|---|---
 |25-Sep-2017	|[Intro to QGIS](https://github.com/MicheleTobias/MaptimeDavis/tree/master/IntroToQGIS)	|Michele Tobias
@@ -143,6 +147,27 @@ Have more questions?  Contact Michele Tobias at mmtobias@ucdavis.edu
 |9-Feb-2021|#maptimeDavis Workshop: Geocoding Address Data: Approaches to Personally Identifiable Data|Michele Tobias
 |16-Feb-2021|#maptimeDavis Studio: Working with Address Data|Community Discussion
 |23-Feb-2021|#maptimeDavis Workshop: Getting started with the new ArcGIS Field Maps|Canserina Kurnia & Mark Stewart, ESRI
-
+|6-Apr-2021 |Simplified Volcano Hazards Maps: Lessons Learned and Future Directions    |David Ramsey       |
+|13-Apr-2021|End-to-end Deep Learning Workflows using Geospatial Technology |David Yu, Esri     |
+|20-Apr-2021|Agent-Based Modeling with NetLogo        |Sarah Grajdura     |
+|27-Apr-2021|Projected Coordinate Systems in R        |Dr. Carl Stahmer   |
+|4-May-2021 |Introduction to Spatial Statistics in R  |Dr. Wesley Brooks  |
+|18-May-2021|Lightning Talks    |Various |
+|5-Oct-2021 |Accessing cloud-hosted NetCDF with Python via Zarr, turbocharged with ReferenceFileSystem       |Lucas Sterzinger   |
+|12-Oct-2021|Is my research mappable? Intro to map-making & GIS for researchers        |Dr. Michele Tobias |
+|19-Oct-2021|Interactive maps in R shiny   |Taylor Nelsen      |
+|26-Oct-2021|Getting started with ArcGIS Online       |Karen Beardsley    |
+|2-Nov-2021 |ArcGIS Field Maps  |Miriam Schmidts    |
+|9-Nov-2021 |Introduction to PostGIS with Crunchy Data|Steve Pousty       |
+|16-Nov-2021|Introduction to Desktop GIS with QGIS    |Dr. Michele Tobias |
+|8-Feb-2022 |Building Maps with D3         |Mina Rezaei        |
+|15-Feb-2022|Building Web Maps with Leaflet|Dr. Michele Tobias |
+|22-Feb-2022|Engage Your Community with ArcGIS Hub    |Carlos Barahona    |
+|12-Apr-2022|Introduction to GIS with QGIS |Dr. Michele Tobias |
+|26-Apr-2022|Working with Cal-Adapt Climate Data in R (#maptimeDavis & D-RUG)          |Andy Lyons|
+|3-May-2022 |Engaging Underserved Communities through GIS Mapping|Angelina Rahimi & Vosawale Lesuma (Aora Planning)   |
+|10-May-2022|Spatial SQL|Dr. Michele Tobias |
+|17-May-2022|Introduction to Google Earth Engine      |Luke Salvato       |
+|27-Sep-2022|Hood Canal Landscape Assessment and Prioritization Tool (HC-LAP): A Web Mapping Application to Support Conservation Efforts in Hood Canal, Washington  |David Puckett      |
 
 
