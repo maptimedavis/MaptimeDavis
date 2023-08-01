@@ -4,7 +4,7 @@
 Tshirts, notebooks, and other items with the #maptimeDavis penny farthing logo are now available to order on [Redbubble](https://www.redbubble.com/people/micheletobias/collections/865154-maptimedavis?asc=u).
 
 # Schedule
-#maptimeDavis Workshops typically happen on **Tuesdays from 10:00am-12:00pm** via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details and the full current schedule.
+#maptimeDavis Workshops typically happen on **Fridays from 10:00am-12:00pm** in the DataLab Classroom (360 Shields Library) and via Zoom, unless otherwise noted.  All #maptimeDavis workshops are free of cost and open to the public.  Please see the [UC Davis DataLab Spatial Sciences Research Cluster Page](https://datalab.ucdavis.edu/spatial-sciences/) for Zoom link details and the full current schedule.
 
 #maptimeDavis events are produced by the [Spatial Sciences Research & Learning Cluster](https://datalab.ucdavis.edu/spatial-sciences/) within the [UC Davis Datalab](https://datalab.ucdavis.edu/).
 
